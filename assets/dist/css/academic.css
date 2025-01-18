@@ -1,0 +1,324 @@
+
+.academic_regulation_main{
+    padding:50px 0;
+}
+.academic_reg_head{
+    margin-bottom:30px;
+}
+.academic_reg_head h3 {
+    font-size: 25px;
+    color: var(--orange);
+    font-weight: bold;
+    border-bottom: solid 2px var(--orange);
+    padding-bottom: 5px;  
+}
+.academic_regulation_main button{
+    color:var(--orange);
+    border-bottom:solid 1px var(--orange);
+    padding:12px 15px;
+}
+.academic_regulation_main .nav-pills{
+    gap:15px;
+}
+.academic_regulation_main .nav-pills .nav-link{
+    border-radius:0;
+}
+
+.academic_reg_dd a{
+    display: flex;
+    height:100%;
+    margin-top: 20px;
+}
+.academic_reg_text{
+    width:100%;
+}
+.academic_reg_text ol{
+    margin:0;
+}
+.academic_reg_icon i,
+.academic_reg_text li{
+    font-size:18px;
+    color:var(--white);
+    padding:12px 15px;
+    background-color:var(--black);
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 2px var(--black);
+    transition:0.5s all;
+}
+.academic_reg_icon i{
+    background-color:var(--orange);
+    height:100%;
+    display: flex;
+    align-items: center;
+    border:solid 2px var(--orange);
+    transition:0.5s all;
+    
+}
+.academic_reg_dd:hover .academic_reg_icon i,
+.academic_reg_dd:hover .academic_reg_text li{
+    background-color:transparent;
+    color:var(--orange);
+}
+.academic_reg_dd:hover .academic_reg_text li{
+    border:solid 2px var(--orange);
+    border-right:solid 1px transparent;
+}
+.academic_regulation_main .nav-pills .nav-link.active,
+.academic_regulation_main .nav-pills .show>.nav-link{
+    background-color:var(--blue);
+}
+.nav-link:focus, .nav-link:hover{
+    color:var(--blue);
+}
+.footer_social{
+    display: none;
+}
+/* committee section */
+#committe_main{
+    padding: 50px 0;
+    padding-bottom: 100px;
+}
+.committee_sec .nav-pills{
+    background-color:var(--blue);
+    padding:80px 20px;
+    width:100%;
+}
+.committee_sec .tab-content{
+    width:100%;
+}
+.committee_sec button{
+    color:#dddddd4d;
+    padding:12px 25px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bnr_scnd_img img {
+    display:none;
+}
+.committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link{
+    background-color:var(--orange);
+    color:var(--white);
+    width:115%;
+    font-style: italic;
+    transition:0.5s all;
+    
+}
+.committee_sec .nav-pills .nav-link{
+    border-radius: 0;
+}
+.committee_sec .nav-link:focus, .committee_sec .nav-link:hover{
+    color:var(--white);
+}
+.committee_head h3 {
+    font-size: 25px;
+    color: var(--blue);
+    margin-bottom: 10px;
+    font-weight: 900;
+    border-bottom: solid 2px var(--blue);
+    padding-bottom: 5px;
+    width: fit-content;
+}
+.committee_table_inn thead{
+    background:linear-gradient(135deg, var(--orange) 0%, var(--black) 100%);
+    font-weight:bold;
+}
+.committee_table_inn th{
+    font-weight:400;
+    color:var(--white);
+}
+.committee_sec .tab-pane{
+    padding-left: 20px;
+}
+.committee_table_inn .table>:not(caption)>*>*{
+    background-color:transparent;
+}
+.committee_table_inn .table{
+    border:solid 1px var(--black);
+}
+.table-bordered td, .table-bordered th {
+    border: 1px solid #0000003b;
+}
+table {
+    counter-reset: Serial;
+}
+table:not(.table-number) tr td:first-child:before {
+    counter-increment: Serial;
+    content: counter(Serial);
+}
+@media (max-width:1440px) {
+.scnd_nav_list li a {
+    margin: 0 10px;
+    font-size: 14px;
+}
+}
+@media (max-width:1366px) {
+.bnr_scnd_img img{
+    display:none;
+}
+.scnd_nav_list li a {
+            margin: 0 3px;
+            font-size: 14px;
+        }
+        .blink_code p {
+    font-size: 14px;
+        }
+        .blink_code h5 {
+    font-size: 17px;
+        }
+        .committee_sec button {
+    color: #dddddd4d;
+    padding: 12px 8px
+        }
+        .bnr_bredcrumb {
+    position: absolute;
+    bottom: 0px;
+    left: 140px;
+}
+.head_tit {
+    margin: 15px 0;
+    left: 140px;
+}
+}
+@media (max-width:1280px) {
+ .scnd_nav_list li a {
+            margin: 0px 1px;
+            font-size: 13px;
+        }
+}
+        
+@media (max-width:1199px) {
+.committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link {
+    width: 126%;
+}
+}
+@media (max-width:1024px) {
+ .scnd_nav_list li a {
+            margin: -2px 0px;
+            font-size: 11px;
+        }
+                .blink_code p {
+            font-size: 12px;
+        }
+}
+
+@media (max-width: 991px) {
+.committee_head h3 {
+    margin-top: 45px;
+}
+.hod-start {
+    row-gap: 60px;
+}
+.bnr_bredcrumb {
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+}
+        .head_tit {
+            top: 200px;
+            left: 70px;
+        }
+            .committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link {
+        width: 109%;
+    }
+}
+@media (max-width: 767px) {
+.cse-hod2 {
+    margin-left: 0px;
+   
+}
+ .bnr_bredcrumb {
+    position: absolute;
+    bottom: 0px;
+    left: 36px;
+}
+   
+    .head_tit h4 {
+    font-size: 31px;
+    }
+footer {
+    margin-top: 100px !important;
+}
+}
+@media (max-width: 576px) {
+.committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link {
+    width: 111%;
+}
+
+@media (max-width:540px) {
+.committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link {
+    background-color: var(--orange);
+    color: var(--white);
+    width: 108%;
+}
+.contact_head h4, .map h4 {
+    font-size: 28px;
+}
+.academic_regulation_main .nav-pills {
+    margin-left: 20px;
+}
+.academic_reg_text ol {
+    padding-left: 0px;
+}
+.committee_sec .tab-pane {
+    padding-left: 0px;
+}
+.academic_regulation_main {
+    overflow:hidden;
+}
+}
+@media (max-width:492px) {
+#committe_main {
+    padding: 50px 0;
+    padding-bottom: 50px;
+}
+ .bnr_img img {
+    height: 350px;
+        }
+           .head_tit {
+    top: 108px;
+            left: 54px;
+}
+}
+@media (max-width:395px) {
+.academic_reg_head h3 {
+    font-size: 23px;
+}
+.committee_sec .tab-pane {
+    padding-left: 0px;
+}
+        #committe_main {
+            padding: 50px 0;
+            padding-bottom: 20px;
+        }
+           .committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link {
+           
+            width: 114%;
+        }
+}
+
+@media (max-width:360px) {
+        .bnr_img img {
+            height: 300px;
+        }
+                .academic_reg_head h3 {
+            font-size: 21px;
+        }
+        .committee_head h3 {
+    font-size: 21px;
+        }
+             
+}
+@media (max-width:320px) {
+.footer-copy p {
+    font-size: 13px;
+}
+.footer-copy span {
+  
+    font-size: 13px;
+}
+}

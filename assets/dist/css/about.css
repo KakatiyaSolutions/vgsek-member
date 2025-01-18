@@ -1,0 +1,1028 @@
+.head_tit {
+  top: 170px;
+}
+
+.administration_main .container-fluid,
+.vm_main .container-fluid,
+#about_two .container-fluid {
+  padding: 0 200px;
+}
+
+#about_two {
+  padding: 70px 0;
+  /* background-image: linear-gradient(to bottom, #ededed 68%, #1e4585 40%); */
+  padding-bottom: 0;
+}
+#about_two .row {
+  align-items: end;
+}
+.about_two_text_sec {
+  /* margin-top: -50px; */
+  margin-bottom: 50px;
+}
+.about_two_text_sec h5 {
+  font-size: 30px;
+  color: var(--orange);
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.about_two_text_sec h2 {
+  font-size: 45px;
+  font-weight: bold;
+  color: #000000b5;
+  margin-top: 10px;
+  text-transform: uppercase;
+  line-height: 55px;
+  letter-spacing: 2px;
+}
+.about_two_text_sec hr {
+  border: solid 1px #000;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+}
+.about_two_text_sec p {
+  font-size: 16px;
+  padding-bottom: 20px;
+  color: #444;
+  text-align: justify;
+  line-height: 28px;
+}
+.about_two_text_sec h2 span{
+  color:var(--orange);
+}
+.facilities_head  h2{
+  font-size:38px;
+  font-weight:bold;
+  letter-spacing:-1px;
+}
+#about_two .abt_inn_img img {
+  object-fit: cover;
+  height: 380px;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* second about section css */
+.legacy_sec h3 {
+  font-size: 43px;
+  color: var(--black);
+  margin-bottom: 40px;
+  font-weight: bold;
+  margin-top: -20px;
+}
+.legacy_row {
+  padding: 50px;
+  border-radius: 40px 40px 0 0;
+  background: linear-gradient(to bottom, var(--orange), var(--blue));
+  gap: 45px;
+  justify-content: center;
+  align-items: center !important;
+}
+.legacy_inn_sec h4 {
+  font-size: 55px;
+  color: var(--white);
+  font-weight: bold;
+}
+.legacy_inn_sec {
+  position: relative;
+  text-align: center;
+}
+.legacy_inn_sec::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -14px;
+  width: 1px;
+  height: 130px;
+  background-color: #fff;
+  border-radius: 25px;
+}
+.legacy_inn_sec1::after {
+  display: none;
+}
+.legacy_inn_sec2::after {
+  top: 0;
+}
+.legacy_inn_sec h4 span {
+  font-size: 30px;
+  margin-left: -15px;
+}
+.legacy_inn_sec p {
+  font-size: 25px;
+  color: var(--white);
+  line-height: 27px;
+}
+
+/* vm_about */
+.vm_main {
+  padding: 70px 0;
+  background-color: #f0f0f0;
+}
+.vm_sec {
+  display: flex;
+  gap: 35px;
+}
+.vm_head {
+  margin-bottom: 50px;
+}
+.vm_head h3 {
+  font-size: 40px;
+  color: var(--blue);
+  font-weight: bold;
+}
+.vm_sec img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.vm_inn_sec {
+  margin-top: 35px;
+}
+.vm_inn_sec h4 {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--blue);
+  margin-bottom: 25px;
+}
+.vm_inn_sec li,
+.vm_inn_sec p {
+  font-size: 22px;
+  color: #000000ea;
+  text-align: justify;
+  line-height: 35px;
+  width: 415px;
+}
+.vm_inn_sec li {
+  width: 440px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.vm_inn_sec li img {
+  width: 25px;
+  height: 19px;
+  object-fit: contain;
+  margin-top: 5px;
+}
+/* administration section */
+.administration_main {
+  padding: 70px 0;
+  background: linear-gradient(to bottom, var(--orange), var(--blue));
+}
+.administration_head h3 {
+  font-size: 35px;
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-bottom: solid 2px var(--blue);
+  padding-bottom: 15px;
+}
+.administration_head h4 {
+  padding-left: 90px;
+  font-size: 30px;
+  color: var(--white);
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+}
+.administration_head h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background-color: var(--white);
+  top: 13px;
+}
+/* image section */
+.admi_tab_text {
+  text-align: center;
+}
+
+.admi_tab_text .about_img1 img {
+  /* height: 181px; */
+  object-fit: cover;
+}
+.admi_tab_text h4 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: var(--white);
+}
+.admi_tab_text p {
+  margin-top: 5px;
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 300;
+}
+.admi_tab_text p b {
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.admi_tab_text .admin_clg_name{
+    font-size:16px;
+    letter-spacing: 2px;
+    line-height: 26px;
+}
+#leadership .row .col-lg-3{
+  width:19%;
+}
+#leadership .row .col-lg-9{
+  width:81%;
+}
+/* **** */
+.admin_tab_text {
+  /* background-color: #ffffffa6; */
+  padding: 30px;
+  background: linear-gradient(to bottom, #c8573a, #6a4756);
+  box-shadow: 0px 0px 12px 1px #00000061;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:100%;
+}
+.admin_tab_text p {
+  font-size: 17px;
+  color: #ffffffe3;
+  text-align: justify;
+  line-height: 33px;
+}
+.admin_tab_text h5 {
+  color: var(--orange);
+  /* padding-bottom: 8px; */
+  width: fit-content;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.admin_img_sec img {
+  width: 100%;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  display: none;
+}
+.admin_img_sec_main h4 {
+  font-size: 20px;
+  color: var(--white);
+  font-weight: bold;
+  margin: 5px;
+}
+.admin_img_sec_main p {
+  color: var(--white);
+}
+.educat_clg_list{
+  text-align: center;
+}
+.depart_list {
+  justify-content: end;
+}
+#leadershipTab {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap:70px;
+}
+#leadershipTab li a {
+  display: block;
+  padding: 0;
+  margin-left: 15px;
+  width: 220px;
+  cursor: pointer;
+}
+#leadershipTab li a.active{
+  transition:0.5s all;
+}
+#leadershipTab li:has(a.active) {
+  display: none;
+}
+/* governing section */
+.governing_main {
+  padding: 80px 0;
+  background-color: #ededed;
+}
+#college_group .administration_head h3,
+.governing_main .administration_head h3{
+  color:var(--black);
+}
+.contact_head span {
+  color: var(--orange);
+}
+.managing_img .info {
+  margin-top: 15px;
+}
+.managing_img p:nth-child(1) {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+.managing_img p:nth-child(2) {
+  font-size: 16px;
+}
+.managing_img {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.ma_img {
+  transform: scale(1);
+  overflow: hidden;
+}
+.ma_img img {
+  height: 196px;
+  object-fit: cover;
+  transition: 0.5s all;
+}
+.managing_img:hover .ma_img img {
+  transform: scale(1.2);
+}
+.footer_social {
+  display: none;
+}
+.OmbudsPerson_head {
+  margin-top: 30px;
+}
+
+/* group section */
+#college_group {
+  padding: 80px 0;
+}
+#college_group .row {
+  align-items: center;
+}
+#college_group .row .col-lg-6 {
+  padding: 0;
+}
+.grp_text {
+  padding-right: 25px;
+}
+.grp_text1 {
+  padding-right: 0;
+  padding-left: 25px;
+}
+.grp_text h3 {
+  font-size: 35px;
+  color: var(--blue);
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.grp_text p {
+  font-size: 18px;
+  color: var(--black);
+  line-height: 30px;
+  text-align: justify;
+}
+
+/* contact section */
+.contact_1 {
+  padding: 50px 0;
+  background-color: #ecececd1;
+}
+.contact_1 .row .col-lg-4 ul li:last-child .card {
+  margin: 0;
+}
+.contact_1 .card {
+  padding: 20px 0;
+  border-color: transparent;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: inherit;
+  padding-left: 30px;
+  border-radius: 0;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.contact_1 .card i {
+  margin-right: 30px;
+  font-size: 18px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--red);
+  background-color: #fef6f3;
+}
+.contact_1 .col-lg-4 h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.contact_1 .col-lg-4 p,
+.contact_1 .col-lg-4 a {
+  color: var(--black);
+}
+.contact_1 .col-lg-8 form,
+.contact_1 .col-lg-6 form {
+  background-color: var(--white);
+  height: 100%;
+  padding: 32px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+.contact_1 .col-lg-8 h3,
+.contact_1 .col-lg-6 h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+.contact_1 .col-lg-8 .line,
+.contact_1 .col-lg-6 .line {
+  width: 50px;
+  height: 2px;
+  background: var(--orange);
+  margin-bottom: 20px;
+}
+.contact_1 .col-lg-8 form .btn,
+.contact_1 .col-lg-6 form .btn {
+  background-color: var(--orange);
+  border: 2px solid var(--orange);
+  border-radius: 0;
+  padding: 3px 20px;
+  font-size: 16px;
+  color: var(--white);
+}
+.map {
+  padding-bottom: 100px;
+  text-align: center;
+}
+.map iframe {
+  width: 100%;
+  height: 550px;
+  display: block;
+}
+.contact_head h4,
+.map h4 {
+  font-size: 35px;
+  color: var(--blue);
+  font-weight: bold;
+  margin: 50px 0;
+}
+.contact_head h4 {
+  border-bottom: solid 2px var(--blue);
+  width: fit-content;
+  margin-top: 0;
+}
+
+/* facilities */
+
+
+.infrastructure_camp_main {
+  background: #d3d3d354;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 70px 0px 100px;
+}
+.structure_camp_head h2 {
+  margin-top: 46px;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--black);
+}
+.structure_img {
+position: relative;
+
+}
+ .structure_img p {
+position: absolute;
+bottom: 20px;
+font-size: 16px;
+color: var(--white);
+background-color: var(--blue);
+padding: 5px 15px;
+z-index: 1;
+left: 20px;
+} 
+.infrastructure_camp_main .row{
+     row-gap: 25px;
+}
+.structure_long {
+  height: 478px;
+  object-fit: cover;
+}
+ .structure_img::after{
+position: absolute;
+    content: " ";
+    background-color: #000000aa;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+@media (max-width: 1710px) {
+     .abt_inn_img {
+        margin-bottom: 60px;
+    }
+}
+@media (max-width: 1680px) {
+    .abt_inn_img{
+        margin-bottom:50px;
+    }
+    
+}
+@media (max-width: 1600px) {
+    .abt_inn_img {
+        margin-bottom: 68px;
+    }
+}
+@media (max-width: 1536px) {
+.legacy_row {
+    padding: 35px;
+}
+.legacy_inn_sec h4 span {
+    font-size: 24px;
+    margin-left: -15px;
+}
+    .abt_inn_img {
+        margin-bottom: 0px;
+    }
+#leadershipTab li a {
+    display: block;
+    padding: 0;
+     margin-left: 0px; 
+    width: 175px;
+    cursor: pointer;
+}
+.vm_sec {
+    gap: 15px;
+}
+.vm_inn_sec li, .vm_inn_sec p {
+    font-size: 19px;
+        width: 345px;
+}
+.abt_inn_img img{
+     margin-top: -527px;
+}
+}
+@media (max-width: 1440px) {
+.scnd_nav_list li a {
+    margin: 0 10px;
+    font-size: 14px;
+}
+.about_two_text_sec h2 {
+    font-size: 35px;
+}
+.legacy_row {
+    gap:20px;
+}
+.legacy_inn_sec h4 {
+    font-size: 47px;
+}
+    .legacy_inn_sec h4 span {
+        font-size: 22px;
+        margin-left: -10px;
+    }
+    .legacy_inn_sec p {
+    font-size: 21px;
+    }
+        .vm_inn_sec li, .vm_inn_sec p {
+        font-size: 19px;
+        width: 301px;
+        line-height:32px;
+        }
+        .admi_tab_text h4 {
+    font-size: 19px;
+        }
+        .admi_tab_text p b {
+    letter-spacing: 1px;
+    font-size: 17px;
+        }
+}
+@media (max-width: 1366px) {
+.administration_main .container-fluid, .vm_main .container-fluid, #about_two .container-fluid {
+    padding: 0 130px;
+}
+.bnr_scnd_img img{
+    display:none;
+}
+        .scnd_nav_list li a {
+            margin: 0 3px;
+            font-size: 14px;
+        }
+        .blink_code p {
+    font-size: 14px;
+        }
+        .blink_code h5 {
+    font-size: 17px;
+        }
+        .ma_img img {
+    height: auto;
+        }
+        .vm_sec img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+.vm_inn_sec h4 {
+    font-size: 35px;
+}
+    .vm_inn_sec li, .vm_inn_sec p {
+        width: auto;
+     font-size: 17px;
+    }
+    .administration_head h3 {
+    font-size: 30px;
+    }
+    .grp_text h3 {
+    font-size: 30px;
+    }
+    .vm_head h3 {
+    font-size: 35px;
+    }
+    .legacy_sec h3 {
+    font-size: 35px;
+    }
+    .about_two_text_sec h2 {
+            letter-spacing: 1px;
+    }
+    .bnr_bredcrumb {
+    position: absolute;
+    bottom: 0px;
+    left: 140px;
+}
+.head_tit {
+    margin: 15px 0;
+    left: 140px;
+}
+.structure_long {
+    height: 414px;
+}
+}
+@media (max-width: 1280px) {
+.managing_img p:nth-child(1) {
+    font-weight: bold;
+    font-size: 17px;
+}
+        .scnd_nav_list li a {
+            margin: 0px 1px;
+            font-size: 13px;
+        }
+        .grp_text p {
+    font-size: 15px;
+        }
+        .grp_text h3 {
+    font-size: 30px;
+        }
+}
+    @media (max-width: 1200px) {
+        .administration_main .container-fluid, .vm_main .container-fluid, #about_two .container-fluid {
+            padding: 0 50px;
+        }
+                .vm_inn_sec li, .vm_inn_sec p {
+            font-size: 17px;
+            width: 301px;
+            line-height: 29px;
+        }
+    }
+    
+     @media (max-width: 1024px) {
+                 .about_two_text_sec h2 {
+            font-size: 30px;
+            line-height:40px;
+        }
+        .about_two_text_sec h5 {
+    font-size: 25px;
+    margin-bottom: 9px;
+}
+        .legacy_inn_sec h4 {
+            font-size: 32px;
+        }
+                .legacy_inn_sec h4 span {
+            font-size: 20px;
+            margin-left: -1px;
+        }
+      
+    
+     #leadershipTab {
+    display: flex
+;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 20px;
+}
+        .scnd_nav_list li a {
+            margin: -2px 0px;
+            font-size: 11px;
+        }
+                .blink_code p {
+            font-size: 12px;
+        }
+     }
+      @media (max-width:1199px) {
+     .structure_camp_head h2 {
+    margin-top: 0px;
+    font-size: 56px;
+     }
+         .structure_long {
+        height: 345px;
+    }
+      }
+     @media (max-width: 992px) {
+             .legacy_inn_sec h4 span {
+            font-size: 19px;
+            margin-left: -1px;
+        }
+        footer {
+
+    margin-top: 169px;
+}
+     }
+@media (max-width: 991px) {
+.administration_main .container-fluid, .vm_main .container-fluid, #about_two .container-fluid {
+    padding: 0 50px;
+}
+.ma_img img {
+    height: auto;
+}
+    .abt_inn_img img {
+        margin-bottom: 56px;
+        margin-top: -48px;
+    }
+        .vm_inn_sec li, .vm_inn_sec p {
+        font-size: 17px;
+        width: 100%;
+        line-height: 29px;
+    }
+    #college_group .row {
+    row-gap: 30px;
+    align-items: center;
+}
+.legacy_row {
+    row-gap: 20px;
+    padding: 50px;
+  gap:0px;
+    justify-content: start;
+    align-items: center !important;
+}
+.legacy_inn_sec {
+    padding-bottom: 20px;
+}
+.legacy_inn_sec::after {
+    display:none;
+}
+.legacy_sec h3 {
+    font-size: 38px;
+}
+.bnr_bredcrumb {
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+}
+        .head_tit {
+            top: 200px;
+            left: 70px;
+        }
+        .contact_1 .row{
+            row-gap:30px;
+        }
+}
+ @media (max-width: 768px) {
+    #leadershipTab li a {
+      
+        width: 148px;
+    }
+ }
+ @media (max-width: 767px) {
+      #leadership .row .col-lg-3 {
+        width: 50%;
+        margin: auto;
+    }
+    .grp_text1 {
+        padding-left:0px;
+    }
+        footer {
+        margin-top: 100px;
+    }
+#leadership .row .col-lg-9 {
+    width: 100%;
+}
+    #leadershipTab li a {
+        width: 143px;
+    }
+      
+    .head_tit h4 {
+    font-size: 31px;
+    }
+    .bnr_bredcrumb {
+    position: absolute;
+    bottom: 0px;
+    left: 36px;
+}
+.vm_head h3 {
+    font-size: 35px;
+}
+    .vm_inn_sec h4 {
+        font-size: 35px;
+    }
+}
+ @media (max-width: 540px) {
+       .legacy_sec h3 {
+        font-size: 30px;
+    }
+    
+    #about_two {
+    padding: 50px 0;
+    }
+    .facilities_head {
+    margin-bottom:0px !important;
+    }
+    .about_two_text_sec {
+        margin-bottom:50px;
+    }
+        .vm_head h3 {
+        font-size: 30px;
+    }
+        .administration_main .container-fluid, .vm_main .container-fluid, #about_two .container-fluid {
+        padding: 0 10px;
+    }
+    .contact_head h4, .map h4 {
+    font-size: 28px;
+}
+.infrastructure_camp_main {
+ 
+    padding: 50px 0px 80px;
+}
+.structure_camp_head h2 {
+    margin-top: 11px;
+    font-size: 38px;
+}
+.map {
+    padding-bottom: 70px;
+}
+.map iframe {
+    height:auto;
+}
+.contact_1 .card {
+    padding-left: 10px;
+}
+    #about_two .abt_inn_img img {
+        height:auto;
+    }
+        .vm_inn_sec h4 {
+        font-size: 30px;
+            margin-bottom: 10px;
+    }
+    .vm_inn_sec li {
+    margin-bottom: 5px;
+}
+.administration_head h3 {
+    font-size: 30px;
+}
+       #leadershipTab li a {
+        width: 122px;
+    }
+    .admin_img_sec_main h4 {
+    font-size: 16px;
+    }
+    .admin_img_sec_main p {
+    font-size: 14px;
+}
+    #leadershipTab {
+        gap: 9px;
+    }
+    .grp_text {
+    padding: 0px 20px;
+ }
+ .grp_img{
+     padding:0px 20px;
+ }
+     .legacy_inn_sec {
+        padding-bottom: 33px;
+    }
+        #leadership .row .col-lg-3 {
+        width: 100%;
+        margin: auto;
+    }
+   .administration_head  .admin_row .row{
+        row-gap:25px;
+    }
+           footer {
+        margin-top: 100px;
+    }
+ }
+  @media (max-width:492px) {
+    .footer {
+        margin-top: 80px !important;
+    }
+           #leadershipTab {
+        row-gap: 9px;
+        column-gap: 56px;
+    }
+     #leadershipTab li a {
+        width: 152px;
+    }
+    .admin_tab_text {
+    margin-top: 40px;
+    }
+        #leadershipTab {
+        margin-top: 70px;
+        }
+        .bnr_img img {
+    height: 350px;
+        }
+        .head_tit {
+    top: 108px;
+            left: 54px;
+}
+ }
+ 
+   @media (max-width:432px) {
+     .legacy_sec h3 {
+        font-size: 28px;
+    }
+       .vm_sec {
+        text-align: center;
+        margin: auto;
+        display: block;
+    }
+        .vm_inn_sec h4 {
+        text-align: start;
+        }
+            footer {
+        margin-top: 85px;
+    }
+        .committee_sec .nav-pills .nav-link.active, .committee_sec .nav-pills .show>.nav-link {
+            width: 112% !important;
+        }
+   }
+   
+   @media (max-width:395px) {
+       .vm_head h3 {
+        font-size: 28px;
+    }
+        .administration_head h3 {
+        font-size: 28px;
+    }
+        .vm_inn_sec h4 {
+        font-size: 28px;
+        }
+            footer {
+        margin-top: 65px;
+    }
+   }
+     @media (max-width:375px) {
+       .about_two_text_sec h2 {
+        font-size: 26px;
+       }
+           .vm_head h3 {
+        font-size: 26px;
+    }
+        .legacy_sec h3 {
+        font-size: 26px;
+    }
+        .vm_inn_sec h4 {
+        font-size: 26px;
+    }
+        #leadershipTab {
+        row-gap: 9px;
+        column-gap: 36px;
+    }
+        .administration_head h3 {
+        font-size: 26px;
+    }
+    .administration_head h4 {
+    padding-left: 90px;
+    font-size: 26px;
+    }
+        .footer-copy span, .footer-copy p {
+        font-size: 13px;
+     }
+         .structure_camp_head h2 {
+        margin-top: 11px;
+        font-size: 30px;
+    }
+     }
+     @media (max-width:360px) {
+        .bnr_img img {
+            height: 300px;
+        }
+        .contact_head h4, .map h4 {
+    font-size: 25px;
+        }
+     }
+     
+        @media (max-width:320px) {
+                .about_two_text_sec h2 {
+        font-size: 24px;
+    }
+        .vm_head h3 {
+        font-size: 23px;
+    }
+        .administration_head h3 {
+        font-size: 23px;
+    }
+        #leadershipTab li a {
+        width: 138px;
+    }
+      #leadershipTab {
+        row-gap: 9px;
+        column-gap: 6px;
+    }
+      
+        }
