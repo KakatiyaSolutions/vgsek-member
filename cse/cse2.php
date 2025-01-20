@@ -328,7 +328,13 @@ figure.table.table-bordered.table-striped th {
                             $query = "SELECT sno, department, description, status, vision, mission,peo,po,po_pso,advisory_board, achivements, board_of_studies FROM dep_about WHERE department_name = 'CSE'";
 
                             $result = mysqli_query($con, $query);
+                            $query1 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_btech WHERE branch_name = 'CSE'";
 
+                            $result2 = mysqli_query($con, $query1);
+
+                          
+                            $query2 = "SELECT lab_name, lab_details FROM dep_btech WHERE branch_name = 'CSE'";
+                            $result3 = mysqli_query($con, $query2);
                             // Close the database connection
                             mysqli_close($con);
                         ?>
@@ -647,6 +653,22 @@ figure.table.table-bordered.table-striped th {
                             } else {
                                             echo "<p>No department information found.</p>";
                             }
+
+                            if (mysqli_num_rows($result2) > 0) {
+                                while ($row2 = mysqli_fetch_assoc($result2)) {
+                                    // Extract department data
+                                    $id = $row2['id'];
+                                    // $banner = $row2['banner'];
+                                    $branch_name = $row2['branch_name'];
+                                    $lab_name = $row2['lab_name'];
+                                    $lab_details = $row2['lab_details'];
+                                    $laboratories = $row2['laboratories'];
+                                    $syllabus = $row2['syllabus'];
+                                    $timetable = $row2['timetable'];
+                                    $academic_calendar = $row2['academic_calendar'];
+                                    // $board_of_studies = $row['board_of_studies'];
+                                    // Encode image data for inline display
+                                    // $imageSrc = 'data:image/png;base64,' . base64_encode($banner);
                         ?>
 
 
@@ -668,7 +690,8 @@ figure.table.table-bordered.table-striped th {
                                     </div>
                                     <div class="committee_table_inn">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-striped">
+                                        <p> <?php echo $syllabus; ?></p>
+                                            <!-- <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
                                                         <th>S.NO</th>
@@ -693,7 +716,7 @@ figure.table.table-bordered.table-striped th {
 
 
                                                 </tbody>
-                                            </table>
+                                            </table> -->
                                         </div>
                                     </div>
                                 </div>
@@ -711,12 +734,13 @@ figure.table.table-bordered.table-striped th {
                                     </div>
                                     <div class="committee_table_inn">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-striped">
+                                        <p> <?php echo $timetable; ?></p>
+                                            <!-- <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
                                                         <th>S.NO</th>
                                                         <th>Academic Year</th>
-                                                        <!-- <th>Semester</th> -->
+                                                        
                                                         <th>Link</th>
 
                                                     </tr>
@@ -731,7 +755,7 @@ figure.table.table-bordered.table-striped th {
                                                         <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/Time_tables.pdf" target="_blank" rel="noopener">View</a></td>
                                                     </tr>
                                                 </tbody>
-                                            </table>
+                                            </table> -->
                                         </div>
                                     </div>
                                 </div>
@@ -751,12 +775,13 @@ figure.table.table-bordered.table-striped th {
                                     </div>
                                     <div class="committee_table_inn">
                                         <div class="table-responsive">
-                                            <table class="table table-bordered table-striped">
+                                        <p> <?php echo $academic_calendar; ?></p>
+                                            <!-- <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
                                                         <th>S.NO</th>
                                                         <th>Academic Year</th>
-                                                        <!-- <th>Semester</th> -->
+                                                        
                                                         <th>Link</th>
 
                                                     </tr>
@@ -765,28 +790,34 @@ figure.table.table-bordered.table-striped th {
                                                     <tr>
                                                         <td></td>
                                                         <td>2023-24</td>
-                                                        <!-- <td>SEM-I</td> -->
+                                                        
                                                         <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/Academic_Calenders.pdf" target="_blank" rel="noopener">View</a></td>
 
                                                     </tr>
 
 
                                                 </tbody>
-                                            </table>
+                                            </table> -->
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
                         </div>
-
+                        <?php
+                             }
+                            } else {
+                                            echo "<p>No department information found.</p>";
+                            }
+                            ?>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-lab" role="tabpanel" aria-labelledby="v-pills-lab-tab" tabindex="0">
                             <div class="committee_head">
                                 <h3>Laboratories</h3>
                             </div>
                             <div class="committee_table_inn">
                                 <div class="table-responsive">
-                                    <table class="table table-bordered table-striped">
+                                <p> <?php echo $laboratories; ?></p>
+                                    <!-- <table class="table table-bordered table-striped">
                                         <thead>
                                             <tr>
                                                 <th>S.NO</th>
@@ -907,17 +938,49 @@ figure.table.table-bordered.table-striped th {
 
 
                                         </tbody>
-                                    </table>
+                                    </table> -->
                                 </div>
                             </div>
 
                             <div class="lab-head">
                                 <h1>Lab Details</h1>
                             </div>
-
+                               
                             <div class="accordion" id="accordionExample2">
+                            <?php
+                                        if (mysqli_num_rows($result3) > 0) {
+                                            echo '<div class="accordion" id="accordionExample2">';
+                                            $count = 1;
+                                            while ($row = mysqli_fetch_assoc($result3)) {
+                                                $labName = $row['lab_name'];
+                                                $labDetails = $row['lab_details'];
+                                                $collapseId = "collapse" . $count;
+                                                $headingId = "heading" . $count;
 
-                                <div class="accordion-item">
+                                                echo '
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="' . $headingId . '">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                            ' . htmlspecialchars($labName) . '
+                                                        </button>
+                                                    </h2>
+                                                    <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
+                                                        <div class="accordion-body">
+                                                            ' . htmlspecialchars($labDetails) . '
+                                                        </div>
+                                                    </div>
+                                                </div>';
+                                                $count++;
+                                            }
+                                            echo '</div>';
+                                        } else {
+                                            echo "<p>No lab details found for the selected branch.</p>";
+                                        }
+
+
+
+                                ?>
+                                <!-- <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne1">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
                                             CSE LAB-1
@@ -1210,7 +1273,7 @@ figure.table.table-bordered.table-striped th {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="lab-img">
                                     <div class="your-slider">
@@ -1284,7 +1347,7 @@ figure.table.table-bordered.table-striped th {
 
 
                         </div>
-
+                       
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-mtech" role="tabpanel" aria-labelledby="v-pills-mtech-tab" tabindex="0">
                             <div class="committee_head">
                                 <h3>M.Tech Courses</h3>
