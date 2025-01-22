@@ -966,7 +966,7 @@ figure.table.table-bordered.table-striped th {
                                                     </h2>
                                                     <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
                                                         <div class="accordion-body">
-                                                            ' . htmlspecialchars($labDetails) . '
+                                                            ' .($labDetails) . '
                                                         </div>
                                                     </div>
                                                 </div>';
