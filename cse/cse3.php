@@ -74,3 +74,5 @@ if (mysqli_num_rows($result10) > 0) {
     echo "<p>No event details found for the selected branch.</p>";
 }
 ?>
+
+<!-- Use this as temporary file for fetching the dtaa in middle of the border don't use this for actuall purpose -->
