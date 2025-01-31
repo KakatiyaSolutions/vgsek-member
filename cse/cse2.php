@@ -429,7 +429,37 @@
                 $query3 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_mtech WHERE branch_name = 'CSE'";
                 $result4 = mysqli_query($con, $query3);
 
+
+                $query4 = "SELECT * FROM faculty_event2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $result5 = mysqli_query($con, $query4);
+
+
+                $query5 = "SELECT * FROM dep_faculty_publications2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $result6 = mysqli_query($con, $query5);
+
+                $query6 = "SELECT * FROM dep_faculty_innovations2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $result7 = mysqli_query($con, $query6);
                 // mysqli_close($con);
+                // for student events
+                $query7 = "SELECT * FROM student_events2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $result8 = mysqli_query($con, $query7);
+
+                // for student placement
+
+                $query8 = "SELECT * FROM student_placements2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $result9 = mysqli_query($con, $query8);
+                
+                // for contcat Hod Dynamic 
+
+                
+                $query9 = "SELECT * FROM contact_hod WHERE department = 'CSE' ORDER BY id ASC LIMIT 1";
+                $result10 = mysqli_query($con, $query9);
+                
+                // for Co's Po's
+
+                $query10 = "SELECT * FROM contact_hod WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $result11 = mysqli_query($con, $query10);
+                
                 ?>
 
                 <div class="col-lg-9">
@@ -1700,7 +1730,7 @@
                                     <div class="committee_head">
                                         <h3>Faculty Events</h3>
                                     </div>
-                                    <div class="accordion" id="student-events">
+                                    <!-- <div class="accordion" id="student-events">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -2580,8 +2610,49 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
 
+
+                                    <!-- adding new faculty events dynamically -->
+                                    <div class="accordion" id="student-events">
+                                <?php
+                                if (mysqli_num_rows($result5) > 0) {
+                                    echo '<div class="accordion" id="accordionExample2">';
+                                    $count = 1;
+                                    while ($row = mysqli_fetch_assoc($result5)) {
+                                        $title = $row['title'];
+                                        $description = $row['description'];
+                                        $collapseId = "collapse" . $count;
+                                        $headingId = "heading" . $count;
+
+                                        echo '
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="' . $headingId . '">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                            ' . ($title) . '
+                                                        </button>
+                                                    </h2>
+                                                    <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
+                                                        <div class="accordion-body">
+                                                        <div class="committee_table_inn">
+                                                             <div class="table-responsive">
+                                                            ' . ($description) . '
+                                                        </div>
+                                                         </div>
+                                                          </div>
+                                                    </div>
+                                                </div>';
+                                        $count++;
+                                    }
+                                    echo '</div>';
+                                } else {
+                                    echo "<p>No event details found for the selected branch.</p>";
+                                }
+
+
+
+                                ?>
+                                </div>
                                 </div>
 
 
@@ -2593,7 +2664,7 @@
                                 <h3>Publications</h3>
                             </div>
 
-                            <div class="accordion" id="faculty_list">
+                            <!-- <div class="accordion" id="faculty_list">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -3583,8 +3654,49 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> -->
 
+
+                            <!-- adding new faculty events dynamically -->
+                            <div class="accordion" id="faculty_list">
+                                <?php
+                                if (mysqli_num_rows($result6) > 0) {
+                                    echo '<div class="accordion" id="accordionExample2">';
+                                    $count = 1;
+                                    if ($row = mysqli_fetch_assoc($result6)) {
+                                        $title = $row['title'];
+                                        $description = $row['description'];
+                                        $collapseId = "collapse" . $count;
+                                        $headingId = "heading" . $count;
+
+                                        echo '
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="' . $headingId . '">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                            ' . ($title) . '
+                                                        </button>
+                                                    </h2>
+                                                    <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
+                                                        <div class="accordion-body">
+                                                        <div class="committee_table_inn">
+                                                             <div class="table-responsive">
+                                                            ' . ($description) . '
+                                                        </div>
+                                                         </div>
+                                                          </div>
+                                                    </div>
+                                                </div>';
+                                        $count++;
+                                    }
+                                    echo '</div>';
+                                } else {
+                                    echo "<p>No event details found for the selected branch.</p>";
+                                }
+
+
+
+                                ?>
+                                </div>
                         </div>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-news"
                             role="tabpanel" aria-labelledby="v-pills-news-tab" tabindex="0">
@@ -3605,7 +3717,7 @@
                                     <div class="committee_head">
                                         <h3>Faculty Innovations</h3>
                                     </div>
-                                    <div class="accordion" id="student-events">
+                                    <!-- <div class="accordion" id="student-events">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header">
                                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -3989,9 +4101,51 @@
                                             </div>
                                         </div>
 
-                                    </div>
+                                    </div> -->
 
-                                </div>
+                                <!-- adding fcaulty innovations -->
+                                    <div class="accordion" id="faculty_list">
+                                <?php
+                                if (mysqli_num_rows($result7) > 0) {
+                                    echo '<div class="accordion" id="accordionExample2">';
+                                    $count = 1;
+                                    while ($row = mysqli_fetch_assoc($result7)) {
+                                        $title = $row['title'];
+                                        $description = $row['description'];
+                                        $collapseId = "collapse" . $count;
+                                        $headingId = "heading" . $count;
+
+                                        echo '
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="' . $headingId . '">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                            ' . ($title) . '
+                                                        </button>
+                                                    </h2>
+                                                    <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
+                                                        <div class="accordion-body">
+                                                        <div class="committee_table_inn">
+                                                             <div class="table-responsive">
+                                                            ' . ($description) . '
+                                                        </div>
+                                                         </div>
+                                                          </div>
+                                                    </div>
+                                                </div>';
+                                        $count++;
+                                    }
+                                    echo '</div>';
+                                } else {
+                                    echo "<p>No event details found for the selected branch.</p>";
+                                }
+
+
+
+                                ?>
+                                </div> 
+                                
+
+                            </div>
 
 
                             </div>
@@ -4011,7 +4165,7 @@
                             <div class="committee_head">
                                 <h3>Student Events</h3>
                             </div>
-                            <div class="accordion" id="student-events">
+                            <!-- <div class="accordion" id="student-events">
                                 <div class="accordion-item">
 
                                     <h2 class="accordion-header">
@@ -4535,8 +4689,49 @@
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> -->
 
+
+                            <!-- adding student Events -->
+                            <div class="accordion" id="student-events">
+                                <?php
+                                if (mysqli_num_rows($result8) > 0) {
+                                    echo '<div class="accordion" id="accordionExample2">';
+                                    $count = 1;
+                                    while ($row = mysqli_fetch_assoc($result8)) {
+                                        $title = $row['title'];
+                                        $description = $row['description'];
+                                        $collapseId = "collapse" . $count;
+                                        $headingId = "heading" . $count;
+
+                                        echo '
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="' . $headingId . '">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                            ' . ($title) . '
+                                                        </button>
+                                                    </h2>
+                                                    <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
+                                                        <div class="accordion-body">
+                                                        <div class="committee_table_inn">
+                                                             <div class="table-responsive">
+                                                            ' . ($description) . '
+                                                        </div>
+                                                         </div>
+                                                          </div>
+                                                    </div>
+                                                </div>';
+                                        $count++;
+                                    }
+                                    echo '</div>';
+                                } else {
+                                    echo "<p>No event details found for the selected branch.</p>";
+                                }
+
+
+
+                                ?>
+                                </div> 
                         </div>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-res" role="tabpanel"
                             aria-labelledby="v-pills-res-tab" tabindex="0">
@@ -4550,7 +4745,7 @@
                             <div class="committee_head">
                                 <h3>Placements</h3>
                             </div>
-                            <div class="accordion" id="accordionExample_one">
+                            <!-- <div class="accordion" id="accordionExample_one">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -6148,7 +6343,50 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+                        
+                        <!-- adding student placement -->
+                        <div class="accordion" id="student-events">
+                                <?php
+                                if (mysqli_num_rows($result9) > 0) {
+                                    echo '<div class="accordion" id="accordionExample2">';
+                                    $count = 1;
+                                    while ($row = mysqli_fetch_assoc($result9)) {
+                                        $title = $row['title'];
+                                        $description = $row['description'];
+                                        $collapseId = "collapse" . $count;
+                                        $headingId = "heading" . $count;
+
+                                        echo '
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header" id="' . $headingId . '">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                            ' . ($title) . '
+                                                        </button>
+                                                    </h2>
+                                                    <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
+                                                        <div class="accordion-body">
+                                                        <div class="committee_table_inn">
+                                                             <div class="table-responsive">
+                                                            ' . ($description) . '
+                                                        </div>
+                                                         </div>
+                                                          </div>
+                                                    </div>
+                                                </div>';
+                                        $count++;
+                                    }
+                                    echo '</div>';
+                                } else {
+                                    echo "<p>No event details found for the selected branch.</p>";
+                                }
+
+
+
+                                ?>
+                                </div> 
+                        
+                        
                         </div>
 
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-hod" role="tabpanel"
@@ -6156,7 +6394,7 @@
                             <div class="committee_head">
                                 <h3>Contact HOD</h3>
                             </div>
-                            <div class="row hod-start">
+                            <!-- <div class="row hod-start">
                                 <div class="col-lg-4">
                                     <div class="hod-img">
                                         <img src="<?php echo $base_url; ?>/assets/images/cse/Dr_ N_Chandramouli.webp"
@@ -6199,7 +6437,91 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+
+                            <!-- <div class="row hod-start"> -->
+                            <?php
+// $con = mysqli_connect('srv1328.hstgr.io', 'u629694569_vcpkacin_web', 'Kakatiya@1243', 'u629694569_vcpkacin_web');
+// if (!$con) {
+//     die("Connection failed: " . mysqli_connect_error());
+// }
+
+// $query9 = "SELECT * FROM contact_hod WHERE department = 'CSE'";
+// $result10 = mysqli_query($con, $query9);
+
+// Assuming the database connection has already been established
+if (mysqli_num_rows($result10) > 0) {
+    echo '<div class="accordion" id="accordionExample2">';
+    $count = 1;
+
+    // Loop through the fetched data
+    while ($row = mysqli_fetch_assoc($result10)) {
+        // Fetching individual data fields
+        $name = $row['name'];
+        $designation = $row['designation'];
+
+        // Check if image exists and process it
+        if (!empty($row['image'])) {
+            // If the image is stored as BLOB, base64_encode it
+            $imageData = base64_encode($row['image']);
+            $imageSrc = "data:image/jpeg;base64," . $imageData;
+        } else {
+            // If no image, provide a default image or null
+            $imageSrc = "path/to/default/image.jpg"; // Update with your default image path
+        }
+
+        $message = $row['message'];
+        $phone = $row['phone'];
+        $email = $row['email'];
+        
+        // Dynamically create collapse IDs for each HOD section
+        $collapseId = "collapse" . $count;
+        $headingId = "heading" . $count;
+        
+        // Output each HOD section
+        echo '
+        <div class="row hod-start">
+            <div class="col-lg-4">
+                <div class="hod-img">
+                    <!-- Dynamically set image path -->
+                    <img src="' . $imageSrc . '" 
+                        alt="faculty_img" class="img-fluid" loading="lazy" decoding="async" class="img-fluid faculty-img-sec">
+                    <div class="cse-hod">
+                        <!-- Dynamically set name and designation -->
+                        <h5>' . htmlspecialchars($name) . '</h5>
+                        <p>' . htmlspecialchars($designation) . '</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div id="contact-info">
+                    <!-- Dynamically set message -->
+                    <p>' . nl2br(htmlspecialchars($message)) . '</p>
+
+                    <div class="cse-hod2">
+                        <h4>Contact</h4>
+                        <!-- Dynamically set contact info -->
+                        <p><b>Mobile Number:</b> ' . htmlspecialchars($phone) . '</p>
+                        <p><b>Email:</b> ' . htmlspecialchars($email) . '</p>
+                    </div>
+                </div>
+            </div>
+        </div>';
+        
+        $count++; // Increment the count for next iteration
+    }
+
+    echo '</div>'; // Close the accordion div
+} else {
+    echo "<p>No event details found for the selected branch.</p>";
+}
+?>
+
+                            <!-- </div> -->
+
+
+
+                            <!-- dynamic Contact HOD -->
                         </div>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-co" role="tabpanel"
                             aria-labelledby="v-pills-co-tab" tabindex="0">
