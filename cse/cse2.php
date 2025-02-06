@@ -434,6 +434,19 @@
                                 $query03 = "SELECT * FROM dep_btech_academic_calendar WHERE branch = 'CSE'";
 
                                 $result03 = mysqli_query($con, $query03);
+
+                                // for query btech lab configurations
+
+                                $query04 = "SELECT * FROM laboratories_config WHERE department_name = 'CSE'";
+
+                                $result04 = mysqli_query($con, $query04);
+
+                                // for query btech lab details
+
+                                $query05 = "SELECT * FROM  labdetails WHERE department LIKE 'CSE' ORDER BY 	date_of_creation ASC";
+
+                                $result05 = mysqli_query($con, $query05);
+
        
                 $result2 = mysqli_query($con, $query1);
 
@@ -1002,6 +1015,8 @@
                                                                 } else {
                                                                     echo "<p>No department information found.</p>";
                                                                 }
+
+                                                               
                                                                 ?>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-lab" role="tabpanel"
                             aria-labelledby="v-pills-lab-tab" tabindex="0">
@@ -1009,6 +1024,11 @@
                                 <h3>Laboratories</h3>
                             </div>
                             <div class="committee_table_inn">
+                                <?php
+                                if (mysqli_num_rows($result04) > 0) {
+                                    while ($row5 = mysqli_fetch_assoc($result04)) {                         
+                                        $laboratories = $row5['description'];
+                                ?>
                                 <div class="table-responsive">
                                     <p> <?php echo $laboratories; ?></p>
                                     <!-- <table class="table table-bordered table-striped">
@@ -1134,7 +1154,15 @@
                                         </tbody>
                                     </table> -->
                                 </div>
+                                <?php
+                                                                    }
+                                                                } else {
+                                                                    echo "";
+                                                                }
+                                                                ?>
                             </div>
+
+                       
 
                             <div class="lab-head">
                                 <h1>Lab Details</h1>
@@ -1142,12 +1170,12 @@
 
                             <div class="accordion" id="accordionExample2">
                                 <?php
-                                if (mysqli_num_rows($result3) > 0) {
+                                if (mysqli_num_rows($result05) > 0) {
                                     echo '<div class="accordion" id="accordionExample2">';
                                     $count = 1;
-                                    while ($row = mysqli_fetch_assoc($result3)) {
-                                        $labName = $row['lab_name'];
-                                        $labDetails = $row['lab_details'];
+                                    while ($row = mysqli_fetch_assoc($result05)) {
+                                        $labName = $row['title'];
+                                        $labDetails = $row['description'];
                                         $collapseId = "collapse" . $count;
                                         $headingId = "heading" . $count;
 
@@ -1155,7 +1183,7 @@
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
                                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
-                                                            ' . htmlspecialchars($labName) . '
+                                                            ' . ($labName) . '
                                                         </button>
                                                     </h2>
                                                     <div id="' . $collapseId . '" class="accordion-collapse collapse" aria-labelledby="' . $headingId . '" data-bs-parent="#accordionExample2">
