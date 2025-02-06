@@ -20,6 +20,11 @@ ini_set('display_errors', 1)
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <style>
+
+        .cse-sec{
+            font-size: larger;
+        }
+
         figure.table {
             margin: 0;
             padding: 0;
@@ -159,6 +164,11 @@ ini_set('display_errors', 1)
             width: 100px !important;
             height: auto !important;
         }
+
+        .table-responsive {
+    overflow-x: clip !important;
+   
+}
     </style>
 
 
@@ -1213,7 +1223,7 @@ ini_set('display_errors', 1)
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($labName) . '
                                                         </button>
                                                     </h2>
@@ -2017,7 +2027,7 @@ ini_set('display_errors', 1)
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
@@ -2080,7 +2090,7 @@ ini_set('display_errors', 1)
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
@@ -2133,7 +2143,7 @@ ini_set('display_errors', 1)
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
