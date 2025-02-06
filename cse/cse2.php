@@ -420,7 +420,22 @@
                 $query1 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_btech WHERE branch_name = 'CSE'";
 
                 $result2 = mysqli_query($con, $query1);
+                                // for query Btech syllabus
+                                $query01 = "SELECT * FROM dep_btech_syllabus WHERE branch = 'CSE'";
 
+                                $result01 = mysqli_query($con, $query01);
+                                // for query btech timetable
+                                $query02 = "SELECT * FROM dep_btech_timetable WHERE branch = 'CSE'";
+
+                                $result02 = mysqli_query($con, $query02);
+
+                                // for query btech academic calendar
+
+                                $query03 = "SELECT * FROM dep_btech_academic_calendar WHERE branch = 'CSE'";
+
+                                $result03 = mysqli_query($con, $query03);
+       
+                $result2 = mysqli_query($con, $query1);
 
                 $query2 = "SELECT lab_name, lab_details FROM dep_btech WHERE branch_name = 'CSE'";
                 $result3 = mysqli_query($con, $query2);
@@ -794,18 +809,12 @@
                                                                     echo "<p>No department information found.</p>";
                                                                 }
 
-                                                                if (mysqli_num_rows($result2) > 0) {
-                                                                    while ($row2 = mysqli_fetch_assoc($result2)) {
+                                                                if (mysqli_num_rows($result01) > 0) {
+                                                                    while ($row2 = mysqli_fetch_assoc($result01)) {
                                                                         // Extract department data
-                                                                        $id = $row2['id'];
-                                                                        // $banner = $row2['banner'];
-                                                                        $branch_name = $row2['branch_name'];
-                                                                        $lab_name = $row2['lab_name'];
-                                                                        $lab_details = $row2['lab_details'];
-                                                                        $laboratories = $row2['laboratories'];
                                                                         $syllabus = $row2['syllabus'];
-                                                                        $timetable = $row2['timetable'];
-                                                                        $academic_calendar = $row2['academic_calendar'];
+                                                                        // $banner = $row2['banner'];
+                                                                       
                                                                         // $board_of_studies = $row['board_of_studies'];
                                                                         // Encode image data for inline display
                                                                         // $imageSrc = 'data:image/png;base64,' . base64_encode($banner);
@@ -832,7 +841,11 @@
                                             </div>
                                             <div class="committee_table_inn">
                                                 <div class="table-responsive">
+
+
                                                     <p> <?php echo $syllabus; ?></p>
+
+
                                                     <!-- <table class="table table-bordered table-striped">
                                                 <thead>
                                                     <tr>
@@ -865,6 +878,23 @@
 
                                     </div>
                                 </div>
+                                <?php
+                                                                    }
+                                                                } else {
+                                                                    echo "<p>No department information found.</p>";
+                                                                }
+
+                                                                if (mysqli_num_rows($result02) > 0) {
+                                                                    while ($row3 = mysqli_fetch_assoc($result02)) {
+                                                                        // Extract department data
+                                                                       
+                                                                        $timetable = $row3['syllabus'];
+                                                                       
+                                                                        // $board_of_studies = $row['board_of_studies'];
+                                                                        // Encode image data for inline display
+                                                                        // $imageSrc = 'data:image/png;base64,' . base64_encode($banner);
+                                                                ?>
+                                
 
                                 <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-time"
                                     role="tabpanel" aria-labelledby="v-pills-time-tab" tabindex="0">
@@ -905,6 +935,25 @@
 
                                     </div>
                                 </div>
+                                <?php
+                                                                    }
+                                                                } else {
+                                                                    echo "<p>No department information found.</p>";
+                                                                }
+
+                                                                if (mysqli_num_rows($result03) > 0) {
+                                                                    while ($row4 = mysqli_fetch_assoc($result03)) {
+                                                                        // Extract department data
+                                                                        // $id = $row2['id'];
+                                                                        // // $banner = $row2['banner'];
+                                                                        // $branch_name = $row2['branch_name'];
+                                                                        // $lab_name = $row2['lab_name'];
+                                                                        // $lab_details = $row2['lab_details'];
+                                                                        // $laboratories = $row2['laboratories'];
+                                                                        // $syllabus = $row2['syllabus'];
+                                                                        // $timetable = $row2['timetable'];
+                                                                        $academic_calendar = $row4['syllabus'];
+                                                                ?>
 
                                 <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-academic"
                                     role="tabpanel" aria-labelledby="v-pills-academic-tab" tabindex="0">
