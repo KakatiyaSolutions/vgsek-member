@@ -1,3 +1,9 @@
+<?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1)
+
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -14,6 +20,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <style>
+
+        .cse-sec{
+            font-size: larger;
+        }
+
         figure.table {
             margin: 0;
             padding: 0;
@@ -153,6 +164,11 @@
             width: 100px !important;
             height: auto !important;
         }
+
+        .table-responsive {
+    overflow-x: clip !important;
+   
+}
     </style>
 
 
@@ -510,7 +526,7 @@
                 
                 // for Co's Po's
 
-                $query10 = "SELECT * FROM contact_hod WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query10 = "SELECT * FROM contact_hod WHERE department = 'CSE'";
                 $result11 = mysqli_query($con, $query10);
                 
                 ?>
@@ -522,7 +538,7 @@
                             <div class="pro-ove">
 
                                 <section>
-                                    <div class="col-lg-9">
+                                    <div class="col-lg-12">
                                         <div class="tab-content" id="v-pills-tabContent">
                                             <div class="tab-pane fade show active animate__animated animate__fadeInUp"
                                                 id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab"
@@ -1207,7 +1223,7 @@
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($labName) . '
                                                         </button>
                                                     </h2>
@@ -1884,889 +1900,6 @@
                                     <div class="committee_head">
                                         <h3>Faculty Events</h3>
                                     </div>
-                                    <!-- <div class="accordion" id="student-events">
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                    data-bs-target="#collapsestudentsevents" aria-expanded="true"
-                                                    aria-controls="collapsestudentsevents">
-                                                    Details of courses delivered by industrial experts during the
-                                                    academic year 2022-23
-                                                </button>
-                                            </h2>
-                                            <div id="collapsestudentsevents" class="accordion-collapse collapse show"
-                                                data-bs-parent="#student-events">
-                                                <div class="accordion-body">
-                                                    <div class="committee_table">
-                                                        <div class="committee_head">
-                                                            <h3>Academic Year 2022-23</h3>
-                                                        </div>
-                                                        <div class="committee_table_inn">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered table-striped">
-                                                                    <thead>
-                                                                        <tr class="tableizer-firstrow">
-                                                                            <th>S. No</th>
-                                                                            <th>Topic</th>
-                                                                            <th>Course</th>
-                                                                            <th>Date/Month/Year</th>
-                                                                            <th>Resource Person with Designation</th>
-                                                                            <th>Number ofstudentsattended</th>
-
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>IoT Supply Chain andM2M Supply Chain
-                                                                                -Internet of Things</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>22/08/2022</td>
-                                                                            <td>Mr. B Yakub, Junior ResearchEngineer at
-                                                                                Cyberaegis ITSolutions Pvt.
-                                                                                Limited,Hyderabad</td>
-                                                                            <td>95</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Prevention of DigitalAttacks –
-                                                                                CyberSecurity</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>11/08/2022</td>
-                                                                            <td>Mr. B Yakub, Junior ResearchEngineer at
-                                                                                Cyberaegis ITSolutions Pvt.
-                                                                                Limited,Hyderabad</td>
-                                                                            <td>96 </td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Advanced ComputerNetworks</td>
-                                                                            <td>GuestLecturer</td>
-                                                                            <td>03/09/2022</td>
-                                                                            <td>Mr. M. Aravind Kumar,
-                                                                                AssistantProfessor,
-                                                                                Sri Chaitanya College ofEngineering,
-                                                                                Karimnagar
-                                                                            </td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Process ImprovementDiscipline</td>
-                                                                            <td>GuestLecturer</td>
-                                                                            <td>16/09/2022</td>
-                                                                            <td>Mr. Khaja Ziauddin,
-                                                                                Associate Professor,
-                                                                                Sri Chaitanya College of Engineering,
-                                                                                Karimnagar</td>
-                                                                            <td>96</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Real Time OperatingSystem</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>26/09/2022</td>
-                                                                            <td>Mr. B Yakub, Junior ResearchEngineer at
-                                                                                Cyberaegis ITSolutions Pvt.
-                                                                                Limited,Hyderabad</td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Essential elements of design patterns
-                                                                                andhow to solve realworld problems using
-                                                                                design</td>
-                                                                            <td>GuestLecture</td>
-                                                                            <td>24/09/2022</td>
-                                                                            <td>Mr. Raghu Nagunoori,
-                                                                                Assistant Professor,
-                                                                                Kamala Institute of Technologyand
-                                                                                Science, Singapur,Telangana
-                                                                            </td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Mobile SecurityThreats</td>
-                                                                            <td>GuestLecture</td>
-                                                                            <td>10/10/2022</td>
-                                                                            <td>Mr. Oggula Raju,
-                                                                                Assistant Professor,
-                                                                                JNTUH College of Engineering,Jagityal
-                                                                            </td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Keras and Tensor flowfor developing
-                                                                                theApplications ofMachine Learning</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>18/10/2022</td>
-                                                                            <td>Mrs. Drava Arpitha,
-                                                                                Assistant Professor,
-                                                                                Sri Chaitanya College ofEngineering,
-                                                                                Karimnagar
-                                                                            </td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Data Mining UsingWeka Tool</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>11/11/2022</td>
-                                                                            <td>Mr. Bhasker Prakash,
-                                                                                Assistant Professor,
-                                                                                Kamala Institute of TechnologyScience,
-                                                                                Singapur, Telangana
-                                                                            </td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Software Testing Tools</td>
-                                                                            <td>GuestLecturer</td>
-                                                                            <td>25/11/2022</td>
-                                                                            <td>Dr. P. Sammulal, Professor,JNTUH College
-                                                                                of Engineering,Jagityal
-                                                                            </td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-
-
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapsestudentseventsone" aria-expanded="false"
-                                                    aria-controls="collapsestudentseventsone">
-
-                                                    Details of courses delivered by industrial experts during the
-                                                    academic year 2021-22
-
-                                                </button>
-                                            </h2>
-                                            <div id="collapsestudentseventsone" class="accordion-collapse collapse"
-                                                data-bs-parent="#student-events">
-                                                <div class="accordion-body">
-
-                                                    <div class="committee_table">
-                                                        <div class="committee_head">
-                                                            <h3>Academic Year: 2021-22</h3>
-                                                        </div>
-                                                        <div class="committee_table_inn">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered table-striped">
-                                                                    <thead>
-                                                                        <tr class="tableizer-firstrow">
-                                                                            <th>S. No</th>
-                                                                            <th>Topic</th>
-                                                                            <th>Course</th>
-                                                                            <th>Date/Month/Year</th>
-                                                                            <th>Resource Person with Designation</th>
-                                                                            <th>Number ofstudentsattended</th>
-
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Cloud Computing</td>
-                                                                            <td>TrainingProgram</td>
-                                                                            <td>12/07/2021</td>
-                                                                            <td>Dr. B. Vishnuvardhan, Sr.Professor,
-                                                                                JNTUH College ofEngineering, Jagityal
-                                                                            </td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Front EndDevelopment</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>20/10/2021 </td>
-                                                                            <td>Mr. Sanjeevaraju Akinapalli,Assistant
-                                                                                Professor,
-                                                                                Kamala Institute of Technologyand
-                                                                                Science, Singapur,Telangana
-                                                                            </td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Context FreeGrammar</td>
-                                                                            <td>GuestLecture</td>
-                                                                            <td>30/10/2021</td>
-                                                                            <td>Mr. Khaja Ziauddin, AssociateProfessor,
-                                                                                Sri Chaitanya College ofEngineering,
-                                                                                Karimnagar
-                                                                            </td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Data Mining UsingWeka Tool</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>08/11/2021</td>
-                                                                            <td>Mr. Raghu Nagunuri, AssistantProfessor,
-                                                                                Kamala institute of Technologyand
-                                                                                Science, Singapur,Telangana
-                                                                            </td>
-                                                                            <td>97 </td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Real TimeOperating System</td>
-                                                                            <td>GuestLecture</td>
-                                                                            <td>18/11/2021</td>
-                                                                            <td>Mr. P. Sreenivasa Rao,Associate
-                                                                                Professor,
-                                                                                JNTUH College of Engineering,Jagityal
-                                                                            </td>
-                                                                            <td>96</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Introduction toDatabases and its
-                                                                                Connectivity</td>
-                                                                            <td>TrainingProgram</td>
-                                                                            <td>22/11/2021</td>
-                                                                            <td>Mr. Kamarapu Naresh,Assistant Professor,
-                                                                                Sri Chaitanya College ofEngineering,
-                                                                                Karimnagar
-
-                                                                            </td>
-                                                                            <td>97</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Introduction toArtificial Intelligence
-                                                                            </td>
-                                                                            <td>Workshop</td>
-                                                                            <td>02/12/2021</td>
-                                                                            <td>Mr. Uday Kumar,
-                                                                                Associate Professor,
-                                                                                Sri Chaitanya </td>
-                                                                            <td>96</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Introduction toArtificial Intelligence
-                                                                            </td>
-                                                                            <td>Workshop</td>
-                                                                            <td>02/12/2021</td>
-                                                                            <td>Mr. Uday Kumar,
-                                                                                Associate Professor,
-                                                                                Sri Chaitanya College ofEngineering,
-                                                                                Karimnagar </td>
-                                                                            <td>96</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>AdvancedComputation andGraphics using
-                                                                                C++</td>
-                                                                            <td>GuestLecture</td>
-                                                                            <td>17/12/2021</td>
-                                                                            <td>Mr. Pavan Kumar Jamalpur,Assistant
-                                                                                Professor,
-                                                                                Kamala Institute of Technologyand
-                                                                                Science, SingapurTelangana
-                                                                            </td>
-                                                                            <td>98</td>
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Mobile Security Threats</td>
-                                                                            <td>Training Program</td>
-                                                                            <td>01/02/2022</td>
-                                                                            <td>Mr. Mr. Rachakatla Saiteja,Assistant
-                                                                                Professor,Jyothishmathi Institute
-                                                                                ofTechnology and Science,Karimnagar
-                                                                            </td>
-                                                                            <td>98</td>
-
-                                                                        </tr>
-
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapsestudentseventstwo" aria-expanded="false"
-                                                    aria-controls="collapsestudentseventstwo">
-                                                    Details of courses delivered by industrial experts during the
-                                                    academic year 2020-21
-                                                </button>
-                                            </h2>
-                                            <div id="collapsestudentseventstwo" class="accordion-collapse collapse"
-                                                data-bs-parent="#student-events">
-                                                <div class="accordion-body">
-
-                                                    <div class="committee_table">
-                                                        <div class="committee_head">
-                                                            <h3>Academic Year: 2020-21</h3>
-                                                        </div>
-                                                        <div class="committee_table_inn">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered table-striped">
-                                                                    <thead>
-                                                                        <tr class="tableizer-firstrow">
-                                                                            <th>S. No</th>
-                                                                            <th>Topic</th>
-                                                                            <th>Course</th>
-                                                                            <th>Date/Month/Year</th>
-                                                                            <th>Resource Person with Designation</th>
-                                                                            <th>Number ofstudentsattended</th>
-
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>IDEA and BLOWFISH Algorithms</td>
-                                                                            <td>Guestlecture</td>
-                                                                            <td>01/12/2020</td>
-                                                                            <td>Dr. Sunitha Dodda,
-                                                                                Associate Professor,
-                                                                                Kamala Institute of Technologyand
-                                                                                Science, Singapur,Telangana
-                                                                            </td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>MVC Architecture inDesign Patterns
-                                                                                andDescribing DesignPatterns</td>
-                                                                            <td>Guestlecture</td>
-                                                                            <td>04/12/2020</td>
-                                                                            <td>Mr. Khaja Ziauddin, AssociateProfessor,
-                                                                                Sri Chaitanya College ofEngineering,
-                                                                                Karimnagar
-                                                                            </td>
-                                                                            <td>96</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Industry LevelProblems &, How toOrganize
-                                                                                Data</td>
-                                                                            <td>NPTEL</td>
-                                                                            <td>07/12/2020</td>
-                                                                            <td>Prof. Bala Raju, IIT Madras,Chennai</td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>The Concept of Real-Time OperatingSystem
-                                                                            </td>
-                                                                            <td>NPTEL</td>
-                                                                            <td>28/12/2020</td>
-                                                                            <td>Prof Rajib Mall, IIT, Kharagpur</td>
-                                                                            <td>99</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Cray 1, Cyber 205,Super
-                                                                                ComputerArchitecture</td>
-                                                                            <td>Workshop</td>
-                                                                            <td>08/02/2021</td>
-                                                                            <td>Mr. B Yakub, Junior ResearchEngineer at
-                                                                                Cyberaegis ITSolutions Pvt.
-                                                                                Limited,Hyderabad</td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Towers of Hanoi andRB-Tree</td>
-                                                                            <td>OnlineGuestLecture</td>
-                                                                            <td>19/12/2020</td>
-                                                                            <td>Mr. G Srinivasulu, Retired AirForce
-                                                                                Officer, Senior Consultant,ISAC,
-                                                                                Hyderabad</td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Development ofUpcoming Engineers</td>
-                                                                            <td>OnlineGuestLecture</td>
-                                                                            <td>26/12/2020</td>
-                                                                            <td>Mr. B Yakub, Junior ResearchEngineer at
-                                                                                Cyberaegis ITSolutions Pvt.
-                                                                                Limited,Hyderabad</td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Internet of Things</td>
-                                                                            <td>NPTEL</td>
-                                                                            <td>04/01/2021</td>
-                                                                            <td>Prof P Sudap Misra, IIT,Kharagpur, West
-                                                                                Bengal</td>
-                                                                            <td>99</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Practical Exposure ofPython
-                                                                                Programming(DatabaseConnectivity)</td>
-                                                                            <td>GuestLecturer</td>
-                                                                            <td>05/01/2021</td>
-                                                                            <td>Dr. P. Sammulal, Professor,JNTUH College
-                                                                                of Engineering ,Jagityal</td>
-                                                                            <td>98</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Python Using DataScience</td>
-                                                                            <td>GuestLecturer</td>
-                                                                            <td>08/01/2021</td>
-                                                                            <td>Mr. Sanjeevaraju Akinapalli,Assistant
-                                                                                Professor,
-                                                                                Kamala institute of technologyand
-                                                                                Science, Singapur,Telangana
-                                                                            </td>
-                                                                            <td>97</td>
-
-
-                                                                        </tr>
-
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapsestudentseventsthree" aria-expanded="false"
-                                                    aria-controls="collapsestudentseventsthree">
-                                                    Events for Career Guidance of Students for the A.Y. 2022-23
-                                                </button>
-                                            </h2>
-                                            <div id="collapsestudentseventsthree" class="accordion-collapse collapse"
-                                                data-bs-parent="#student-events">
-                                                <div class="accordion-body">
-
-                                                    <div class="committee_table">
-                                                        <div class="committee_head">
-                                                            <h3>Academic Year 2022-2023</h3>
-                                                        </div>
-                                                        <div class="committee_table_inn">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered table-striped">
-                                                                    <thead>
-                                                                        <tr class="tableizer-firstrow">
-                                                                            <th>S. No</th>
-                                                                            <th>Name of Activity</th>
-                                                                            <th>Date</th>
-                                                                            <th>Event detail/speaker</th>
-                                                                            <th>No. of Student</th>
-
-
-
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One day Workshop on “CyberSecurity”</td>
-
-                                                                            <td>09-11-2022</td>
-                                                                            <td>Mr. K. Vasanth Kumar</td>
-                                                                            <td>99</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One day Workshop on“Internet of Things”.
-                                                                            </td>
-
-                                                                            <td>21-01-2023</td>
-                                                                            <td>Mr. R. Srinivas</td>
-                                                                            <td>118</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One day Workshop on “SoftComputing
-                                                                                Application inPower System”</td>
-
-                                                                            <td>02-12-2022</td>
-                                                                            <td>Mr. Kedam Ramesh</td>
-                                                                            <td>31</td>
-
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Campus Recruitment Training</td>
-
-                                                                            <td>13-02-2023
-                                                                                to
-                                                                                28-02-2023
-                                                                            </td>
-                                                                            <td>Mr. Lakshmannath A</td>
-                                                                            <td>446</td>
-
-
-                                                                        </tr>
-
-
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapsestudentseventsfour" aria-expanded="false"
-                                                    aria-controls="collapsestudentseventsfour">
-                                                    Events for Career Guidance of Students for the A.Y. 2021-22
-                                                </button>
-                                            </h2>
-                                            <div id="collapsestudentseventsfour" class="accordion-collapse collapse"
-                                                data-bs-parent="#student-events">
-                                                <div class="accordion-body">
-
-                                                    <div class="committee_table">
-                                                        <div class="committee_head">
-                                                            <h3>Academic Year 2021-2022</h3>
-                                                        </div>
-                                                        <div class="committee_table_inn">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered table-striped">
-                                                                    <thead>
-                                                                        <tr class="tableizer-firstrow">
-                                                                            <th>S. No</th>
-                                                                            <th>Name of Activity</th>
-                                                                            <th>Date</th>
-                                                                            <th>Event detail/speaker</th>
-                                                                            <th>No. of Student</th>
-
-
-
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One-day Workshop on“Python” </td>
-
-                                                                            <td>24-11-2021 </td>
-                                                                            <td>Mr. K. Sridhar Reddy </td>
-                                                                            <td>100</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One-day Workshop on“Operation and
-                                                                                Maintenanceof Power System</td>
-
-                                                                            <td>23-11-2021 </td>
-                                                                            <td>Mr. J. Raju </td>
-                                                                            <td>32</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One-day Workshop on “Roleof MATLAB in
-                                                                                ImageProcessing” </td>
-
-                                                                            <td>26-11-2021 </td>
-                                                                            <td>Dr. U. Rajendar </td>
-                                                                            <td>117</td>
-
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One-day
-                                                                                Workshop on “Language andCommunication
-                                                                                skills- Englishfor Career Development”
-                                                                            </td>
-
-                                                                            <td>27-11-2021
-                                                                            </td>
-                                                                            <td>Mr. Madhu Kumar </td>
-                                                                            <td>287</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Campus Recruitment Training
-                                                                            </td>
-
-                                                                            <td>08-02-2022
-                                                                                to
-                                                                                28-02-2022
-
-                                                                            </td>
-                                                                            <td>Mr. Lakshmannath A </td>
-                                                                            <td>453</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>GRE/TOFEL AwarenessProgram
-                                                                            </td>
-
-                                                                            <td>04-03-2022
-
-                                                                            </td>
-                                                                            <td>Mr. S. Sateesh Reddy </td>
-                                                                            <td>258</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>GATE Awareness Program
-                                                                            </td>
-
-                                                                            <td>23-03-2022
-
-                                                                            </td>
-                                                                            <td>Dr. Surendhar </td>
-                                                                            <td>412</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One-day Workshop on“Mechatronics”
-                                                                            </td>
-
-                                                                            <td>09-11-2021
-
-                                                                            </td>
-                                                                            <td>Mr. N. Srinivas</td>
-                                                                            <td>48</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>One-day Workshop on“Application of GIS”
-                                                                            </td>
-
-                                                                            <td>11-11-2021
-
-                                                                            </td>
-                                                                            <td>Mr. K. Rajesh</td>
-                                                                            <td>48</td>
-
-
-                                                                        </tr>
-
-
-
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header">
-                                                <button class="accordion-button collapsed" type="button"
-                                                    data-bs-toggle="collapse"
-                                                    data-bs-target="#collapsestudentseventsfive" aria-expanded="false"
-                                                    aria-controls="collapsestudentseventsfive">
-
-                                                    Events for Career Guidance of Students for the A.Y. 2020-21
-
-                                                </button>
-                                            </h2>
-                                            <div id="collapsestudentseventsfive" class="accordion-collapse collapse"
-                                                data-bs-parent="#student-events">
-                                                <div class="accordion-body">
-
-                                                    <div class="committee_table">
-                                                        <div class="committee_head">
-                                                            <h3>Academic Year 2020-2021</h3>
-                                                        </div>
-                                                        <div class="committee_table_inn">
-                                                            <div class="table-responsive">
-                                                                <table class="table table-bordered table-striped">
-                                                                    <thead>
-                                                                        <tr class="tableizer-firstrow">
-                                                                            <th>S. No</th>
-                                                                            <th>Name of Activity</th>
-                                                                            <th>Date</th>
-                                                                            <th>Event detail/speaker</th>
-                                                                            <th>No. of Student</th>
-
-
-
-                                                                        </tr>
-                                                                    </thead>
-
-                                                                    <tbody>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Personality skill development</td>
-
-                                                                            <td>07-02-2021</td>
-                                                                            <td>MR. K. Pradeep Kumar</td>
-                                                                            <td>504</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>Campus recruitment training</td>
-
-                                                                            <td>15-02-2021
-                                                                                to
-                                                                                22-02-2021
-                                                                            </td>
-                                                                            <td>Mr. Lakshmannath A</td>
-                                                                            <td>649</td>
-
-
-                                                                        </tr>
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>GRE/TOFEL Awarenessprogram</td>
-
-                                                                            <td>18-03-2021</td>
-                                                                            <td>A. Srinivas</td>
-                                                                            <td>215</td>
-
-
-                                                                        </tr>
-
-                                                                        <tr>
-                                                                            <td></td>
-                                                                            <td>GATE Awareness program</td>
-
-                                                                            <td>05-02-2021
-                                                                            </td>
-                                                                            <td>Dr. Dinesh Kumar</td>
-                                                                            <td>230</td>
-
-
-                                                                        </tr>
-
-
-                                                                    </tbody>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> -->
-
-
                                     <!-- adding new faculty events dynamically -->
                                     <div class="accordion" id="student-events">
                                 <?php
@@ -2782,7 +1915,7 @@
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
@@ -2833,7 +1966,7 @@
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
@@ -2894,7 +2027,7 @@
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
@@ -2957,7 +2090,7 @@
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>
@@ -3010,7 +2143,7 @@
                                         echo '
                                                 <div class="accordion-item">
                                                     <h2 class="accordion-header" id="' . $headingId . '">
-                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#' . $collapseId . '" aria-expanded="false" aria-controls="' . $collapseId . '">
                                                             ' . ($title) . '
                                                         </button>
                                                     </h2>

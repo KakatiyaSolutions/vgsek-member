@@ -137,9 +137,9 @@
 .committee_table_inn .table>:not(caption)>*>*{
     background-color:transparent;
 }
-.committee_table_inn .table{
+/* .committee_table_inn .table{
     border:solid 1px var(--black);
-}
+} */
 .table-bordered td, .table-bordered th {
     border: 1px solid #0000003b;
 }
