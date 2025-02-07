@@ -162,7 +162,12 @@ ini_set('display_errors', 1)
 
         #v-pills-profile1 table img {
             width: 100px !important;
-            height: auto !important;
+            height: 60px !important;
+            border-radius: 25px !important;
+            object-fit: cover;
+        }
+        #v-pills-profile1 table tbody tr td:last-child{
+            text-align:center;
         }
 
         .table-responsive {
