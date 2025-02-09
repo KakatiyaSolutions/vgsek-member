@@ -15,82 +15,94 @@
 </head>
 <style>
     #accordionExample_one .table-bordered td {
-    text-transform: uppercase;
-    font-size: 15px;
-}
-.table-bordered td {
-    padding: 15px 2px;
-    font-size: 15px;
-}
+        text-transform: uppercase;
+        font-size: 15px;
+    }
 
-#contact-info {
-  margin:20px;
-}
+    .table-bordered td {
+        padding: 15px 2px;
+        font-size: 15px;
+    }
 
-#contact-info p {
-    font-size: 15px !important;
-    line-height: 30px !important;
-    text-align: justify;
-}
-.hod-img {
-    position: relative;
-}
-.hod-img img {
-    border-radius: 20px;
-    border: 5px solid var(--blue);
+    #contact-info {
+        margin: 20px;
+    }
 
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-.cse-hod {
-    left: 11px;
-    margin: auto;
-    padding: 10px 20px;
-    color: white;
-    background-color: var(--orange);
-    bottom: -24px;
-    position: absolute;
-    text-align: center;
-}
-.cse-hod h4 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 28px;
-}
-.cse-hod p {
-    text-align: end;
-    font-size: 15px;
-    line-height: 28px;
-}
-.cse-hod2 {
-    padding-left: 10px;
-    border-left: 3px solid var(--orange);
-    margin-left: 313px;
-    margin-top: 30px;
-}
-.cse-hod2 h4{
-    color:var(--blue);
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 28px;
-}
-.cse-hod2 p{
-    font-size: 16px;
-    line-height: 28px;
-}
-.cse-hod2 p b{
-    color:var(--blue);
-}
-.hod-start {
-    margin-top: 50px;
-    padding: 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    background: linear-gradient(90deg, #eee 96%, var(--blue) 94%);
-}
- #v-pills-profile1 table  img{
-    width:100px !important;
-    height:124px !important;
-}
-  </style>
+    #contact-info p {
+        font-size: 15px !important;
+        line-height: 30px !important;
+        text-align: justify;
+    }
+
+    .hod-img {
+        position: relative;
+    }
+
+    .hod-img img {
+        border-radius: 20px;
+        border: 5px solid var(--blue);
+
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
+    .cse-hod {
+        left: 11px;
+        margin: auto;
+        padding: 10px 20px;
+        color: white;
+        background-color: var(--orange);
+        bottom: -24px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .cse-hod h4 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .cse-hod p {
+        text-align: end;
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .cse-hod2 {
+        padding-left: 10px;
+        border-left: 3px solid var(--orange);
+        margin-left: 313px;
+        margin-top: 30px;
+    }
+
+    .cse-hod2 h4 {
+        color: var(--blue);
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 28px;
+    }
+
+    .cse-hod2 p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .cse-hod2 p b {
+        color: var(--blue);
+    }
+
+    .hod-start {
+        margin-top: 50px;
+        padding: 40px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        background: linear-gradient(90deg, #eee 96%, var(--blue) 94%);
+    }
+
+    #v-pills-profile1 table img {
+        width: 100px !important;
+        height: 124px !important;
+    }
+</style>
 
 <body>
 
@@ -573,64 +585,64 @@
                                 <h3>Advisory Board</h3>
                             </div>
                             <div class="committee_table_inn">
-                                       
-                                       <div class="table-responsive">
-                                           <table class="table table-bordered table-striped">
-                                               <thead>
-                                                   <tr>
-                                                       <th>S.NO</th>
-                                                       <th>Name of the Member</th>
-                                                       <th>Designation</th>
-                                                       <th>Position</th>
 
-                                                   </tr>
-                                               </thead>
-                                               <tbody>
-                                                   <tr>
-                                                       <td></td>
-                                                       <td>Dr.A. Venkat Reddy</td> 
-                                                      <td>Professor & HoD</td>
-                                                      <td>Chairperson</td>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>S.NO</th>
+                                                <th>Name of the Member</th>
+                                                <th>Designation</th>
+                                                <th>Position</th>
 
-                                                   </tr>
-                                                   <tr>
-                                                       <td></td>
-                                                       <td>Dr. D. Surendhar</td>
-                                                       <td>Assistant Professor</td>
-                                                       <td>Member Secretary</td>
-                                                      
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>Dr.A. Venkat Reddy</td>
+                                                <td>Professor & HoD</td>
+                                                <td>Chairperson</td>
 
-                                                   </tr>
-                                                   <tr>
-                                                       <td></td>
-                                                       <td>Mr.Md. Khursheed</td>
-                                                       <td>Assistant Professor</td>
-                                                       <td>Member</td>
-                                                      
-
-                                                   </tr>
-                                                   <tr>
-                                                       <td></td>
-                                                       <td>Dr. U. Rajendhar</td>
-                                                       <td>Assistant Professor</td>
-                                                       <td>Member</td>
-                                                      
-
-                                                   </tr>
-                                                   <tr>
-                                                       <td></td>
-                                                       <td>Mr. A. Arunkumar</td>
-                                                       <td>Assistant Professor</td>
-                                                       <td>Member</td>
-                                                      
-
-                                                   </tr>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Dr. D. Surendhar</td>
+                                                <td>Assistant Professor</td>
+                                                <td>Member Secretary</td>
 
 
-                                               </tbody>
-                                           </table>
-                                       </div>
-                                   </div>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Mr.Md. Khursheed</td>
+                                                <td>Assistant Professor</td>
+                                                <td>Member</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Dr. U. Rajendhar</td>
+                                                <td>Assistant Professor</td>
+                                                <td>Member</td>
+
+
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>Mr. A. Arunkumar</td>
+                                                <td>Assistant Professor</td>
+                                                <td>Member</td>
+
+
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-achi" role="tabpanel" aria-labelledby="v-pills-achi-tab" tabindex="0">
                             <div class="committee_head">
@@ -1288,588 +1300,589 @@
                                 <h3>Faculty Profile</h3>
                             </div>
                             <div class="committee_table_inn">
-                                    <div class="table-responsive">
+                                <div class="table-responsive">
                                     <table class="table table-bordered table-striped">
-                                            <thead>
-                                                    <tr>
-                                                            <th>S.No</th>
-                                                            <th>Name of the Faculty</th>
-                                                          
-                                                            <th>Qualification</th>
-															<th>Designation</th>
-                                                        
-                                                            <th>Photo</th>
-                                                     </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                                                                                <tr>
-                                                            <td></td>
-                                                            <td>Name</td>
-                                                            
-                                                            <td>Qualification</td>
-														
-                                                            <td>Designation</td>
-                                                            
-                                                            <td><img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/department/user-img.png" alt="faculty_img" width="100" loading="lazy" decoding="async" class="img-fluid faculty-img-sec"></td>
-                                                        </tr>
-                                                           
-                                                                                                            </tbody></table>
-                                    </div>
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Name of the Faculty</th>
+
+                                                <th>Qualification</th>
+                                                <th>Designation</th>
+
+                                                <th>Photo</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td></td>
+                                                <td>Name</td>
+
+                                                <td>Qualification</td>
+
+                                                <td>Designation</td>
+
+                                                <td><img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/department/user-img.png" alt="faculty_img" width="100" loading="lazy" decoding="async" class="img-fluid faculty-img-sec"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
                                 </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-event" role="tabpanel" aria-labelledby="v-pills-event-tab" tabindex="0">
-                        <div class="peo">
-
-
-<div class="committee_table">
-<div class="committee_head">
-<h3>Faculty Events</h3>
-</div>
-<div class="accordion" id="student-events">
-<div class="accordion-item">
-    <h2 class="accordion-header">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentsevents" aria-expanded="true" aria-controls="collapsestudentsevents">
-        Details of courses delivered by industrial experts during the academic year 2022-23
-        </button>
-    </h2>
-    <div id="collapsestudentsevents" class="accordion-collapse collapse show" data-bs-parent="#student-events">
-        <div class="accordion-body">
-            <div class="committee_table">
-                <div class="committee_head">
-                    <h3>Academic Year 2022-23</h3>
-                </div>
-                <div class="committee_table_inn">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="tableizer-firstrow">
-                                <th>S. No</th>
-                                    <th>Topic</th>
-                                    <th>Course</th>
-                                    <th>Date/Month/Year</th>
-                                    <th>Resource Person with Designation</th>
-                                    <th>Number ofstudentsattended</th>
-                                   
-                                </tr>
-                            </thead>
-                         
-                           <tbody>
-
-<tr>
-<td></td>
-<td>Internet of ThingsFundamentals</td>
-<td>Add on/certificationprogram</td>
-<td>21/09/2022</td>
-<td>Dr.D.Surender
-Associate Professor in ECE
-</td>
-<td>127 </td>
-
-
-</tr>
-
-
-                           </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="accordion-item">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentseventsone" aria-expanded="false" aria-controls="collapsestudentseventsone">
-            
-Details of courses delivered by industrial experts during the academic year 2021-22 
-
-        </button>
-    </h2>
-    <div id="collapsestudentseventsone" class="accordion-collapse collapse" data-bs-parent="#student-events">
-        <div class="accordion-body">
-
-        <div class="committee_table">
-                <div class="committee_head">
-                    <h3>Academic Year: 2021-22</h3>
-                </div>
-                <div class="committee_table_inn">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="tableizer-firstrow">
-                                <th>S. No</th>
-                                    <th>Topic</th>
-                                    <th>Course</th>
-                                    <th>Date/Month/Year</th>
-                                    <th>Resource Person with Designation</th>
-                                    <th>Number ofstudentsattended</th>
-                                   
-                                </tr>
-                            </thead>
-                         
-                           <tbody>
-
-<tr>
-<td></td>
-<td>Signal processingusing Mat lab</td>
-<td>Add on/certificationprogram</td>
-<td>01/12/2021</td>
-<td>P.AJAY KUMAR
-Asst.prof in ECE
-</td>
-<td>125</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>WirelessCommunication</td>
-<td>Webinar</td>
-<td>09/11/2021 </td>
-<td>VENKATA REDDY ADAMA
-Associate Professor in ECE
-
-</td>
-<td>64 </td>
-
-
-</tr>
-
-
-                           </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="accordion-item">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentseventstwo" aria-expanded="false" aria-controls="collapsestudentseventstwo">
-        Details of courses delivered by industrial experts during the academic year 2020-21 
-        </button>
-    </h2>
-    <div id="collapsestudentseventstwo" class="accordion-collapse collapse" data-bs-parent="#student-events">
-        <div class="accordion-body">
-
-        <div class="committee_table">
-                <div class="committee_head">
-                    <h3>Academic Year: 2020-21</h3>
-                </div>
-                <div class="committee_table_inn">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="tableizer-firstrow">
-                                <th>S. No</th>
-                                    <th>Topic</th>
-                                    <th>Course</th>
-                                    <th>Date/Month/Year</th>
-                                    <th>Resource Person with Designation</th>
-                                    <th>Number ofstudentsattended</th>
-                                   
-                                </tr>
-                            </thead>
-                         
-                           <tbody>
-
-<tr>
-<td></td>
-<td>PCB Design</td>
-<td>Add on/certificationprogram</td>
-<td>02/11/2020</td>
-<td>B.BHARGVENDRA
-Asst prof in ECE 
-
-</td>
-<td>454</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>Rasberry Pi</td>
-<td>workshop</td>
-<td>29/06/2021</td>
-<td>GS.ARUN KUMAR
-Asst prof in ECE
-
-</td>
-<td>61</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>Arduino and ItsApplications</td>
-<td>Webinar</td>
-<td>28/08/2020</td>
-<td>M.KRANTHI KUMAR
-Asst prof in ECE
-</td>
-<td>61</td>
-
-
-</tr>
-
-
-
-                           </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="accordion-item">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#collapsestudentseventsthree" aria-expanded="false" aria-controls="collapsestudentseventsthree">
-        Events for Career Guidance of Students for the A.Y. 2022-23
-        </button>
-    </h2>
-    <div id="collapsestudentseventsthree" class="accordion-collapse collapse" data-bs-parent="#student-events">
-        <div class="accordion-body">
-
-        <div class="committee_table">
-                <div class="committee_head">
-                    <h3>Academic Year 2022-2023</h3>
-                </div>
-                <div class="committee_table_inn">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="tableizer-firstrow">
-                                    <th>S. No</th>
-                                    <th>Name of Activity</th>
-                                    <th>Date</th>
-                                    <th>Event detail/speaker</th>
-                                    <th>No. of Student</th>
-                                    
-                                  
-                                   
-                                </tr>
-                            </thead>
-                         
-                           <tbody>
-
-<tr>
-<td></td>
-<td>One day Workshop on “CyberSecurity”</td>
-
-<td>09-11-2022</td>
-<td>Mr. K. Vasanth Kumar</td>
-<td>99</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>One day Workshop on“Internet of Things”.</td>
-
-<td>21-01-2023</td>
-<td>Mr. R. Srinivas</td>
-<td>118</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>One day Workshop on “SoftComputing Application inPower System”</td>
-
-<td>02-12-2022</td>
-<td>Mr. Kedam Ramesh</td>
-<td>31</td>
-
-
-</tr>
-
-<tr>
-<td></td>
-<td>Campus Recruitment Training</td>
-
-<td>13-02-2023
-to
-28-02-2023
-</td>
-<td>Mr. Lakshmannath A</td>
-<td>446</td>
-
-
-</tr>
-
-
-                           </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-<div class="accordion-item">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#collapsestudentseventsfour" aria-expanded="false" aria-controls="collapsestudentseventsfour">
-        Events for Career Guidance of Students for the A.Y. 2021-22
-        </button>
-    </h2>
-    <div id="collapsestudentseventsfour" class="accordion-collapse collapse" data-bs-parent="#student-events">
-        <div class="accordion-body">
-
-        <div class="committee_table">
-                <div class="committee_head">
-                    <h3>Academic Year 2021-2022</h3>
-                </div>
-                <div class="committee_table_inn">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="tableizer-firstrow">
-                                    <th>S. No</th>
-                                    <th>Name of Activity</th>
-                                    <th>Date</th>
-                                    <th>Event detail/speaker</th>
-                                    <th>No. of Student</th>
-                                    
-                                  
-                                   
-                                </tr>
-                            </thead>
-                         
-                           <tbody>
-
-<tr>
-<td></td>
-<td>One-day Workshop on“Python” </td>
-
-<td>24-11-2021 </td>
-<td>Mr. K. Sridhar Reddy </td>
-<td>100</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>One-day Workshop on“Operation and Maintenanceof Power System</td>
-
-<td>23-11-2021 </td>
-<td>Mr. J. Raju </td>
-<td>32</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>One-day Workshop on “Roleof MATLAB in ImageProcessing” </td>
-
-<td>26-11-2021 </td>
-<td>Dr. U. Rajendar </td>
-<td>117</td>
-
-
-</tr>
-
-<tr>
-<td></td>
-<td>One-day
-Workshop on “Language andCommunication skills- Englishfor Career Development”
-</td>
-
-<td>27-11-2021
-</td>
-<td>Mr. Madhu Kumar </td>
-<td>287</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>Campus Recruitment Training
-</td>
-
-<td>08-02-2022
-to
-28-02-2022
-
-</td>
-<td>Mr. Lakshmannath A </td>
-<td>453</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>GRE/TOFEL AwarenessProgram
-</td>
-
-<td>04-03-2022
-
-</td>
-<td>Mr. S. Sateesh Reddy </td>
-<td>258</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>GATE Awareness Program
-</td>
-
-<td>23-03-2022
-
-</td>
-<td>Dr. Surendhar </td>
-<td>412</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>One-day Workshop on“Mechatronics”
-</td>
-
-<td>09-11-2021
-
-</td>
-<td>Mr. N. Srinivas</td>
-<td>48</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>One-day Workshop on“Application of GIS”
-</td>
-
-<td>11-11-2021
-
-</td>
-<td>Mr. K. Rajesh</td>
-<td>48</td>
-
-
-</tr>
-
-
-
-                           </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<div class="accordion-item">
-    <h2 class="accordion-header">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-        data-bs-target="#collapsestudentseventsfive" aria-expanded="false" aria-controls="collapsestudentseventsfive">
-       
-Events for Career Guidance of Students for the A.Y. 2020-21
-
-        </button>
-    </h2>
-    <div id="collapsestudentseventsfive" class="accordion-collapse collapse" data-bs-parent="#student-events">
-        <div class="accordion-body">
-
-        <div class="committee_table">
-                <div class="committee_head">
-                    <h3>Academic Year 2020-2021</h3>
-                </div>
-                <div class="committee_table_inn">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped">
-                            <thead>
-                                <tr class="tableizer-firstrow">
-                                    <th>S. No</th>
-                                    <th>Name of Activity</th>
-                                    <th>Date</th>
-                                    <th>Event detail/speaker</th>
-                                    <th>No. of Student</th>
-                                    
-                                  
-                                   
-                                </tr>
-                            </thead>
-                         
-                           <tbody>
-
-<tr>
-<td></td>
-<td>Personality skill development</td>
-
-<td>07-02-2021</td>
-<td>MR. K. Pradeep Kumar</td>
-<td>504</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>Campus recruitment training</td>
-
-<td>15-02-2021
-to
-22-02-2021
-</td>
-<td>Mr. Lakshmannath A</td>
-<td>649</td>
-
-
-</tr>
-<tr>
-<td></td>
-<td>GRE/TOFEL Awarenessprogram</td>
-
-<td>18-03-2021</td>
-<td>A. Srinivas</td>
-<td>215</td>
-
-
-</tr>
-
-<tr>
-<td></td>
-<td>GATE Awareness program</td>
-
-<td>05-02-2021
-</td>
-<td>Dr. Dinesh Kumar</td>
-<td>230</td>
-
-
-</tr>
-
-
-                           </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-</div>
-   
-</div>
-
-
-</div>
+                            <div class="peo">
+
+
+                                <div class="committee_table">
+                                    <div class="committee_head">
+                                        <h3>Faculty Events</h3>
+                                    </div>
+                                    <div class="accordion" id="student-events">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentsevents" aria-expanded="true" aria-controls="collapsestudentsevents">
+                                                    Details of courses delivered by industrial experts during the academic year 2022-23
+                                                </button>
+                                            </h2>
+                                            <div id="collapsestudentsevents" class="accordion-collapse collapse show" data-bs-parent="#student-events">
+                                                <div class="accordion-body">
+                                                    <div class="committee_table">
+                                                        <div class="committee_head">
+                                                            <h3>Academic Year 2022-23</h3>
+                                                        </div>
+                                                        <div class="committee_table_inn">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr class="tableizer-firstrow">
+                                                                            <th>S. No</th>
+                                                                            <th>Topic</th>
+                                                                            <th>Course</th>
+                                                                            <th>Date/Month/Year</th>
+                                                                            <th>Resource Person with Designation</th>
+                                                                            <th>Number ofstudentsattended</th>
+
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Internet of ThingsFundamentals</td>
+                                                                            <td>Add on/certificationprogram</td>
+                                                                            <td>21/09/2022</td>
+                                                                            <td>Dr.D.Surender
+                                                                                Associate Professor in ECE
+                                                                            </td>
+                                                                            <td>127 </td>
+
+
+                                                                        </tr>
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentseventsone" aria-expanded="false" aria-controls="collapsestudentseventsone">
+
+                                                    Details of courses delivered by industrial experts during the academic year 2021-22
+
+                                                </button>
+                                            </h2>
+                                            <div id="collapsestudentseventsone" class="accordion-collapse collapse" data-bs-parent="#student-events">
+                                                <div class="accordion-body">
+
+                                                    <div class="committee_table">
+                                                        <div class="committee_head">
+                                                            <h3>Academic Year: 2021-22</h3>
+                                                        </div>
+                                                        <div class="committee_table_inn">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr class="tableizer-firstrow">
+                                                                            <th>S. No</th>
+                                                                            <th>Topic</th>
+                                                                            <th>Course</th>
+                                                                            <th>Date/Month/Year</th>
+                                                                            <th>Resource Person with Designation</th>
+                                                                            <th>Number ofstudentsattended</th>
+
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Signal processingusing Mat lab</td>
+                                                                            <td>Add on/certificationprogram</td>
+                                                                            <td>01/12/2021</td>
+                                                                            <td>P.AJAY KUMAR
+                                                                                Asst.prof in ECE
+                                                                            </td>
+                                                                            <td>125</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>WirelessCommunication</td>
+                                                                            <td>Webinar</td>
+                                                                            <td>09/11/2021 </td>
+                                                                            <td>VENKATA REDDY ADAMA
+                                                                                Associate Professor in ECE
+
+                                                                            </td>
+                                                                            <td>64 </td>
+
+
+                                                                        </tr>
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentseventstwo" aria-expanded="false" aria-controls="collapsestudentseventstwo">
+                                                    Details of courses delivered by industrial experts during the academic year 2020-21
+                                                </button>
+                                            </h2>
+                                            <div id="collapsestudentseventstwo" class="accordion-collapse collapse" data-bs-parent="#student-events">
+                                                <div class="accordion-body">
+
+                                                    <div class="committee_table">
+                                                        <div class="committee_head">
+                                                            <h3>Academic Year: 2020-21</h3>
+                                                        </div>
+                                                        <div class="committee_table_inn">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr class="tableizer-firstrow">
+                                                                            <th>S. No</th>
+                                                                            <th>Topic</th>
+                                                                            <th>Course</th>
+                                                                            <th>Date/Month/Year</th>
+                                                                            <th>Resource Person with Designation</th>
+                                                                            <th>Number ofstudentsattended</th>
+
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>PCB Design</td>
+                                                                            <td>Add on/certificationprogram</td>
+                                                                            <td>02/11/2020</td>
+                                                                            <td>B.BHARGVENDRA
+                                                                                Asst prof in ECE
+
+                                                                            </td>
+                                                                            <td>454</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Rasberry Pi</td>
+                                                                            <td>workshop</td>
+                                                                            <td>29/06/2021</td>
+                                                                            <td>GS.ARUN KUMAR
+                                                                                Asst prof in ECE
+
+                                                                            </td>
+                                                                            <td>61</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Arduino and ItsApplications</td>
+                                                                            <td>Webinar</td>
+                                                                            <td>28/08/2020</td>
+                                                                            <td>M.KRANTHI KUMAR
+                                                                                Asst prof in ECE
+                                                                            </td>
+                                                                            <td>61</td>
+
+
+                                                                        </tr>
+
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsestudentseventsthree" aria-expanded="false" aria-controls="collapsestudentseventsthree">
+                                                    Events for Career Guidance of Students for the A.Y. 2022-23
+                                                </button>
+                                            </h2>
+                                            <div id="collapsestudentseventsthree" class="accordion-collapse collapse" data-bs-parent="#student-events">
+                                                <div class="accordion-body">
+
+                                                    <div class="committee_table">
+                                                        <div class="committee_head">
+                                                            <h3>Academic Year 2022-2023</h3>
+                                                        </div>
+                                                        <div class="committee_table_inn">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr class="tableizer-firstrow">
+                                                                            <th>S. No</th>
+                                                                            <th>Name of Activity</th>
+                                                                            <th>Date</th>
+                                                                            <th>Event detail/speaker</th>
+                                                                            <th>No. of Student</th>
+
+
+
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One day Workshop on “CyberSecurity”</td>
+
+                                                                            <td>09-11-2022</td>
+                                                                            <td>Mr. K. Vasanth Kumar</td>
+                                                                            <td>99</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One day Workshop on“Internet of Things”.</td>
+
+                                                                            <td>21-01-2023</td>
+                                                                            <td>Mr. R. Srinivas</td>
+                                                                            <td>118</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One day Workshop on “SoftComputing Application inPower System”</td>
+
+                                                                            <td>02-12-2022</td>
+                                                                            <td>Mr. Kedam Ramesh</td>
+                                                                            <td>31</td>
+
+
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Campus Recruitment Training</td>
+
+                                                                            <td>13-02-2023
+                                                                                to
+                                                                                28-02-2023
+                                                                            </td>
+                                                                            <td>Mr. Lakshmannath A</td>
+                                                                            <td>446</td>
+
+
+                                                                        </tr>
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsestudentseventsfour" aria-expanded="false" aria-controls="collapsestudentseventsfour">
+                                                    Events for Career Guidance of Students for the A.Y. 2021-22
+                                                </button>
+                                            </h2>
+                                            <div id="collapsestudentseventsfour" class="accordion-collapse collapse" data-bs-parent="#student-events">
+                                                <div class="accordion-body">
+
+                                                    <div class="committee_table">
+                                                        <div class="committee_head">
+                                                            <h3>Academic Year 2021-2022</h3>
+                                                        </div>
+                                                        <div class="committee_table_inn">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr class="tableizer-firstrow">
+                                                                            <th>S. No</th>
+                                                                            <th>Name of Activity</th>
+                                                                            <th>Date</th>
+                                                                            <th>Event detail/speaker</th>
+                                                                            <th>No. of Student</th>
+
+
+
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One-day Workshop on“Python” </td>
+
+                                                                            <td>24-11-2021 </td>
+                                                                            <td>Mr. K. Sridhar Reddy </td>
+                                                                            <td>100</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One-day Workshop on“Operation and Maintenanceof Power System</td>
+
+                                                                            <td>23-11-2021 </td>
+                                                                            <td>Mr. J. Raju </td>
+                                                                            <td>32</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One-day Workshop on “Roleof MATLAB in ImageProcessing” </td>
+
+                                                                            <td>26-11-2021 </td>
+                                                                            <td>Dr. U. Rajendar </td>
+                                                                            <td>117</td>
+
+
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One-day
+                                                                                Workshop on “Language andCommunication skills- Englishfor Career Development”
+                                                                            </td>
+
+                                                                            <td>27-11-2021
+                                                                            </td>
+                                                                            <td>Mr. Madhu Kumar </td>
+                                                                            <td>287</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Campus Recruitment Training
+                                                                            </td>
+
+                                                                            <td>08-02-2022
+                                                                                to
+                                                                                28-02-2022
+
+                                                                            </td>
+                                                                            <td>Mr. Lakshmannath A </td>
+                                                                            <td>453</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>GRE/TOFEL AwarenessProgram
+                                                                            </td>
+
+                                                                            <td>04-03-2022
+
+                                                                            </td>
+                                                                            <td>Mr. S. Sateesh Reddy </td>
+                                                                            <td>258</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>GATE Awareness Program
+                                                                            </td>
+
+                                                                            <td>23-03-2022
+
+                                                                            </td>
+                                                                            <td>Dr. Surendhar </td>
+                                                                            <td>412</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One-day Workshop on“Mechatronics”
+                                                                            </td>
+
+                                                                            <td>09-11-2021
+
+                                                                            </td>
+                                                                            <td>Mr. N. Srinivas</td>
+                                                                            <td>48</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>One-day Workshop on“Application of GIS”
+                                                                            </td>
+
+                                                                            <td>11-11-2021
+
+                                                                            </td>
+                                                                            <td>Mr. K. Rajesh</td>
+                                                                            <td>48</td>
+
+
+                                                                        </tr>
+
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapsestudentseventsfive" aria-expanded="false" aria-controls="collapsestudentseventsfive">
+
+                                                    Events for Career Guidance of Students for the A.Y. 2020-21
+
+                                                </button>
+                                            </h2>
+                                            <div id="collapsestudentseventsfive" class="accordion-collapse collapse" data-bs-parent="#student-events">
+                                                <div class="accordion-body">
+
+                                                    <div class="committee_table">
+                                                        <div class="committee_head">
+                                                            <h3>Academic Year 2020-2021</h3>
+                                                        </div>
+                                                        <div class="committee_table_inn">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped">
+                                                                    <thead>
+                                                                        <tr class="tableizer-firstrow">
+                                                                            <th>S. No</th>
+                                                                            <th>Name of Activity</th>
+                                                                            <th>Date</th>
+                                                                            <th>Event detail/speaker</th>
+                                                                            <th>No. of Student</th>
+
+
+
+                                                                        </tr>
+                                                                    </thead>
+
+                                                                    <tbody>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Personality skill development</td>
+
+                                                                            <td>07-02-2021</td>
+                                                                            <td>MR. K. Pradeep Kumar</td>
+                                                                            <td>504</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>Campus recruitment training</td>
+
+                                                                            <td>15-02-2021
+                                                                                to
+                                                                                22-02-2021
+                                                                            </td>
+                                                                            <td>Mr. Lakshmannath A</td>
+                                                                            <td>649</td>
+
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>GRE/TOFEL Awarenessprogram</td>
+
+                                                                            <td>18-03-2021</td>
+                                                                            <td>A. Srinivas</td>
+                                                                            <td>215</td>
+
+
+                                                                        </tr>
+
+                                                                        <tr>
+                                                                            <td></td>
+                                                                            <td>GATE Awareness program</td>
+
+                                                                            <td>05-02-2021
+                                                                            </td>
+                                                                            <td>Dr. Dinesh Kumar</td>
+                                                                            <td>230</td>
+
+
+                                                                        </tr>
+
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
                         </div>
                         <div class="tab-pane fade animate__animated animate__fadeInUp " id="v-pills-pub" role="tabpanel" aria-labelledby="v-pills-pub-tab" tabindex="0">
                             <div class="committee_head">
@@ -1907,8 +1920,8 @@ to
                                                                     <td>Analysis of Facet-Loaded Rectangular DR-Rectenna Designs for Multi-Source RF Energy Harvesting Applications</td>
                                                                     <td>Daasari Surender, Md. Ahsan Halimi, Taimoor Khan, Fazal A. Talukdar, Binod Kumar Kanaujia, Karumudi Rambabu, and Ahmed A. Kishk</td>
                                                                     <td>IEEE Transactions on Antennas and Propagation
-(Vol. 71, No. 2, Feb, pp. 1273-1284)
-</td>
+                                                                        (Vol. 71, No. 2, Feb, pp. 1273-1284)
+                                                                    </td>
                                                                     <td>Feb, 2023</td>
                                                                     <td>0018-926X</td>
                                                                 </tr>
@@ -1931,14 +1944,14 @@ to
                                                                 <tr>
                                                                     <td></td>
                                                                     <td>LoRa enabled Real-time Monitoring of Workers in Building
-Construction Site
-</td>
+                                                                        Construction Site
+                                                                    </td>
                                                                     <td>G S Arun Kumar, Rajesh Singh, Anita Gehlot, Shaik Vaseem
-Akram
-</td>
+                                                                        Akram
+                                                                    </td>
                                                                     <td>International Journal of
-Electrical and Electronics Research (IJEER)
-</td>
+                                                                        Electrical and Electronics Research (IJEER)
+                                                                    </td>
                                                                     <td>Oct, 2022</td>
                                                                     <td>2347-470X</td>
                                                                 </tr>
@@ -1974,7 +1987,7 @@ Electrical and Electronics Research (IJEER)
                                                                     <td>Nov. 2022</td>
                                                                     <td>978-1-6654-7100-8</td>
                                                                 </tr>
-                                                               
+
                                                                 <tr>
                                                                     <td></td>
                                                                     <td>Application of Synthetic Aperture Radar (SAR) based Control Algorithms for the Autonomous Vehicles Simulation Environment</td>
@@ -1983,7 +1996,7 @@ Electrical and Electronics Research (IJEER)
                                                                     <td>13-15, Oct. 2022</td>
                                                                     <td>978-1-6654-8232-5</td>
                                                                 </tr>
-                                                               
+
                                                                 <tr>
                                                                     <td></td>
                                                                     <td>Internet of Personal Protective Equipment: Automation for Workers Safety at Construction Sites</td>
@@ -1992,10 +2005,10 @@ Electrical and Electronics Research (IJEER)
                                                                     <td>May, 2022</td>
                                                                     <td>9781003272328</td>
                                                                 </tr>
-                                                               
-                                                               
-                                                            
-                                                                
+
+
+
+
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -2018,7 +2031,7 @@ Electrical and Electronics Research (IJEER)
                                                 <div class="committee_head">
                                                     <h3>Academic Year 2021-22</h3>
                                                 </div>
-                                               
+
                                                 <div class="committee_table_inn">
                                                     <div class="table-responsive">
                                                         <table class="table table-bordered table-striped">
@@ -2044,15 +2057,15 @@ Electrical and Electronics Research (IJEER)
                                                                 <tr>
                                                                     <td></td>
                                                                     <td>LoRa enabled Real-time Monitoring of Workers in Building
-Construction Site
-</td>
+                                                                        Construction Site
+                                                                    </td>
                                                                     <td>G S Arun Kumar, Rajesh Singh, Anita Gehlot, Shaik Vaseem
-Akram
-</td>
+                                                                        Akram
+                                                                    </td>
                                                                     <td>International Journal of Electrical and Electronics Research (IJEER)</td>
                                                                     <td>Apr,
-2022
-</td>
+                                                                        2022
+                                                                    </td>
                                                                     <td>2347-470X</td>
                                                                 </tr>
                                                                 <tr>
@@ -2063,14 +2076,14 @@ Akram
                                                                     <td>15-17 December 2021</td>
                                                                     <td>978-1-6654-2338-0</td>
                                                                 </tr>
-                                                               
-                                                            
-                                                                
+
+
+
                                                             </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
-                                            
+
                                             </div>
 
                                         </div>
@@ -2129,9 +2142,9 @@ Akram
                                                                     <td>Jan, 2021</td>
                                                                     <td>2511-2104</td>
                                                                 </tr>
-                                                               
-                                                            
-                                                                
+
+
+
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -2158,7 +2171,7 @@ Akram
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentsevents" aria-expanded="true" aria-controls="collapsestudentsevents">
-                                        Academic Year: 2022-23
+                                            Academic Year: 2022-23
                                         </button>
                                     </h2>
                                     <div id="collapsestudentsevents" class="accordion-collapse collapse show" data-bs-parent="#student-events">
@@ -2178,65 +2191,65 @@ Akram
                                                                     <th>Course</th>
                                                                     <th>Topics</th>
                                                                     <th>Methodology/AID</th>
-                                                                   
+
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-    
-    <tr>
-        <td></td>
-        <td>E. Jyothi</td>
-        <td>III-II</td>
-        <td>AWP</td>
-        <td>Radiation Pattern</td>
-        <td>Experimental Demonstration of Antenna Trainer</td>
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>Dr. D. Surender</td>
-        <td>II-II</td>
-        <td>EMTL</td>
-        <td>Electromagnetic Fields</td>
-        <td>Slip Tests</td>
-      
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>Dr. K. Keerthi Kumar</td>
-        <td>III-II</td>
-        <td>VLSI Design</td>
-        <td>CMOS fabrication</td>
-        <td>Animation Video</td>
-        
-       
-    </tr>
 
-    <tr>
-        <td></td>
-        <td>D. Laxminarayana</td>
-        <td>IV-I</td>
-        <td>MWE</td>
-        <td>Waveguides, MicrowaveTues</td>
-        <td>Quiz</td>
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>G S Arun Kumar</td>
-        <td>IV-II</td>
-        <td>Project</td>
-        <td>Arduino UNO</td>
-        <td>Hardware Demonstration and Performance</td>
-       
-       
-    </tr>
-   
-                                                           </tbody>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>E. Jyothi</td>
+                                                                    <td>III-II</td>
+                                                                    <td>AWP</td>
+                                                                    <td>Radiation Pattern</td>
+                                                                    <td>Experimental Demonstration of Antenna Trainer</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Dr. D. Surender</td>
+                                                                    <td>II-II</td>
+                                                                    <td>EMTL</td>
+                                                                    <td>Electromagnetic Fields</td>
+                                                                    <td>Slip Tests</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Dr. K. Keerthi Kumar</td>
+                                                                    <td>III-II</td>
+                                                                    <td>VLSI Design</td>
+                                                                    <td>CMOS fabrication</td>
+                                                                    <td>Animation Video</td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>D. Laxminarayana</td>
+                                                                    <td>IV-I</td>
+                                                                    <td>MWE</td>
+                                                                    <td>Waveguides, MicrowaveTues</td>
+                                                                    <td>Quiz</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>G S Arun Kumar</td>
+                                                                    <td>IV-II</td>
+                                                                    <td>Project</td>
+                                                                    <td>Arduino UNO</td>
+                                                                    <td>Hardware Demonstration and Performance</td>
+
+
+                                                                </tr>
+
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2254,7 +2267,7 @@ Akram
                                     <div id="collapsestudentseventsone" class="accordion-collapse collapse" data-bs-parent="#student-events">
                                         <div class="accordion-body">
 
-                                        <div class="committee_table">
+                                            <div class="committee_table">
                                                 <div class="committee_head">
                                                     <h3>Academic Year: 2021-22</h3>
                                                 </div>
@@ -2269,65 +2282,65 @@ Akram
                                                                     <th>Course</th>
                                                                     <th>Topics</th>
                                                                     <th>Methodology/AID</th>
-                                                                   
+
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-    
-    <tr>
-        <td></td>
-        <td>Dr. A. Venkata Reddy</td>
-        <td>II-II</td>
-        <td>ADC</td>
-        <td>Analog and Digital Communication</td>
-        <td>Discussion</td>
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>E. Jyothi</td>
-        <td>II-I</td>
-        <td>DLD</td>
-        <td>Combinational circuits</td>
-        <td>Quiz</td>
-      
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>B. Bharghavendra</td>
-        <td>III-II</td>
-        <td>CS</td>
-        <td>Block Diagram Reduction, Bode Plots</td>
-        <td>Problem solving and exercises</td>
-        
-       
-    </tr>
 
-    <tr>
-        <td></td>
-        <td>B. Thirupathi</td>
-        <td>III-II</td>
-        <td>DSP</td>
-        <td>DSP processors</td>
-        <td>Think pair share</td>
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>D. Laxminarayana</td>
-        <td>II-II</td>
-        <td>ADC</td>
-        <td>Analog and Digital Modulation Schemes</td>
-        <td>Lab based</td>
-       
-       
-    </tr>
-   
-                                                           </tbody>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Dr. A. Venkata Reddy</td>
+                                                                    <td>II-II</td>
+                                                                    <td>ADC</td>
+                                                                    <td>Analog and Digital Communication</td>
+                                                                    <td>Discussion</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>E. Jyothi</td>
+                                                                    <td>II-I</td>
+                                                                    <td>DLD</td>
+                                                                    <td>Combinational circuits</td>
+                                                                    <td>Quiz</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>B. Bharghavendra</td>
+                                                                    <td>III-II</td>
+                                                                    <td>CS</td>
+                                                                    <td>Block Diagram Reduction, Bode Plots</td>
+                                                                    <td>Problem solving and exercises</td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>B. Thirupathi</td>
+                                                                    <td>III-II</td>
+                                                                    <td>DSP</td>
+                                                                    <td>DSP processors</td>
+                                                                    <td>Think pair share</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>D. Laxminarayana</td>
+                                                                    <td>II-II</td>
+                                                                    <td>ADC</td>
+                                                                    <td>Analog and Digital Modulation Schemes</td>
+                                                                    <td>Lab based</td>
+
+
+                                                                </tr>
+
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2347,7 +2360,7 @@ Akram
                                     <div id="collapsestudentseventstwo" class="accordion-collapse collapse" data-bs-parent="#student-events">
                                         <div class="accordion-body">
 
-                                        <div class="committee_table">
+                                            <div class="committee_table">
                                                 <div class="committee_head">
                                                     <h3>Academic Year: 2020-21</h3>
                                                 </div>
@@ -2362,65 +2375,65 @@ Akram
                                                                     <th>Course</th>
                                                                     <th>Topics</th>
                                                                     <th>Methodology/AID</th>
-                                                                   
+
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-    
-    <tr>
-        <td></td>
-        <td>K. Jyothsna</td>
-        <td>II-I</td>
-        <td>STLD</td>
-        <td>Combinational circuits</td>
-        <td>Quiz</td>
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>E. Jyothi</td>
-        <td>III-1</td>
-        <td>MPMC</td>
-        <td>Intel 8051 Micro Controller</td>
-        <td>Flipped class room</td>
-      
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>Dr. Bonala Satyam</td>
-        <td>II-I</td>
-        <td>Network Theory</td>
-        <td>Superposition Theorem, Thevenin’s and Norton’s Theorems, etc</td>
-        <td>Problem Solving and Exercises </td>
-        
-       
-    </tr>
 
-    <tr>
-        <td></td>
-        <td>B. Bharghavendra/td>
-        <td>II-II</td>
-        <td>EMTL</td>
-        <td>Electromagnetic Fields</td>
-        <td>Animation Video</td>
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>B. Thirupathi</td>
-        <td>III-II</td>
-        <td>DSP</td>
-        <td>DSP processors</td>
-        <td>Think pair share </td>
-       
-       
-    </tr>
-   
-                                                           </tbody>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>K. Jyothsna</td>
+                                                                    <td>II-I</td>
+                                                                    <td>STLD</td>
+                                                                    <td>Combinational circuits</td>
+                                                                    <td>Quiz</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>E. Jyothi</td>
+                                                                    <td>III-1</td>
+                                                                    <td>MPMC</td>
+                                                                    <td>Intel 8051 Micro Controller</td>
+                                                                    <td>Flipped class room</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Dr. Bonala Satyam</td>
+                                                                    <td>II-I</td>
+                                                                    <td>Network Theory</td>
+                                                                    <td>Superposition Theorem, Thevenin’s and Norton’s Theorems, etc</td>
+                                                                    <td>Problem Solving and Exercises </td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>B. Bharghavendra/td>
+                                                                    <td>II-II</td>
+                                                                    <td>EMTL</td>
+                                                                    <td>Electromagnetic Fields</td>
+                                                                    <td>Animation Video</td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>B. Thirupathi</td>
+                                                                    <td>III-II</td>
+                                                                    <td>DSP</td>
+                                                                    <td>DSP processors</td>
+                                                                    <td>Think pair share </td>
+
+
+                                                                </tr>
+
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2431,15 +2444,15 @@ Akram
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentseventsfive" 
-                                        aria-expanded="false" aria-controls="collapsestudentseventsfive">
-                                        List of Pedagogical Initiatives by the Faculty Members
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsestudentseventsfive"
+                                            aria-expanded="false" aria-controls="collapsestudentseventsfive">
+                                            List of Pedagogical Initiatives by the Faculty Members
                                         </button>
                                     </h2>
                                     <div id="collapsestudentseventsfive" class="accordion-collapse collapse" data-bs-parent="#student-events">
                                         <div class="accordion-body">
 
-                                        <div class="committee_table">
+                                            <div class="committee_table">
                                                 <div class="committee_head">
                                                     <h3>List of Pedagogical Initiatives by the Faculty Members</h3>
                                                 </div>
@@ -2452,86 +2465,86 @@ Akram
                                                                     <th>Faculty Name</th>
                                                                     <th>No.of Teaching Learning methodologies used</th>
                                                                     <th>Link of webpage/blog/Google classroom/LMS etc.</th>
-                                                                    
-                                                                   
+
+
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-    
-    <tr>
-        <td></td>
-        <td>Dr. D. Laxminarayana</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/Microwave_Notes.pdf" target="_blank">
-        View</a></td>
-       
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>Dr. D. Surender</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/EMTL_Complete.pdf" target="_blank">
-        View</a></td>
-      
-      
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>Mr. B. Ram Mohan</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/EDC_Notes.pdf" target="_blank">
-        View</a></td>
-      
-        
-       
-    </tr>
 
-    <tr>
-        <td></td>
-        <td>Mr. T. Nageshwar Rao</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/Optical_Communication_Complete.pdf" target="_blank">
-        View</a></td>
-       
-        
-        
-    </tr>
-    <tr>
-        <td></td>
-        <td>Mr. B. Bharghavendra</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/NAS_Complete.pdf" target="_blank">
-        View</a></td>
-        
-       
-       
-    </tr>
-    <tr>
-        <td></td>
-        <td>Mr. P. Ajay Kumar</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/Control_Systems_Notes.pdf" target="_blank">
-        View</a></td>
-        
-       
-       
-    </tr>
-    <tr>
-        <td></td>
-        <td>Mrs. E. Jyothi</td>
-        <td>1</td>
-        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/AWP_Notes_1_2.pdf" target="_blank">
-        View</a></td>
-        
-       
-       
-    </tr>
-   
-                                                           </tbody>
+                                                            <tbody>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Dr. D. Laxminarayana</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/Microwave_Notes.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Dr. D. Surender</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/EMTL_Complete.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Mr. B. Ram Mohan</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/EDC_Notes.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Mr. T. Nageshwar Rao</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/Optical_Communication_Complete.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Mr. B. Bharghavendra</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/NAS_Complete.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Mr. P. Ajay Kumar</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/Control_Systems_Notes.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Mrs. E. Jyothi</td>
+                                                                    <td>1</td>
+                                                                    <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/faculty-innovations/AWP_Notes_1_2.pdf" target="_blank">
+                                                                            View</a></td>
+
+
+
+                                                                </tr>
+
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2541,18 +2554,18 @@ Akram
                                     </div>
                                 </div>
 
-                                
+
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
-                                        data-bs-target="#collapsestudentseventsthree" aria-expanded="false" aria-controls="collapsestudentseventsthree">
-                                        ECE Faculty YouTube Lecture Videos
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapsestudentseventsthree" aria-expanded="false" aria-controls="collapsestudentseventsthree">
+                                            ECE Faculty YouTube Lecture Videos
                                         </button>
                                     </h2>
                                     <div id="collapsestudentseventsthree" class="accordion-collapse collapse" data-bs-parent="#student-events">
                                         <div class="accordion-body">
 
-                                        <div class="committee_table">
+                                            <div class="committee_table">
                                                 <div class="committee_head">
                                                     <h3>ECE Faculty YouTube Lecture Videos</h3>
                                                 </div>
@@ -2563,127 +2576,127 @@ Akram
                                                                 <tr class="tableizer-firstrow">
                                                                     <th>Sl. No.</th>
                                                                     <th colspan="2">ECE Faculty YouTube Lecture Videos</th>
-                                                                  
-                                                                   
+
+
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-    
-    <tr>
-        <td rowspan="2">1</td>
-        <td rowspan="2">Electromagnetic Theory and Transmission Lines</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=Z-B4LmlJBq8" target="_blank">
-        View</a></td>
-        
-        
-    </tr>
-    <tr>
 
-    <td><a href="https://www.youtube.com/watch?v=Mxm9I-qQL38" target="_blank">
-        View</a></td>
-    </tr>
-   
-    <tr>
-        <td>2</td>
-        <td>Control Systems</td>
-      
-        <td><a href="https://www.youtube.com/watch?v=LQbPuRl6_1E" target="_blank">
-        View</a></td>
-        
-       
-    </tr>
+                                                            <tbody>
 
-    <tr>
-        <td>3</td>
-        <td>Antennas and Wave Propagation</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=ybrHBijn6_U" target="_blank">
-        View</a></td>
-        
-        
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>VLSI</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=EcW3mAQStHc" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>Signals and Systems</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=95V4RBHfK1Q" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>Computer Organization and Architecture</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=txlZ90-bHmc" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-    <tr>
-        <td  rowspan="2">7</td>
-        <td  rowspan="2">Microprocessor and Micro-controller</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=G49blG8TuWU" target="_blank">
-        View</a></td>
-    
-       
-       
-       
-    </tr>
-    <tr>
-    <td><a href="https://www.youtube.com/watch?v=eFt8Wzw4cd8" target="_blank">
-    View</a></td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>Digital Logic Design</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=GWmqAg9yM6M" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>Switching Theory and Logic Design</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=D-pVdTJJ3Mg" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>Analog and Digital Circuits</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=IsfW2mfeJS8" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>Communication Systems</td>
-       
-        <td><a href="https://www.youtube.com/watch?v=0oBMpxaKl8A" target="_blank">
-        View</a></td>
-       
-       
-    </tr>
-   
-                                                           </tbody>
+                                                                <tr>
+                                                                    <td rowspan="2">1</td>
+                                                                    <td rowspan="2">Electromagnetic Theory and Transmission Lines</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=Z-B4LmlJBq8" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=Mxm9I-qQL38" target="_blank">
+                                                                            View</a></td>
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>2</td>
+                                                                    <td>Control Systems</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=LQbPuRl6_1E" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+
+                                                                <tr>
+                                                                    <td>3</td>
+                                                                    <td>Antennas and Wave Propagation</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=ybrHBijn6_U" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>4</td>
+                                                                    <td>VLSI</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=EcW3mAQStHc" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>5</td>
+                                                                    <td>Signals and Systems</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=95V4RBHfK1Q" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>6</td>
+                                                                    <td>Computer Organization and Architecture</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=txlZ90-bHmc" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td rowspan="2">7</td>
+                                                                    <td rowspan="2">Microprocessor and Micro-controller</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=G49blG8TuWU" target="_blank">
+                                                                            View</a></td>
+
+
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><a href="https://www.youtube.com/watch?v=eFt8Wzw4cd8" target="_blank">
+                                                                            View</a></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>8</td>
+                                                                    <td>Digital Logic Design</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=GWmqAg9yM6M" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>9</td>
+                                                                    <td>Switching Theory and Logic Design</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=D-pVdTJJ3Mg" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>10</td>
+                                                                    <td>Analog and Digital Circuits</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=IsfW2mfeJS8" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>11</td>
+                                                                    <td>Communication Systems</td>
+
+                                                                    <td><a href="https://www.youtube.com/watch?v=0oBMpxaKl8A" target="_blank">
+                                                                            View</a></td>
+
+
+                                                                </tr>
+
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2733,21 +2746,21 @@ Akram
                                                                     <th>Number of students attended</th>
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-                                                           <tr>
-        <td></td>
-        <td>Internet of Things Fundamentals</td>
-        <td>Add on/ certification program</td>
-       
-        <td>21-09-2022</td>
-        <td>Dr.D.Surender Associate Professor in ECE</td>
-       
-        <td>127</td>
-       
-    </tr>
-   
-                                                           </tbody>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Internet of Things Fundamentals</td>
+                                                                    <td>Add on/ certification program</td>
+
+                                                                    <td>21-09-2022</td>
+                                                                    <td>Dr.D.Surender Associate Professor in ECE</td>
+
+                                                                    <td>127</td>
+
+                                                                </tr>
+
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2782,30 +2795,30 @@ Akram
                                                                     <th>Number of students attended</th>
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-    
-                                             
-                                                           <tr>
-        <td></td>
-        <td>Signal processing using Mat lab</td>
-       
-        <td>Add on/ certification program</td>
-        <td>01-12-2021</td>
-        <td>P.AJAY KUMAR Asst.prof in ECE</td>
-        <td>125</td>
-       
-    </tr>
-    <tr>
-        <td></td>
-        <td>Wireless</td>
-       
-        <td>Webinar</td>
-        <td>09-11-2021</td>
-        <td>VENKATA</td>
-        <td>64</td>
-    </tr>
-                                                           </tbody>
+
+                                                            <tbody>
+
+
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Signal processing using Mat lab</td>
+
+                                                                    <td>Add on/ certification program</td>
+                                                                    <td>01-12-2021</td>
+                                                                    <td>P.AJAY KUMAR Asst.prof in ECE</td>
+                                                                    <td>125</td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Wireless</td>
+
+                                                                    <td>Webinar</td>
+                                                                    <td>09-11-2021</td>
+                                                                    <td>VENKATA</td>
+                                                                    <td>64</td>
+                                                                </tr>
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2842,44 +2855,44 @@ Akram
                                                                     <th>Number of students attended</th>
                                                                 </tr>
                                                             </thead>
-                                                         
-                                                           <tbody>
-                                                           <tr>
-        <td></td>
-        <td>PCB Design</td>
-        <td>Add on/ certification program</td>
-       
-        <td>02-11-2020</td>
-       
-        <td>B.BHARGVENDRA Asst prof in ECE</td>
-        
-        <td>454</td>
-       
-    </tr>
-    <tr>
-        <td></td>
-        <td>Rasberry Pi</td>
-        <td>workshop</td>
-      
-        <td>29-06-2021</td>
-       
-        <td>GS.ARUN KUMAR Asst prof in ECE</td>
-        
-        <td>61</td>
-       
-    </tr>
-    <tr>
-        <td></td>
-        <td>Arduino and Its Applications</td>
-        <td>Webinar</td>
-      
-        <td>28-08-2020</td>
-      
-        <td>M.KRANTHI KUMAR Asst prof in ECE</td>
-        
-        <td>61</td>
-    </tr>
-                                                           </tbody>
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>PCB Design</td>
+                                                                    <td>Add on/ certification program</td>
+
+                                                                    <td>02-11-2020</td>
+
+                                                                    <td>B.BHARGVENDRA Asst prof in ECE</td>
+
+                                                                    <td>454</td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Rasberry Pi</td>
+                                                                    <td>workshop</td>
+
+                                                                    <td>29-06-2021</td>
+
+                                                                    <td>GS.ARUN KUMAR Asst prof in ECE</td>
+
+                                                                    <td>61</td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>Arduino and Its Applications</td>
+                                                                    <td>Webinar</td>
+
+                                                                    <td>28-08-2020</td>
+
+                                                                    <td>M.KRANTHI KUMAR Asst prof in ECE</td>
+
+                                                                    <td>61</td>
+                                                                </tr>
+                                                            </tbody>
                                                         </table>
                                                     </div>
                                                 </div>
@@ -2930,7 +2943,7 @@ Akram
                                                                     <td>20S45A0445</td>
                                                                     <td>HIKE EDU</td>
                                                                     <td>vgse/2023/ECE/001</td>
-                                                                   
+
                                                                 </tr>
 
                                                                 <tr>
@@ -3394,7 +3407,7 @@ Akram
                                                                     <td>TCS</td>
                                                                     <td>vgse/2023/ECE/003</td>
                                                                 </tr>
-                                                               
+
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -3411,553 +3424,553 @@ Akram
                                     </h2>
                                     <div id="list_sec_two" class="accordion-collapse collapse" data-bs-parent="#accordionExample_one">
                                         <div class="accordion-body">
-                                        <div class="accordion-body">
-                                            <div class="committee_table">
-                                                <div class="committee_head">
-                                                    <h3>Academic Year 2021-22</h3>
-                                                </div>
-                                                <div class="committee_table_inn">
-                                                    <div class="table-responsive">
-                                                        <table class="table table-bordered table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>S.No</th>
-                                                                    <th>Student Name</th>
-                                                                    <th>Enrollment No</th>
-                                                                    <th>Employee Name</th>
-                                                                    <th>Appointment No</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>AILENI RANADEEP</td>
-                                                                    <td>18S41A0401</td>
-                                                                    <td>MPHASIS,PACTERAEDGE</td>
-                                                                    <td>vgse/2022/ECE/001</td>
-                                                                </tr>
+                                            <div class="accordion-body">
+                                                <div class="committee_table">
+                                                    <div class="committee_head">
+                                                        <h3>Academic Year 2021-22</h3>
+                                                    </div>
+                                                    <div class="committee_table_inn">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>S.No</th>
+                                                                        <th>Student Name</th>
+                                                                        <th>Enrollment No</th>
+                                                                        <th>Employee Name</th>
+                                                                        <th>Appointment No</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>AILENI RANADEEP</td>
+                                                                        <td>18S41A0401</td>
+                                                                        <td>MPHASIS,PACTERAEDGE</td>
+                                                                        <td>vgse/2022/ECE/001</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>AMEREDDY MANJULA</td>
-                                                                    <td>18S41A0403</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/002</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>AMEREDDY MANJULA</td>
+                                                                        <td>18S41A0403</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/002</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ANANTHOJU SAIKIRAN</td>
-                                                                    <td>18S41A0404</td>
-                                                                    <td>Citius Tech,wipro</td>
-                                                                    <td>vgse/2022/ECE/003</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ANANTHOJU SAIKIRAN</td>
+                                                                        <td>18S41A0404</td>
+                                                                        <td>Citius Tech,wipro</td>
+                                                                        <td>vgse/2022/ECE/003</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ANNAPURNA YEKKALI	</td>
-                                                                    <td>18S41A0405</td>
-                                                                    <td>MPHASIS	</td>
-                                                                    <td>vgse/2022/ECE/004</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ANNAPURNA YEKKALI </td>
+                                                                        <td>18S41A0405</td>
+                                                                        <td>MPHASIS </td>
+                                                                        <td>vgse/2022/ECE/004</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ATIKETI SWATHI	</td>
-                                                                    <td>18S41A0406</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/005</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ATIKETI SWATHI </td>
+                                                                        <td>18S41A0406</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/005</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BOBBILI SUSHMITHA	</td>
-                                                                    <td>18S41A0413</td>
-                                                                    <td>Wipro	</td>
-                                                                    <td>vgse/2022/ECE/006</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BOBBILI SUSHMITHA </td>
+                                                                        <td>18S41A0413</td>
+                                                                        <td>Wipro </td>
+                                                                        <td>vgse/2022/ECE/006</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>CHEVULA RAJANIKANTH</td>
-                                                                    <td>18S41A0420</td>
-                                                                    <td>MPHASIS	</td>
-                                                                    <td>vgse/2022/ECE/007</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>CHEVULA RAJANIKANTH</td>
+                                                                        <td>18S41A0420</td>
+                                                                        <td>MPHASIS </td>
+                                                                        <td>vgse/2022/ECE/007</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>CHOPPARI SANDHYA	</td>
-                                                                    <td>18S41A0422</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/008</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>CHOPPARI SANDHYA </td>
+                                                                        <td>18S41A0422</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/008</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>DYAVANAPELLY MANASA	</td>
-                                                                    <td>18S41A0425</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/009</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>DYAVANAPELLY MANASA </td>
+                                                                        <td>18S41A0425</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/009</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>FURQANIA ARSHI</td>
-                                                                    <td>18S41A0429</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/010</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>FURQANIA ARSHI</td>
+                                                                        <td>18S41A0429</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/010</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GADDAM SOUMYA	</td>
-                                                                    <td>18S41A0430</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/011</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GADDAM SOUMYA </td>
+                                                                        <td>18S41A0430</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/011</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GANGADHARI ANUSHA</td>
-                                                                    <td>18S41A0432</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/012</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GANGADHARI ANUSHA</td>
+                                                                        <td>18S41A0432</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/012</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GOLLE SANDHYA	</td>
-                                                                    <td>18S41A04368</td>
-                                                                    <td>	MPHASIS	</td>
-                                                                    <td>vgse/2022/ECE/013</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GOLLE SANDHYA </td>
+                                                                        <td>18S41A04368</td>
+                                                                        <td> MPHASIS </td>
+                                                                        <td>vgse/2022/ECE/013</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GONE SUPRAJA</td>
-                                                                    <td>18S41A0437</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/014</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GONE SUPRAJA</td>
+                                                                        <td>18S41A0437</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/014</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GUDISE ESHWAR</td>
-                                                                    <td>18S41A0439</td>
-                                                                    <td>MPHASIS</td>
-                                                                    <td>vgse/2022/ECE/015</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GUDISE ESHWAR</td>
+                                                                        <td>18S41A0439</td>
+                                                                        <td>MPHASIS</td>
+                                                                        <td>vgse/2022/ECE/015</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ITHAM ARCHANA	</td>
-                                                                    <td>18S41A0445</td>
-                                                                    <td>Minfy,Wipro - P2	</td>
-                                                                    <td>vgse/2022/ECE/016</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ITHAM ARCHANA </td>
+                                                                        <td>18S41A0445</td>
+                                                                        <td>Minfy,Wipro - P2 </td>
+                                                                        <td>vgse/2022/ECE/016</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>JUHI FATHEEN	</td>
-                                                                    <td>18S41A0448</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/017</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>JUHI FATHEEN </td>
+                                                                        <td>18S41A0448</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/017</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KANKANALA PRATHIMA</td>
-                                                                    <td>18S41A0451</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/018</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KANKANALA PRATHIMA</td>
+                                                                        <td>18S41A0451</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/018</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KASARLA PREETHI	</td>
-                                                                    <td>18S41A0455</td>
-                                                                    <td>	NTT Data	</td>
-                                                                    <td>vgse/2022/ECE/019</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KASARLA PREETHI </td>
+                                                                        <td>18S41A0455</td>
+                                                                        <td> NTT Data </td>
+                                                                        <td>vgse/2022/ECE/019</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KOLIPAKA HARIKA	</td>
-                                                                    <td>18S41A0457</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/020</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KOLIPAKA HARIKA </td>
+                                                                        <td>18S41A0457</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/020</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KOMMU VAISHNAVI	</td>
-                                                                    <td>18S41A0458</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/021</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KOMMU VAISHNAVI </td>
+                                                                        <td>18S41A0458</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/021</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KONDAMEEDI ANUSARIKA</td>
-                                                                    <td>18S41A0459</td>
-                                                                    <td>SONATA</td>
-                                                                    <td>vgse/2022/ECE/022</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KONDAMEEDI ANUSARIKA</td>
+                                                                        <td>18S41A0459</td>
+                                                                        <td>SONATA</td>
+                                                                        <td>vgse/2022/ECE/022</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MOHAMMAD WAHED ALI</td>
-                                                                    <td>18S41A0472</td>
-                                                                    <td>Citius Tech,GLOBAL QUEST</td>
-                                                                    <td>	vgse/2022/ECE/023</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MOHAMMAD WAHED ALI</td>
+                                                                        <td>18S41A0472</td>
+                                                                        <td>Citius Tech,GLOBAL QUEST</td>
+                                                                        <td> vgse/2022/ECE/023</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>NARSINGOJU AISHWARYA</td>
-                                                                    <td>18S41A0480</td>
-                                                                    <td>NTT Data</td>
-                                                                    <td>vgse/2022/ECE/024</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>NARSINGOJU AISHWARYA</td>
+                                                                        <td>18S41A0480</td>
+                                                                        <td>NTT Data</td>
+                                                                        <td>vgse/2022/ECE/024</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>NUCHU SAI SRUJANA	</td>
-                                                                    <td>18S41A0483</td>
-                                                                    <td>MPHASIS</td>
-                                                                    <td>vgse/2022/ECE/025</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>NUCHU SAI SRUJANA </td>
+                                                                        <td>18S41A0483</td>
+                                                                        <td>MPHASIS</td>
+                                                                        <td>vgse/2022/ECE/025</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PADALA MADHURI	</td>
-                                                                    <td>18S41A0485</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/026</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PADALA MADHURI </td>
+                                                                        <td>18S41A0485</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/026</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PAKALA HARITHA</td>
-                                                                    <td>18S41A0486</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/027</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PAKALA HARITHA</td>
+                                                                        <td>18S41A0486</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/027</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PASHAM VARSHA	</td>
-                                                                    <td>18S41A0488</td>
-                                                                    <td>	Pactera Edge	</td>
-                                                                    <td>vgse/2022/ECE/028</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PASHAM VARSHA </td>
+                                                                        <td>18S41A0488</td>
+                                                                        <td> Pactera Edge </td>
+                                                                        <td>vgse/2022/ECE/028</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PONNAM MEGHANA	</td>
-                                                                    <td>18S41A0495</td>
-                                                                    <td>MPHASIS</td>
-                                                                    <td>vgse/2022/ECE/029</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PONNAM MEGHANA </td>
+                                                                        <td>18S41A0495</td>
+                                                                        <td>MPHASIS</td>
+                                                                        <td>vgse/2022/ECE/029</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PORANDLA SINDHUPRIYA</td>
-                                                                    <td>18S41A0497</td>
-                                                                    <td>Pactera Edge	</td>
-                                                                    <td>vgse/2022/ECE/030</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PORANDLA SINDHUPRIYA</td>
+                                                                        <td>18S41A0497</td>
+                                                                        <td>Pactera Edge </td>
+                                                                        <td>vgse/2022/ECE/030</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PULISHETTI RAMYA	</td>
-                                                                    <td>18S41A0498</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/031</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PULISHETTI RAMYA </td>
+                                                                        <td>18S41A0498</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/031</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>RAMADUGU SANTHOSH</td>
-                                                                    <td>18S41A04A1</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/032</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>RAMADUGU SANTHOSH</td>
+                                                                        <td>18S41A04A1</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/032</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>THIRUNAHARI SHOBITH</td>
-                                                                    <td>18S41A04A8</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/033</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>THIRUNAHARI SHOBITH</td>
+                                                                        <td>18S41A04A8</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/033</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VARI RENUSRI	</td>
-                                                                    <td>18S41A04B3</td>
-                                                                    <td>	NTT Data	</td>
-                                                                    <td>vgse/2022/ECE/034</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VARI RENUSRI </td>
+                                                                        <td>18S41A04B3</td>
+                                                                        <td> NTT Data </td>
+                                                                        <td>vgse/2022/ECE/034</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VELDANDI ANJALI	</td>
-                                                                    <td>18S41A04B4</td>
-                                                                    <td>	TCS	</td>
-                                                                    <td>vgse/2022/ECE/035</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VELDANDI ANJALI </td>
+                                                                        <td>18S41A04B4</td>
+                                                                        <td> TCS </td>
+                                                                        <td>vgse/2022/ECE/035</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VENGALA RAMYA	</td>
-                                                                    <td>18S41A04B5</td>
-                                                                    <td>Wipro</td>
-                                                                    <td>vgse/2022/ECE/036</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VENGALA RAMYA </td>
+                                                                        <td>18S41A04B5</td>
+                                                                        <td>Wipro</td>
+                                                                        <td>vgse/2022/ECE/036</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VODNALA VAMSHI KRISHNA	</td>
-                                                                    <td>18S41A04B6</td>
-                                                                    <td>	Infosys	</td>
-                                                                    <td>vgse/2022/ECE/037</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VODNALA VAMSHI KRISHNA </td>
+                                                                        <td>18S41A04B6</td>
+                                                                        <td> Infosys </td>
+                                                                        <td>vgse/2022/ECE/037</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VURADI ADITYA	</td>
-                                                                    <td>18S41A04B8</td>
-                                                                    <td>MPHASIS	</td>
-                                                                    <td>vgse/2022/ECE/038</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VURADI ADITYA </td>
+                                                                        <td>18S41A04B8</td>
+                                                                        <td>MPHASIS </td>
+                                                                        <td>vgse/2022/ECE/038</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BHIMANATHINI SANDEEPA	</td>
-                                                                    <td>18S41A0408</td>
-                                                                    <td>AMAZON</td>
-                                                                    <td>vgse/2022/ECE/039</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BHUPATHI AKSHITHA</td>
-                                                                    <td>18S41A0410</td>
-                                                                    <td>AMAZON</td>
-                                                                    <td>vgse/2022/ECE/040</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BITUKU VILAS	</td>
-                                                                    <td>18S41A0412</td>
-                                                                    <td>AMAZON</td>
-                                                                    <td>vgse/2022/ECE/041</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BUDAMGUNTLA SANATH KUMAR	</td>
-                                                                    <td>18S41A0415</td>
-                                                                    <td>AMAZON</td>
-                                                                    <td>vgse/2022/ECE/042</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>CHENNOJWALA SANNIHITHA	</td>
-                                                                    <td>18S41A0418</td>
-                                                                    <td>AMAZON</td>
-                                                                    <td>vgse/2022/ECE/043</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>DEVARAKONDA SHIVANI	</td>
-                                                                    <td>18S41A0424</td>
-                                                                    <td>AMAZON</td>
-                                                                    <td>vgse/2022/ECE/044</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ERUMALLA MAMATHA	 </td>
-                                                                    <td>18S41A0428</td>
-                                                                    <td>EXCERS</td>
-                                                                    <td>vgse/2022/ECE/045</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GEEKURU SAI KRISHNA</td>
-                                                                    <td>18S41A0434</td>
-                                                                    
-                                                                    <td>EXCERS</td>
-                                                                    <td>vgse/2022/ECE/046</td>
-                                                                    
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GODALA CHANDRA TEJA	</td>
-                                                                    <td>18S41A0435</td>
-                                                                    <td>EXCERS</td>
-                                                                    <td>vgse/2022/ECE/047</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GUNDELLI DEEPTHI	</td>
-                                                                    <td>18S41A0440</td>
-                                                                    <td>EXCERS</td>
-                                                                    <td>vgse/2022/ECE/048</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BHIMANATHINI SANDEEPA </td>
+                                                                        <td>18S41A0408</td>
+                                                                        <td>AMAZON</td>
+                                                                        <td>vgse/2022/ECE/039</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BHUPATHI AKSHITHA</td>
+                                                                        <td>18S41A0410</td>
+                                                                        <td>AMAZON</td>
+                                                                        <td>vgse/2022/ECE/040</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BITUKU VILAS </td>
+                                                                        <td>18S41A0412</td>
+                                                                        <td>AMAZON</td>
+                                                                        <td>vgse/2022/ECE/041</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BUDAMGUNTLA SANATH KUMAR </td>
+                                                                        <td>18S41A0415</td>
+                                                                        <td>AMAZON</td>
+                                                                        <td>vgse/2022/ECE/042</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>CHENNOJWALA SANNIHITHA </td>
+                                                                        <td>18S41A0418</td>
+                                                                        <td>AMAZON</td>
+                                                                        <td>vgse/2022/ECE/043</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>DEVARAKONDA SHIVANI </td>
+                                                                        <td>18S41A0424</td>
+                                                                        <td>AMAZON</td>
+                                                                        <td>vgse/2022/ECE/044</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ERUMALLA MAMATHA </td>
+                                                                        <td>18S41A0428</td>
+                                                                        <td>EXCERS</td>
+                                                                        <td>vgse/2022/ECE/045</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GEEKURU SAI KRISHNA</td>
+                                                                        <td>18S41A0434</td>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GUNDETI KAVYA	</td>
-                                                                    <td>18S41A0442</td>
-                                                                    <td>EXCERS</td>
-                                                                    <td>	vgse/2022/ECE/049</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>JUNNUTHALA DAMODHAR REDDY	</td>
-                                                                    <td>18S41A0449</td>
-                                                                    <td>LETSGETTIN</td>
-                                                                    <td>vgse/2022/ECE/050</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KARIVEDA AKHILA	</td>
-                                                                    <td>18S41A0452</td>
-                                                                    <td>LETSGETTIN</td>
-                                                                    <td>vgse/2022/ECE/051</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KARUMALLA MOUNIKA	</td>
-                                                                    <td>18S41A0454</td>
-                                                                    <td>LETSGETTIN</td>
-                                                                    <td>vgse/2022/ECE/052</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KOREPU AKHILA	</td>
-                                                                    <td>18S41A0461</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/055</td>
-                                                                </tr>
+                                                                        <td>EXCERS</td>
+                                                                        <td>vgse/2022/ECE/046</td>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>LOKURTHI SWAPNA		</td>
-                                                                    <td>18S41A0463</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/056</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MEDHINI KEERTHANA	</td>
-                                                                    <td>18S41A0470</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/057</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MOSARLA PRAHARSHA</td>
-                                                                    <td>18S41A0474</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/058</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>NEELAM ALEKHYA	</td>
-                                                                    <td>18S41A0481</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/059</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PASULA JAYASREE	</td>
-                                                                    <td>18S41A0489</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/060</td>
-                                                                </tr>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GODALA CHANDRA TEJA </td>
+                                                                        <td>18S41A0435</td>
+                                                                        <td>EXCERS</td>
+                                                                        <td>vgse/2022/ECE/047</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GUNDELLI DEEPTHI </td>
+                                                                        <td>18S41A0440</td>
+                                                                        <td>EXCERS</td>
+                                                                        <td>vgse/2022/ECE/048</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PENCHALA RAMYA	</td>
-                                                                    <td>18S41A0492</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/061</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>RACHAKONDA SAI KUMAR	</td>
-                                                                    <td>18S41A0499</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/062</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>RATNA DIVYASAI	</td>
-                                                                    <td>18S41A04A2</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/063</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>SOOROJU CHANDRIKA</td>
-                                                                    <td>18S41A04A5</td>
-                                                                    <td>	UBER	</td>
-                                                                    <td>vgse/2022/ECE/064</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>THUMMANAPELI NAVEEN	</td>
-                                                                    <td>18S41A04B0</td>
-                                                                    <td>Minfy</td>
-                                                                    <td>vgse/2022/ECE/065</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GUNDETI KAVYA </td>
+                                                                        <td>18S41A0442</td>
+                                                                        <td>EXCERS</td>
+                                                                        <td> vgse/2022/ECE/049</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>JUNNUTHALA DAMODHAR REDDY </td>
+                                                                        <td>18S41A0449</td>
+                                                                        <td>LETSGETTIN</td>
+                                                                        <td>vgse/2022/ECE/050</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KARIVEDA AKHILA </td>
+                                                                        <td>18S41A0452</td>
+                                                                        <td>LETSGETTIN</td>
+                                                                        <td>vgse/2022/ECE/051</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KARUMALLA MOUNIKA </td>
+                                                                        <td>18S41A0454</td>
+                                                                        <td>LETSGETTIN</td>
+                                                                        <td>vgse/2022/ECE/052</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KOREPU AKHILA </td>
+                                                                        <td>18S41A0461</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/055</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GODISHALA SUNAYANA	</td>
-                                                                    <td>19S45A0402</td>
-                                                                    <td>LETSGETTIN</td>
-                                                                    <td>vgse/2022/ECE/053</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MAADUGULA SAHITHYA</td>
-                                                                    <td>19S45A0405</td>
-                                                                    <td>LETSGETTIN	</td>
-                                                                    <td>vgse/2022/ECE/054</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GUDA SRAVIKA	</td>
-                                                                    <td>18S41A04C0</td>
-                                                                    <td>UBER</td>
-                                                                    <td>vgse/2022/ECE/066</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>NUNAVATH SUMALATHA</td>
-                                                                    <td>19S45A0408</td>
-                                                                    <td>UBER</td>
-                                                                    <td>vgse/2022/ECE/067</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VARIKOLLA RUCHITHA</td>
-                                                                    <td>19S45A0412</td>
-                                                                    <td>UBER</td>
-                                                                    <td>vgse/2022/ECE/068</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>LOKURTHI SWAPNA </td>
+                                                                        <td>18S41A0463</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/056</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MEDHINI KEERTHANA </td>
+                                                                        <td>18S41A0470</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/057</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MOSARLA PRAHARSHA</td>
+                                                                        <td>18S41A0474</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/058</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>NEELAM ALEKHYA </td>
+                                                                        <td>18S41A0481</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/059</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PASULA JAYASREE </td>
+                                                                        <td>18S41A0489</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/060</td>
+                                                                    </tr>
 
-                                                                
-                                                            
-                                                            </tbody>
-                                                        </table>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PENCHALA RAMYA </td>
+                                                                        <td>18S41A0492</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/061</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>RACHAKONDA SAI KUMAR </td>
+                                                                        <td>18S41A0499</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/062</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>RATNA DIVYASAI </td>
+                                                                        <td>18S41A04A2</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/063</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>SOOROJU CHANDRIKA</td>
+                                                                        <td>18S41A04A5</td>
+                                                                        <td> UBER </td>
+                                                                        <td>vgse/2022/ECE/064</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>THUMMANAPELI NAVEEN </td>
+                                                                        <td>18S41A04B0</td>
+                                                                        <td>Minfy</td>
+                                                                        <td>vgse/2022/ECE/065</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GODISHALA SUNAYANA </td>
+                                                                        <td>19S45A0402</td>
+                                                                        <td>LETSGETTIN</td>
+                                                                        <td>vgse/2022/ECE/053</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MAADUGULA SAHITHYA</td>
+                                                                        <td>19S45A0405</td>
+                                                                        <td>LETSGETTIN </td>
+                                                                        <td>vgse/2022/ECE/054</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GUDA SRAVIKA </td>
+                                                                        <td>18S41A04C0</td>
+                                                                        <td>UBER</td>
+                                                                        <td>vgse/2022/ECE/066</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>NUNAVATH SUMALATHA</td>
+                                                                        <td>19S45A0408</td>
+                                                                        <td>UBER</td>
+                                                                        <td>vgse/2022/ECE/067</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VARIKOLLA RUCHITHA</td>
+                                                                        <td>19S45A0412</td>
+                                                                        <td>UBER</td>
+                                                                        <td>vgse/2022/ECE/068</td>
+                                                                    </tr>
+
+
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -3969,355 +3982,355 @@ Akram
                                     </h2>
                                     <div id="list_sec_three" class="accordion-collapse collapse" data-bs-parent="#accordionExample_one">
                                         <div class="accordion-body">
-                                        <div class="accordion-body">
-                                            <div class="committee_table">
-                                                <div class="committee_head">
-                                                    <h3>Academic Year 2020-21</h3>
-                                                </div>
-                                                <div class="committee_table_inn">
-                                                    <div class="table-responsive">
-                                                        <table class="table table-bordered table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>S.No</th>
-                                                                    <th>Student Name</th>
-                                                                    <th>Enrollment No</th>
-                                                                    <th>Employee Name</th>
-                                                                    <th>Appointment No</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ALLENKI RAMYA	</td>
-                                                                    <td>17S41A0401</td>
-                                                                    <td>	TCS	</td>
-                                                                    <td>vgse/2021/ECE/001</td>
-                                                                </tr>
+                                            <div class="accordion-body">
+                                                <div class="committee_table">
+                                                    <div class="committee_head">
+                                                        <h3>Academic Year 2020-21</h3>
+                                                    </div>
+                                                    <div class="committee_table_inn">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>S.No</th>
+                                                                        <th>Student Name</th>
+                                                                        <th>Enrollment No</th>
+                                                                        <th>Employee Name</th>
+                                                                        <th>Appointment No</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ALLENKI RAMYA </td>
+                                                                        <td>17S41A0401</td>
+                                                                        <td> TCS </td>
+                                                                        <td>vgse/2021/ECE/001</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BODA MAHESH	</td>
-                                                                    <td>17S41A0403</td>
-                                                                    <td>	EDGEVERVE	</td>
-                                                                    <td>vgse/2021/ECE/002</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BODA MAHESH </td>
+                                                                        <td>17S41A0403</td>
+                                                                        <td> EDGEVERVE </td>
+                                                                        <td>vgse/2021/ECE/002</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>BODIGE PRAVALIKA	</td>
-                                                                    <td>17S41A0404</td>
-                                                                    <td>	BROADBRIDGE	</td>
-                                                                    <td>vgse/2021/ECE/003</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>BODIGE PRAVALIKA </td>
+                                                                        <td>17S41A0404</td>
+                                                                        <td> BROADBRIDGE </td>
+                                                                        <td>vgse/2021/ECE/003</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>CHIPPA ANNAPOORNA	</td>
-                                                                    <td>17S41A0408</td>
-                                                                    <td>SAVANTIS SOLUTION	</td>
-                                                                    <td>vgse/2021/ECE/004</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>CHIPPA ANNAPOORNA </td>
+                                                                        <td>17S41A0408</td>
+                                                                        <td>SAVANTIS SOLUTION </td>
+                                                                        <td>vgse/2021/ECE/004</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ERUMALLA ANIL	</td>
-                                                                    <td>17S41A0413</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/005</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ERUMALLA ANIL </td>
+                                                                        <td>17S41A0413</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/005</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>FARKHANDA TANIYA NAJAM	</td>
-                                                                    <td>17S41A0415</td>
-                                                                    <td>	SAVANTIS SOLUTION	</td>
-                                                                    <td>vgse/2021/ECE/006</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>FARKHANDA TANIYA NAJAM </td>
+                                                                        <td>17S41A0415</td>
+                                                                        <td> SAVANTIS SOLUTION </td>
+                                                                        <td>vgse/2021/ECE/006</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GANDLA SANGEETHA	</td>
-                                                                    <td>17S41A0417</td>
-                                                                    <td>	veta technologies	</td>
-                                                                    <td>vgse/2021/ECE/007</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GANDLA SANGEETHA </td>
+                                                                        <td>17S41A0417</td>
+                                                                        <td> veta technologies </td>
+                                                                        <td>vgse/2021/ECE/007</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GUJJULA SHRAVANI	</td>
-                                                                    <td>17S41A0421</td>
-                                                                    <td>	AGGNE	</td>
-                                                                    <td>vgse/2021/ECE/008</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GUJJULA SHRAVANI </td>
+                                                                        <td>17S41A0421</td>
+                                                                        <td> AGGNE </td>
+                                                                        <td>vgse/2021/ECE/008</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GYAJANGI NARMADA</td>
-                                                                    <td>17S41A0423</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/009</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GYAJANGI NARMADA</td>
+                                                                        <td>17S41A0423</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/009</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>HAFSA NISHAD	</td>
-                                                                    <td>17S41A0424</td>
-                                                                    <td>VETA TECHNOLOGIES</td>
-                                                                    <td>vgse/2021/ECE/010</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>HAFSA NISHAD </td>
+                                                                        <td>17S41A0424</td>
+                                                                        <td>VETA TECHNOLOGIES</td>
+                                                                        <td>vgse/2021/ECE/010</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KACHAM VAISHNAVI	</td>
-                                                                    <td>17S41A0426</td>
-                                                                    <td>	vihawk teck solutions pvt ltd 	</td>
-                                                                    <td>vgse/2021/ECE/011</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KACHAM VAISHNAVI </td>
+                                                                        <td>17S41A0426</td>
+                                                                        <td> vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/011</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KASARLA RAMYA	</td>
-                                                                    <td>17S41A0429</td>
-                                                                    <td>	vihawk teck solutions pvt ltd 	</td>
-                                                                    <td>vgse/2021/ECE/012</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KASARLA RAMYA </td>
+                                                                        <td>17S41A0429</td>
+                                                                        <td> vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/012</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KATAKAM VYSHNAVI	</td>
-                                                                    <td>17S41A0430</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/013</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KATAKAM VYSHNAVI </td>
+                                                                        <td>17S41A0430</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/013</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KOKKULA RAMYA	</td>
-                                                                    <td>17S41A0431</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/014</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KOKKULA RAMYA </td>
+                                                                        <td>17S41A0431</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/014</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>ATHE RAJU	</td>
-                                                                    <td>18S45A0401</td>
-                                                                    <td>WIPRO</td>
-                                                                    <td>vgse/2021/ECE/015</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>ATHE RAJU </td>
+                                                                        <td>18S45A0401</td>
+                                                                        <td>WIPRO</td>
+                                                                        <td>vgse/2021/ECE/015</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>CHETTUKINDI SHIVANI	</td>
-                                                                    <td>18S45A0402</td>
-                                                                    <td>HCL</td>
-                                                                    <td>	vgse/2021/ECE/016</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>CHETTUKINDI SHIVANI </td>
+                                                                        <td>18S45A0402</td>
+                                                                        <td>HCL</td>
+                                                                        <td> vgse/2021/ECE/016</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>DUDAM SRIKARUNYA</td>
-                                                                    <td>18S45A0403</td>
-                                                                    <td>peopleLink unified communications Pvt .Ltd </td>
-                                                                    <td>vgse/2021/ECE/017</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>DUDAM SRIKARUNYA</td>
+                                                                        <td>18S45A0403</td>
+                                                                        <td>peopleLink unified communications Pvt .Ltd </td>
+                                                                        <td>vgse/2021/ECE/017</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>GOWDA PAVANKUMAR	</td>
-                                                                    <td>18S45A0404</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/018</td>
-                                                                    
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>GOWDA PAVANKUMAR </td>
+                                                                        <td>18S45A0404</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/018</td>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KARNE RANGAMMA	</td>
-                                                                    <td>18S45A0407</td>
-                                                                    <td>	LTI	</td>
-                                                                    <td>vgse/2021/ECE/019</td>
-                                                                </tr>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MADDI MADHURI	</td>
-                                                                    <td>18S45A0409</td>
-                                                                    <td>vihawk teck solutions pvt ltd 	</td>
-                                                                    <td>vgse/2021/ECE/020</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KARNE RANGAMMA </td>
+                                                                        <td>18S45A0407</td>
+                                                                        <td> LTI </td>
+                                                                        <td>vgse/2021/ECE/019</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MOHD ABDUL SAMAD</td>
-                                                                    <td>18S45A0410</td>
-                                                                    <td>	SAVANTIS SOLUTION</td>
-                                                                    <td>	vgse/2021/ECE/021</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MADDI MADHURI </td>
+                                                                        <td>18S45A0409</td>
+                                                                        <td>vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/020</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MUSKU ABHINAY REDDY</td>
-                                                                    <td>18S45A0411</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/022</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MOHD ABDUL SAMAD</td>
+                                                                        <td>18S45A0410</td>
+                                                                        <td> SAVANTIS SOLUTION</td>
+                                                                        <td> vgse/2021/ECE/021</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>SYEDA KHANSA ATIF	</td>
-                                                                    <td>16S41A0476</td>
-                                                                    <td>	vihawk teck solutions pvt ltd 	</td>
-                                                                    <td>vgse/2021/ECE/023</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MUSKU ABHINAY REDDY</td>
+                                                                        <td>18S45A0411</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/022</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>UPPULURI LIKITHSAI	</td>
-                                                                    <td>16S41A0481</td>
-                                                                    <td>	veta technologies	</td>
-                                                                    <td>vgse/2021/ECE/024</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>SYEDA KHANSA ATIF </td>
+                                                                        <td>16S41A0476</td>
+                                                                        <td> vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/023</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MACHA RAMYA	</td>
-                                                                    <td>17S41A0439</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/025</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>UPPULURI LIKITHSAI </td>
+                                                                        <td>16S41A0481</td>
+                                                                        <td> veta technologies </td>
+                                                                        <td>vgse/2021/ECE/024</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MACHA SUSMITHA	</td>
-                                                                    <td>17S41A0440</td>
-                                                                    <td>	SAVANTIS SOLUTION</td>
-                                                                    <td>	vgse/2021/ECE/026</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MACHA RAMYA </td>
+                                                                        <td>17S41A0439</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/025</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MADIREDDY LAHARI	</td>
-                                                                    <td>17S41A0441</td>
-                                                                    <td>	SAVANTIS SOLUTION</td>
-                                                                    <td>	vgse/2021/ECE/027</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MACHA SUSMITHA </td>
+                                                                        <td>17S41A0440</td>
+                                                                        <td> SAVANTIS SOLUTION</td>
+                                                                        <td> vgse/2021/ECE/026</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>MEHRAJ FATHIMA	</td>
-                                                                    <td>17S41A0444</td>
-                                                                    <td>SAVANTIS SOLUTION	</td>
-                                                                    <td>vgse/2021/ECE/028</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MADIREDDY LAHARI </td>
+                                                                        <td>17S41A0441</td>
+                                                                        <td> SAVANTIS SOLUTION</td>
+                                                                        <td> vgse/2021/ECE/027</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>NAGA SHARANYA SHETTI	</td>
-                                                                    <td>17S41A0446</td>
-                                                                    <td>	SAVANTIS SOLUTION	</td>
-                                                                    <td>vgse/2021/ECE/029</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>MEHRAJ FATHIMA </td>
+                                                                        <td>17S41A0444</td>
+                                                                        <td>SAVANTIS SOLUTION </td>
+                                                                        <td>vgse/2021/ECE/028</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>PENDYALA HARIKA	</td>
-                                                                    <td>17S41A0450</td>
-                                                                    <td>SAVANTIS SOLUTION	</td>
-                                                                    <td>vgse/2021/ECE/030</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>NAGA SHARANYA SHETTI </td>
+                                                                        <td>17S41A0446</td>
+                                                                        <td> SAVANTIS SOLUTION </td>
+                                                                        <td>vgse/2021/ECE/029</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>RODDA GANESH KUMAR</td>
-                                                                    <td>17S41A0453</td>
-                                                                    <td>vihawk teck solutions pvt ltd </td>
-                                                                    <td>vgse/2021/ECE/031</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>PENDYALA HARIKA </td>
+                                                                        <td>17S41A0450</td>
+                                                                        <td>SAVANTIS SOLUTION </td>
+                                                                        <td>vgse/2021/ECE/030</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>SANGEM RUCHITHA	</td>
-                                                                    <td>17S41A0454</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/032</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>RODDA GANESH KUMAR</td>
+                                                                        <td>17S41A0453</td>
+                                                                        <td>vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/031</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>THODETI ALEKYA	</td>
-                                                                    <td>17S41A0458</td>
-                                                                    <td>veta technologies	</td>
-                                                                    <td>vgse/2021/ECE/033</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>SANGEM RUCHITHA </td>
+                                                                        <td>17S41A0454</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/032</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VEMULA ANIL	</td>
-                                                                    <td>17S41A0459</td>
-                                                                    <td>ZENSAR	</td>
-                                                                    <td>vgse/2021/ECE/034</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>THODETI ALEKYA </td>
+                                                                        <td>17S41A0458</td>
+                                                                        <td>veta technologies </td>
+                                                                        <td>vgse/2021/ECE/033</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KUMBALA SPANDANA</td>
-                                                                    <td>17S45A0413</td>
-                                                                    <td>	peopleLink unified communications Pvt .Ltd 	</td>
-                                                                    <td>vgse/2021/ECE/035</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VEMULA ANIL </td>
+                                                                        <td>17S41A0459</td>
+                                                                        <td>ZENSAR </td>
+                                                                        <td>vgse/2021/ECE/034</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>RANGU SRUJANA	</td>
-                                                                    <td>18S45A0421</td>
-                                                                    <td>LTI</td>
-                                                                    <td>vgse/2021/ECE/036</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KUMBALA SPANDANA</td>
+                                                                        <td>17S45A0413</td>
+                                                                        <td> peopleLink unified communications Pvt .Ltd </td>
+                                                                        <td>vgse/2021/ECE/035</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>RAGULA SHIVANI	</td>
-                                                                    <td>18S45A0422</td>
-                                                                    <td>	vihawk teck solutions pvt ltd 	</td>
-                                                                    <td>vgse/2021/ECE/037</td>
-                                                                </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>RANGU SRUJANA </td>
+                                                                        <td>18S45A0421</td>
+                                                                        <td>LTI</td>
+                                                                        <td>vgse/2021/ECE/036</td>
+                                                                    </tr>
 
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>KOYYADA SONY	</td>
-                                                                    <td>18S45A0427</td>
-                                                                    <td>vihawk teck solutions pvt ltd </td>
-                                                                    <td>vgse/2021/ECE/038</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VANGALA MADHAVI	</td>
-                                                                    <td>18S45A0431</td>
-                                                                    <td>vihawk teck solutions pvt ltd 	</td>
-                                                                    <td>vgse/2021/ECE/039</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>VELPULA SRAVANTHI</td>
-                                                                    <td>18S45A0432</td>
-                                                                    <td>TCS</td>
-                                                                    <td>vgse/2021/ECE/040</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td></td>
-                                                                    <td>SAMALA SAI KRISHNA</td>
-                                                                    <td>18S45A0435</td>
-                                                                    <td>VETA TECHNOLOGIES</td>
-                                                                    <td>vgse/2021/ECE/041</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>RAGULA SHIVANI </td>
+                                                                        <td>18S45A0422</td>
+                                                                        <td> vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/037</td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>KOYYADA SONY </td>
+                                                                        <td>18S45A0427</td>
+                                                                        <td>vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/038</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VANGALA MADHAVI </td>
+                                                                        <td>18S45A0431</td>
+                                                                        <td>vihawk teck solutions pvt ltd </td>
+                                                                        <td>vgse/2021/ECE/039</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>VELPULA SRAVANTHI</td>
+                                                                        <td>18S45A0432</td>
+                                                                        <td>TCS</td>
+                                                                        <td>vgse/2021/ECE/040</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td></td>
+                                                                        <td>SAMALA SAI KRISHNA</td>
+                                                                        <td>18S45A0435</td>
+                                                                        <td>VETA TECHNOLOGIES</td>
+                                                                        <td>vgse/2021/ECE/041</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </div>
@@ -4336,32 +4349,32 @@ Akram
                             </div>
                             <div class="row hod-start">
                                 <div class="col-lg-4">
-                                   <div class="hod-img">
-                                   <img src="<?php echo $base_url; ?>/assets/images/ece/Venkata_Reddy_Adama.webp" alt="contact_hod_img" class="img-fluid" loading="lazy" decoding="async">
-                             
-                                 <div class="cse-hod">
-                                    <h4>Mr. Venkata Reddy Adama</h4>
-                                    <p>Associate Professor & HOD</p>
-                                   
-                                 </div>
-                                
-</div>
+                                    <div class="hod-img">
+                                        <img src="<?php echo $base_url; ?>/assets/images/ece/Venkata_Reddy_Adama.webp" alt="contact_hod_img" class="img-fluid" loading="lazy" decoding="async">
+
+                                        <div class="cse-hod">
+                                            <h4>Mr. Venkata Reddy Adama</h4>
+                                            <p>Associate Professor & HOD</p>
+
+                                        </div>
+
+                                    </div>
                                 </div>
                                 <div class="col-lg-8">
-                                    <div id="contact-info" >
+                                    <div id="contact-info">
                                         <p>Mr. Venkata Reddy Adama is an Associate Professor and HOD in the Department of Electronics and Communication Engineering.
-                                             He is having 20 years of experience in Teaching. He is pursing Ph.D from Nagpur University (RTMNU- Rashtrasant Tukadoji 
-                                             Maharaj Nagpur University) Nagpur, Maharashtra. He has received M.Tech (Embedded Systems) from Jawaharlal Nehru Technological
-                                              University Hyderabad and B.Tech Degree from Jawaharlal Nehru Technological University Hyderabad. His Teaching and 
-                                              Research interests include Communication Systems, Wireless Sensor Networks and Cognitive Radio. He has 16 publications
-                                               in reputed International Journals and Conferences.</p>
+                                            He is having 20 years of experience in Teaching. He is pursing Ph.D from Nagpur University (RTMNU- Rashtrasant Tukadoji
+                                            Maharaj Nagpur University) Nagpur, Maharashtra. He has received M.Tech (Embedded Systems) from Jawaharlal Nehru Technological
+                                            University Hyderabad and B.Tech Degree from Jawaharlal Nehru Technological University Hyderabad. His Teaching and
+                                            Research interests include Communication Systems, Wireless Sensor Networks and Cognitive Radio. He has 16 publications
+                                            in reputed International Journals and Conferences.</p>
 
-                                                 <div class="cse-hod2">
-                                    <h4>Contact</h4>
-                                    
-                                    <p><b>Mobile Number:</b>8121860999</p>
-                                    <p><b>Email:</b>vgse.ecehod@gmail.com</p>
-                                 </div>
+                                        <div class="cse-hod2">
+                                            <h4>Contact</h4>
+
+                                            <p><b>Mobile Number:</b>8121860999</p>
+                                            <p><b>Email:</b>vgse.ecehod@gmail.com</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
