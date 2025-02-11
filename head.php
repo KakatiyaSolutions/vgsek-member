@@ -81,8 +81,17 @@
                   <li><a class="dropdown-item" href="<?php echo $base_url; ?>data/data.php">Computer Science & Engineering (Data Science)</a></li>
               </ul>
             </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?php echo $base_url; ?>humanities/h&s_physics.php">Humanities</a>
+                <li class="nav-item dropdown">
+
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Humanities</a>
+
+                <ul class="dropdown-menu"> 
+                    <li> <a class="dropdown-item" href="<?php echo $base_url; ?>humanities/h&s_english.php">ENGLISH</a></li>
+                    <li> <a class="dropdown-item" href="<?php echo $base_url; ?>humanities/h&s_physics.php">PHYSICS</a></li>
+                    <li> <a class="dropdown-item" href="<?php echo $base_url; ?>humanities/h&s_chemistry.php">CHEMISTRY</a></li>
+                     <li> <a class="dropdown-item" href="<?php echo $base_url; ?>humanities/h&s_maths.php">MATHS</a></li>
+                </ul>
+                   
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php echo $base_url; ?>placement/placement.php">Placements</a>

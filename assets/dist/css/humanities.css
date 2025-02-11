@@ -2,17 +2,21 @@
   padding: 80px 0;
   background-color: var(--blue);
 }
+
 #about-vision-main .row {
   display: flex;
   /* align-items: center; */
   justify-content: center;
 }
+
 .vision-class {
   border-right: 2px dashed var(--white);
 }
+
 .abot-vision {
   margin: 15px 0;
 }
+
 .abot-vision h3 {
   color: var(--white);
   font-size: 30px;
@@ -25,10 +29,12 @@
   align-items: center;
   gap: 15px;
 }
+
 .abot-vision h3 img {
   width: 80px;
   filter: invert(1);
 }
+
 .abot-vision li {
   margin-bottom: 0;
   line-height: 30px;
@@ -38,12 +44,14 @@
   align-items: baseline;
   margin-bottom: 10px;
 }
+
 .abot-vision li img {
   filter: invert(1);
   width: 26px;
   position: relative;
   top: 6px;
 }
+
 .abot-mision {
   padding-left: 30px;
 }
@@ -53,9 +61,11 @@
   padding: 50px 0;
   background-color: #dfdede;
 }
+
 .humanities_main_head {
   margin-bottom: 35px;
 }
+
 .humanities_main_head h3 {
   font-size: 35px;
   color: var(--blue);
@@ -63,10 +73,12 @@
   border-bottom: solid 2px var(--blue);
   padding-bottom: 15px;
 }
+
 .hod_sec {
   position: relative;
   z-index: 1;
 }
+
 .hod_sec::before {
   content: "";
   position: absolute;
@@ -77,31 +89,38 @@
   background-color: var(--orange);
   z-index: -1;
 }
+
 .hod_sec img {
   width: 100%;
   background-color: #fff;
   padding: 15px;
 }
+
 .hod_hod_name {
   background-color: var(--black);
   padding: 10px 29px;
 }
+
 .hod_hod_name h4 {
   font-size: 22px;
   color: var(--white);
   margin: 0;
 }
+
 .hod_hod_name p {
   color: #d1d1d1;
   font-size: 16px;
   margin: 0;
 }
+
 .hod_img_text ul {
   margin-top: 10px;
 }
+
 .hod_img_text ul li {
   margin-bottom: 10px;
 }
+
 .hod_img_text ul li a {
   font-size: 17px;
   color: var(--black);
@@ -111,23 +130,26 @@
 }
 
 .hod_img_text ul li a i {
-    font-size: 17px;
-    color: var(--white);
-    background-color: #000;
-    padding: 6px;
-    /* border-radius: 50%; */
+  font-size: 17px;
+  color: var(--white);
+  background-color: #000;
+  padding: 6px;
+  /* border-radius: 50%; */
 }
+
 .hod_sec_text {
   padding: 40px;
   text-align: justify;
   background-color: var(--white);
 }
+
 .hod_sec_text p {
   color: var(--black);
   font-size: 17px;
   line-height: 27px;
   margin-bottom: 30px;
 }
+
 /* faculty section */
 .humanities_faculty_main {
   background-color: transparent;
@@ -137,6 +159,7 @@
 .falicilites_main {
   padding: 80px 0;
 }
+
 .facilities_sec_card {
   position: relative;
   height: 100%;
@@ -145,11 +168,13 @@
   flex-direction: column;
   justify-content: center;
 }
+
 .facilities_sec_card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 /* .facilities_text_sec{
   background-color:#00000091;
 } */
@@ -164,10 +189,12 @@
   border-radius: 0px 30px 0 0;
   padding-bottom: 4px;
 }
+
 .falicilites_main .row,
 .facilities_row {
   row-gap: 20px;
 }
+
 /* .col_4_size img{
   height:555px;
   object-fit:cover;
@@ -175,15 +202,19 @@
 .facilities_sec_card1 {
   background-color: #969696;
 }
+
 .facilities_sec_card2 {
   background-color: var(--blue);
 }
+
 .facilities_sec_card3 {
   background-color: rgb(62, 75, 73);
 }
+
 .col_4_size {
   background-color: slategrey;
 }
+
 .facilities_sec_card h4 {
   font-size: 22px;
   color: var(--white);
@@ -191,44 +222,98 @@
   margin-bottom: 5px;
   padding-left: 20px;
 }
+
 .facilities_sec_card p {
   font-size: 14px;
   color: var(--white);
   padding-left: 20px;
 }
+
+.useful_links_main {
+  padding: 80px 0 !important;
+  background-color: var(--blue) !important;
+}
+
+.links_department {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links_department .depart_lin_inn {
+  width: 100%;
+}
+
+.links_department .depart_lin_inn a {
+  color: black;
+  background-color: var(--white);
+  transition: 0.5s all;
+}
+
+.depart_lin_inn a {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--blue);
+  padding: 15px 15px;
+  transition: 0.5s all;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.depart_lin_inn {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.links_department .depart_lin_inn a:hover {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
 @media (max-width:1199px) {
-.hod_img_text ul li a {
+  .hod_img_text ul li a {
     font-size: 15px;
+  }
 }
-}
+
 @media (max-width: 991px) {
-.vision-class {
-    border-right:none;
+  .vision-class {
+    border-right: none;
+  }
+
+  .humanities_fclty_sec .row {
+    row-gap: 20px;
+  }
 }
-.humanities_fclty_sec .row{
-    row-gap:20px;
-}
-}
+
 @media (max-width: 540px) {
-.abot-mision {
+  .abot-mision {
     padding-left: 0px;
-}
-.hod_sec_text {
+  }
+
+  .hod_sec_text {
     padding: 20px
-}
-.hod_sec_text p {
- 
+  }
+
+  .hod_sec_text p {
+
     font-size: 16px;
-}
-.hod_sec::before {
- 
+  }
+
+  .hod_sec::before {
+
     width: 102%;
-}
-#about-vision-main {
+  }
+
+  #about-vision-main {
     padding: 38px 0px;
- 
-}
-.abot-vision h3 {
+
+  }
+
+  .abot-vision h3 {
     font-size: 25px;
-}
+  }
 }
