@@ -1,9 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1)
-
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -20,60 +14,6 @@ ini_set('display_errors', 1)
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <style>
-        .cse-sec {
-            font-size: larger;
-        }
-
-        figure.table {
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
-
-        figure.table table {
-            width: 100%;
-        }
-
-        figure.table.table-bordered.table-striped {
-            border: 1px solid #ddd;
-            /* Add border to the table */
-            border-collapse: collapse;
-            /* Collapse adjacent borders */
-            background-color: #f9f9f9;
-            /* Background color for striped effect */
-            text-align: left;
-            /* Left-align text */
-            font-size: 14px;
-            /* Font size for table text */
-        }
-
-        figure.table.table-bordered.table-striped th,
-        figure.table.table-bordered.table-striped td {
-            border: 1px solid #ddd;
-            /* Cell border */
-            padding: 8px;
-            /* Cell padding */
-        }
-
-        figure.table.table-bordered.table-striped tr:nth-child(even) {
-            background-color: #f2f2f2;
-            /* Striped rows (even rows) */
-        }
-
-        figure.table.table-bordered.table-striped tr:hover {
-            background-color: #ddd;
-            /* Hover effect */
-        }
-
-        figure.table.table-bordered.table-striped th {
-            background-color: #4CAF50;
-            /* Header background color */
-            color: white;
-            /* Header text color */
-            font-weight: bold;
-            /* Bold header text */
-        }
-
         #accordionExample_one .table-bordered td {
             text-transform: uppercase;
             font-size: 15px;
@@ -161,18 +101,7 @@ ini_set('display_errors', 1)
 
         #v-pills-profile1 table img {
             width: 100px !important;
-            height: 60px !important;
-            border-radius: 25px !important;
-            object-fit: cover;
-        }
-
-        #v-pills-profile1 table tbody tr td:last-child {
-            text-align: center;
-        }
-
-        .table-responsive {
-            overflow-x: clip !important;
-
+            height: 124px !important;
         }
     </style>
 
@@ -186,14 +115,13 @@ ini_set('display_errors', 1)
     <!-- banner section -->
     <section id="department_bnr_main">
         <div class="bnr_img">
-            <img src="<?php echo $base_url; ?>assets/images/department/department_banner_bg.webp" class="img-fluid"
-                alt="banner" loading="lazy" decoding="async">
+            <img src="<?php echo $base_url; ?>assets/images/department/department_banner_bg.webp" class="img-fluid" alt="banner" loading="lazy" decoding="async">
         </div>
 
         <div class="bnr_sec_df">
             <div class="bnr_sec_tt">
                 <div class="head_tit">
-                    <h4>CSE</h4>
+                    <h4>CIVIL</h4>
                 </div>
 
                 <div class="bnr_bredcrumb">
@@ -202,27 +130,26 @@ ini_set('display_errors', 1)
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index">Home</a></li>
                                 <li class="breadcrumb-item"><a href="#">Departments</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">CSE</li>
+                                <li class="breadcrumb-item active" aria-current="page">CIVIL</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
             <div class="bnr_scnd_img">
-                <img src="<?php echo $base_url; ?>assets/images/department/department_banner.webp" class="img-fluid"
-                    alt="banner" loading="lazy" decoding="async">
+                <img src="<?php echo $base_url; ?>assets/images/department/department_banner.webp" class="img-fluid" alt="banner" loading="lazy" decoding="async">
             </div>
         </div>
 
     </section>
 
-    <section class="cse-sec">
+   <section class="cse-sec">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <!-- <div class="d-flex align-items-start"> -->
 
-                    <h2 class="widget-title">CSE Department</h2>
+                    <h2 class="widget-title">CIVIL Department</h2>
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
 
@@ -435,57 +362,57 @@ ini_set('display_errors', 1)
                 }
 
                 // Fetch images and titles from the database
-                $query = "SELECT sno, department, description, status, vision, mission,peo,po,po_pso,advisory_board, achivements, board_of_studies FROM dep_about WHERE department_name = 'CSE'";
+                $query = "SELECT sno, department, description, status, vision, mission,peo,po,po_pso,advisory_board, achivements, board_of_studies FROM dep_about WHERE department_name = 'CIV'";
 
                 $result = mysqli_query($con, $query);
-                $query1 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_btech WHERE branch_name = 'CSE'";
+                $query1 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_btech WHERE branch_name = 'CIV'";
 
                 $result2 = mysqli_query($con, $query1);
                 // for query Btech syllabus
-                $query01 = "SELECT * FROM dep_btech_syllabus WHERE branch = 'CSE'";
+                $query01 = "SELECT * FROM dep_btech_syllabus WHERE branch = 'CIV'";
 
                 $result01 = mysqli_query($con, $query01);
                 // for query btech timetable
-                $query02 = "SELECT * FROM dep_btech_timetable WHERE branch = 'CSE'";
+                $query02 = "SELECT * FROM dep_btech_timetable WHERE branch = 'CIV'";
 
                 $result02 = mysqli_query($con, $query02);
 
                 // for query btech academic calendar
 
-                $query03 = "SELECT * FROM dep_btech_academic_calendar WHERE branch = 'CSE'";
+                $query03 = "SELECT * FROM dep_btech_academic_calendar WHERE branch = 'CIV'";
 
                 $result03 = mysqli_query($con, $query03);
 
                 // for query btech lab configurations
 
-                $query04 = "SELECT * FROM laboratories_config WHERE department_name = 'CSE'";
+                $query04 = "SELECT * FROM laboratories_config WHERE department_name = 'CIV'";
 
                 $result04 = mysqli_query($con, $query04);
 
                 // for query btech lab details
 
-                $query05 = "SELECT * FROM  labdetails WHERE department LIKE 'CSE' ORDER BY 	date_of_creation ASC";
+                $query05 = "SELECT * FROM  labdetails WHERE department LIKE 'CIV' ORDER BY 	date_of_creation ASC";
 
                 $result05 = mysqli_query($con, $query05);
 
                 // for Mtech Tab impleementatios
 
                 // for mtech Syllabus
-                $query06 = "SELECT * FROM  mtech_syllabus WHERE department_name LIKE 'CSE'";
+                $query06 = "SELECT * FROM  mtech_syllabus WHERE department_name LIKE 'CIV'";
 
                 $result06 = mysqli_query($con, $query06);
 
                 // for mtech Timetable
-                $query07 = "SELECT * FROM  mtech_timetable WHERE department_name LIKE 'CSE'";
+                $query07 = "SELECT * FROM  mtech_timetable WHERE department_name LIKE 'CIV'";
 
                 $result07 = mysqli_query($con, $query07);
 
                 // for mtech Academic Calendar
-                $query08 = "SELECT * FROM  mtech_academic_calendar WHERE department_name LIKE 'CSE'";
+                $query08 = "SELECT * FROM  mtech_academic_calendar WHERE department_name LIKE 'CIV'";
 
                 $result08 = mysqli_query($con, $query08);
                 // for mtech Academic Laboratories
-                $query09 = "SELECT * FROM  mtech_laboratories WHERE department_name LIKE 'CSE'";
+                $query09 = "SELECT * FROM  mtech_laboratories WHERE department_name LIKE 'CIV'";
 
                 $result09 = mysqli_query($con, $query09);
 
@@ -496,42 +423,42 @@ ini_set('display_errors', 1)
 
                 $result2 = mysqli_query($con, $query1);
 
-                $query2 = "SELECT lab_name, lab_details FROM dep_btech WHERE branch_name = 'CSE'";
+                $query2 = "SELECT lab_name, lab_details FROM dep_btech WHERE branch_name = 'CIV'";
                 $result3 = mysqli_query($con, $query2);
                 // Close the database connection
                 // mysqli_close($con);
-                $query3 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_mtech WHERE branch_name = 'CSE'";
+                $query3 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_mtech WHERE branch_name = 'CIV'";
                 $result4 = mysqli_query($con, $query3);
 
 
-                $query4 = "SELECT * FROM faculty_event2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query4 = "SELECT * FROM faculty_event2 WHERE department = 'CIV' ORDER BY date_of_creation DESC";
                 $result5 = mysqli_query($con, $query4);
 
 
-                $query5 = "SELECT * FROM dep_faculty_publications2 WHERE department LIKE 'CSE' ORDER BY date_of_creation DESC";
+                $query5 = "SELECT * FROM dep_faculty_publications2 WHERE department LIKE 'CIV' ORDER BY date_of_creation DESC";
                 $result6 = mysqli_query($con, $query5);
 
-                $query6 = "SELECT * FROM dep_faculty_innovations2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query6 = "SELECT * FROM dep_faculty_innovations2 WHERE department = 'CIV' ORDER BY date_of_creation DESC";
                 $result7 = mysqli_query($con, $query6);
                 // mysqli_close($con);
                 // for student events
-                $query7 = "SELECT * FROM student_events2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query7 = "SELECT * FROM student_events2 WHERE department = 'CIV' ORDER BY date_of_creation DESC";
                 $result8 = mysqli_query($con, $query7);
 
                 // for student placement
 
-                $query8 = "SELECT * FROM student_placements2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query8 = "SELECT * FROM student_placements2 WHERE department = 'CIV' ORDER BY date_of_creation DESC";
                 $result9 = mysqli_query($con, $query8);
 
                 // for contcat Hod Dynamic 
 
 
-                $query9 = "SELECT * FROM contact_hod WHERE department = 'CSE' ORDER BY id ASC LIMIT 1";
+                $query9 = "SELECT * FROM contact_hod WHERE department = 'CIV' ORDER BY id ASC LIMIT 1";
                 $result10 = mysqli_query($con, $query9);
 
                 // for Co's Po's
 
-                $query10 = "SELECT * FROM contact_hod WHERE department = 'CSE'";
+                $query10 = "SELECT * FROM contact_hod WHERE department = 'CIV'";
                 $result11 = mysqli_query($con, $query10);
 
                 ?>
@@ -865,7 +792,7 @@ ini_set('display_errors', 1)
                     <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                   // echo "<p>No department information found.</p>";
                                                                 }
 
                                                                 if (mysqli_num_rows($result01) > 0) {
@@ -940,7 +867,7 @@ ini_set('display_errors', 1)
                     <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                   // echo "<p>No department information found.</p>";
                                                                 }
 
                                                                 if (mysqli_num_rows($result02) > 0) {
@@ -997,7 +924,7 @@ ini_set('display_errors', 1)
                     <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                 //   echo "<p>No department information found.</p>";
                                                                 }
 
                                                                 if (mysqli_num_rows($result03) > 0) {
@@ -1028,28 +955,7 @@ ini_set('display_errors', 1)
                                     <div class="committee_table_inn">
                                         <div class="table-responsive">
                                             <p> <?php echo $academic_calendar; ?></p>
-                                            <!-- <table class="table table-bordered table-striped">
-                                                <thead>
-                                                    <tr>
-                                                        <th>S.NO</th>
-                                                        <th>Academic Year</th>
-                                                        
-                                                        <th>Link</th>
 
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td>2023-24</td>
-                                                        
-                                                        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/Academic_Calenders.pdf" target="_blank" rel="noopener">View</a></td>
-
-                                                    </tr>
-
-
-                                                </tbody>
-                                            </table> -->
                                         </div>
                                     </div>
                                 </div>
@@ -1059,7 +965,7 @@ ini_set('display_errors', 1)
                 <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                   // echo "<p>No department information found.</p>";
                                                                 }
 
 
@@ -1543,89 +1449,75 @@ ini_set('display_errors', 1)
                                     </div>
                                 </div> -->
                         <!-- Btech lab images -->
-                        <div class="lab-img">
+                        <!-- <div class="lab-img">
                             <div class="your-slider">
 
                                 <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab1.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab1.webp"
-                                            alt="Image 1" class="img-fluid" loading="lazy" decoding="async"></a>
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab1.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab1.webp" alt="Image 1" class="img-fluid" loading="lazy" decoding="async"></a>
                                     <div class="overlay">
-                                        <p>Cse Lab-1 </p>
+                                        <p>Ece Lab-1 </p>
                                     </div>
                                 </div>
 
                                 <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab2.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab2.webp"
-                                            alt="Image 2" class="img-fluid" loading="lazy" decoding="async"></a>
-                                    <div class="overlay">
-                                        <p>Cse Lab-2 </p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab3.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab3.webp"
-                                            alt="Image 3" class="img-fluid" loading="lazy" decoding="async"></a>
-                                    <div class="overlay">
-                                        <p>Cse Lab-3 </p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab1.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab4.webp"
-                                            alt="Image 4" class="img-fluid" loading="lazy" decoding="async">
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab2.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab2.webp" alt="Image 2" class="img-fluid" loading="lazy" decoding="async">
                                     </a>
                                     <div class="overlay">
-                                        <p>Cse Lab-4 </p>
+                                        <p>EceLab-2 </p>
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab5.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab5.webp"
-                                            alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab3.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab3.webp" alt="Image 3" class="img-fluid" loading="lazy" decoding="async">
                                     </a>
                                     <div class="overlay">
-                                        <p>Cse Lab-5 </p>
+                                        <p>Ece Lab-3 </p>
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab6.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/cse-lab6.webp"
-                                            alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab4.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab4.webp" alt="Image 4" class="img-fluid" loading="lazy" decoding="async">
                                     </a>
                                     <div class="overlay">
-                                        <p>Cse Lab-6 </p>
+                                        <p>Ece Lab-4 </p>
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/project-img.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/project-img.webp"
-                                            alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab5.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab5.webp" alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
                                     </a>
                                     <div class="overlay">
-                                        <p>Project Lab </p>
+                                        <p>Ece Lab-5 </p>
                                     </div>
                                 </div>
                                 <div>
-                                    <a href="https://kakatiyasolutions.int/vageshwari_clg/assets/images/cse/project-img2.webp"
-                                        data-fancybox="gallery" data-caption="Caption Images 1">
-                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/cse/project-img2.webp"
-                                            alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab6.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab6.webp" alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
                                     </a>
                                     <div class="overlay">
-                                        <p> Project Lab </p>
+                                        <p>Ece Lab-6 </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab7.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab7.webp" alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
+                                    </a>
+                                    <div class="overlay">
+                                        <p>Ece Lab-7 </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab8.webp" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="https://kakatiyasolutions.in/vageshwari_clg/assets/images/ece/ece-lab8.webp" alt="Image 5" class="img-fluid" loading="lazy" decoding="async">
+                                    </a>
+                                    <div class="overlay">
+                                        <p> Ece Lab-8 </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
 
@@ -1663,7 +1555,7 @@ ini_set('display_errors', 1)
                         <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                           // echo "<p>No department information found.</p>";
                         }
                         ?>
                     </div>
@@ -1713,7 +1605,7 @@ ini_set('display_errors', 1)
             <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                          //  echo "<p>No department information found.</p>";
                         }
             ?>
                 </div>
@@ -1754,7 +1646,7 @@ ini_set('display_errors', 1)
             <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                            //echo "<p>No department information found.</p>";
                         }
             ?>
                 </div>
@@ -1795,13 +1687,13 @@ ini_set('display_errors', 1)
             <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                            //echo "<p>No department information found.</p>";
                         }
             ?>
                 </div>
                 <?php
 
-                $query = "SELECT * FROM dep_faculty_profile WHERE department = 'CSE' ORDER BY id ASC";
+                $query = "SELECT * FROM dep_faculty_profile WHERE department = 'CIV' ORDER BY id ASC";
                 $result = mysqli_query($con, $query);
 
                 $data = [];

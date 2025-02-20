@@ -1,9 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1)
-
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -20,60 +14,6 @@ ini_set('display_errors', 1)
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
     <style>
-        .cse-sec {
-            font-size: larger;
-        }
-
-        figure.table {
-            margin: 0;
-            padding: 0;
-            border: none;
-        }
-
-        figure.table table {
-            width: 100%;
-        }
-
-        figure.table.table-bordered.table-striped {
-            border: 1px solid #ddd;
-            /* Add border to the table */
-            border-collapse: collapse;
-            /* Collapse adjacent borders */
-            background-color: #f9f9f9;
-            /* Background color for striped effect */
-            text-align: left;
-            /* Left-align text */
-            font-size: 14px;
-            /* Font size for table text */
-        }
-
-        figure.table.table-bordered.table-striped th,
-        figure.table.table-bordered.table-striped td {
-            border: 1px solid #ddd;
-            /* Cell border */
-            padding: 8px;
-            /* Cell padding */
-        }
-
-        figure.table.table-bordered.table-striped tr:nth-child(even) {
-            background-color: #f2f2f2;
-            /* Striped rows (even rows) */
-        }
-
-        figure.table.table-bordered.table-striped tr:hover {
-            background-color: #ddd;
-            /* Hover effect */
-        }
-
-        figure.table.table-bordered.table-striped th {
-            background-color: #4CAF50;
-            /* Header background color */
-            color: white;
-            /* Header text color */
-            font-weight: bold;
-            /* Bold header text */
-        }
-
         #accordionExample_one .table-bordered td {
             text-transform: uppercase;
             font-size: 15px;
@@ -161,18 +101,7 @@ ini_set('display_errors', 1)
 
         #v-pills-profile1 table img {
             width: 100px !important;
-            height: 60px !important;
-            border-radius: 25px !important;
-            object-fit: cover;
-        }
-
-        #v-pills-profile1 table tbody tr td:last-child {
-            text-align: center;
-        }
-
-        .table-responsive {
-            overflow-x: clip !important;
-
+            height: 124px !important;
         }
     </style>
 
@@ -186,14 +115,13 @@ ini_set('display_errors', 1)
     <!-- banner section -->
     <section id="department_bnr_main">
         <div class="bnr_img">
-            <img src="<?php echo $base_url; ?>assets/images/department/department_banner_bg.webp" class="img-fluid"
-                alt="banner" loading="lazy" decoding="async">
+            <img src="<?php echo $base_url; ?>assets/images/department/department_banner_bg.webp" class="img-fluid" alt="banner" loading="lazy" decoding="async">
         </div>
 
         <div class="bnr_sec_df">
             <div class="bnr_sec_tt">
                 <div class="head_tit">
-                    <h4>CSE</h4>
+                    <h4>ME</h4>
                 </div>
 
                 <div class="bnr_bredcrumb">
@@ -202,15 +130,14 @@ ini_set('display_errors', 1)
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index">Home</a></li>
                                 <li class="breadcrumb-item"><a href="#">Departments</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">CSE</li>
+                                <li class="breadcrumb-item active" aria-current="page">ME</li>
                             </ol>
                         </nav>
                     </div>
                 </div>
             </div>
             <div class="bnr_scnd_img">
-                <img src="<?php echo $base_url; ?>assets/images/department/department_banner.webp" class="img-fluid"
-                    alt="banner" loading="lazy" decoding="async">
+                <img src="<?php echo $base_url; ?>assets/images/department/department_banner.webp" class="img-fluid" alt="banner" loading="lazy" decoding="async">
             </div>
         </div>
 
@@ -222,7 +149,7 @@ ini_set('display_errors', 1)
                 <div class="col-lg-3">
                     <!-- <div class="d-flex align-items-start"> -->
 
-                    <h2 class="widget-title">CSE Department</h2>
+                    <h2 class="widget-title">Mechanical Department</h2>
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
 
@@ -435,57 +362,57 @@ ini_set('display_errors', 1)
                 }
 
                 // Fetch images and titles from the database
-                $query = "SELECT sno, department, description, status, vision, mission,peo,po,po_pso,advisory_board, achivements, board_of_studies FROM dep_about WHERE department_name = 'CSE'";
+                $query = "SELECT sno, department, description, status, vision, mission,peo,po,po_pso,advisory_board, achivements, board_of_studies FROM dep_about WHERE department_name = 'MEC'";
 
                 $result = mysqli_query($con, $query);
-                $query1 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_btech WHERE branch_name = 'CSE'";
+                $query1 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_btech WHERE branch_name = 'MEC'";
 
                 $result2 = mysqli_query($con, $query1);
                 // for query Btech syllabus
-                $query01 = "SELECT * FROM dep_btech_syllabus WHERE branch = 'CSE'";
+                $query01 = "SELECT * FROM dep_btech_syllabus WHERE branch = 'MEC'";
 
                 $result01 = mysqli_query($con, $query01);
                 // for query btech timetable
-                $query02 = "SELECT * FROM dep_btech_timetable WHERE branch = 'CSE'";
+                $query02 = "SELECT * FROM dep_btech_timetable WHERE branch = 'MEC'";
 
                 $result02 = mysqli_query($con, $query02);
 
                 // for query btech academic calendar
 
-                $query03 = "SELECT * FROM dep_btech_academic_calendar WHERE branch = 'CSE'";
+                $query03 = "SELECT * FROM dep_btech_academic_calendar WHERE branch = 'MEC'";
 
                 $result03 = mysqli_query($con, $query03);
 
                 // for query btech lab configurations
 
-                $query04 = "SELECT * FROM laboratories_config WHERE department_name = 'CSE'";
+                $query04 = "SELECT * FROM laboratories_config WHERE department_name = 'MEC'";
 
                 $result04 = mysqli_query($con, $query04);
 
                 // for query btech lab details
 
-                $query05 = "SELECT * FROM  labdetails WHERE department LIKE 'CSE' ORDER BY 	date_of_creation ASC";
+                $query05 = "SELECT * FROM  labdetails WHERE department LIKE 'MEC' ORDER BY 	date_of_creation ASC";
 
                 $result05 = mysqli_query($con, $query05);
 
                 // for Mtech Tab impleementatios
 
                 // for mtech Syllabus
-                $query06 = "SELECT * FROM  mtech_syllabus WHERE department_name LIKE 'CSE'";
+                $query06 = "SELECT * FROM  mtech_syllabus WHERE department_name LIKE 'MEC'";
 
                 $result06 = mysqli_query($con, $query06);
 
                 // for mtech Timetable
-                $query07 = "SELECT * FROM  mtech_timetable WHERE department_name LIKE 'CSE'";
+                $query07 = "SELECT * FROM  mtech_timetable WHERE department_name LIKE 'MEC'";
 
                 $result07 = mysqli_query($con, $query07);
 
                 // for mtech Academic Calendar
-                $query08 = "SELECT * FROM  mtech_academic_calendar WHERE department_name LIKE 'CSE'";
+                $query08 = "SELECT * FROM  mtech_academic_calendar WHERE department_name LIKE 'MEC'";
 
                 $result08 = mysqli_query($con, $query08);
                 // for mtech Academic Laboratories
-                $query09 = "SELECT * FROM  mtech_laboratories WHERE department_name LIKE 'CSE'";
+                $query09 = "SELECT * FROM  mtech_laboratories WHERE department_name LIKE 'MEC'";
 
                 $result09 = mysqli_query($con, $query09);
 
@@ -496,42 +423,42 @@ ini_set('display_errors', 1)
 
                 $result2 = mysqli_query($con, $query1);
 
-                $query2 = "SELECT lab_name, lab_details FROM dep_btech WHERE branch_name = 'CSE'";
+                $query2 = "SELECT lab_name, lab_details FROM dep_btech WHERE branch_name = 'MEC'";
                 $result3 = mysqli_query($con, $query2);
                 // Close the database connection
                 // mysqli_close($con);
-                $query3 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_mtech WHERE branch_name = 'CSE'";
+                $query3 = "SELECT id, branch_name, lab_name, number_of_systems, lab_details, laboratories, syllabus, timetable, academic_calendar FROM dep_mtech WHERE branch_name = 'MEC'";
                 $result4 = mysqli_query($con, $query3);
 
 
-                $query4 = "SELECT * FROM faculty_event2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query4 = "SELECT * FROM faculty_event2 WHERE department = 'MEC' ORDER BY date_of_creation DESC";
                 $result5 = mysqli_query($con, $query4);
 
 
-                $query5 = "SELECT * FROM dep_faculty_publications2 WHERE department LIKE 'CSE' ORDER BY date_of_creation DESC";
+                $query5 = "SELECT * FROM dep_faculty_publications2 WHERE department LIKE 'MEC' ORDER BY date_of_creation DESC";
                 $result6 = mysqli_query($con, $query5);
 
-                $query6 = "SELECT * FROM dep_faculty_innovations2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query6 = "SELECT * FROM dep_faculty_innovations2 WHERE department = 'MEC' ORDER BY date_of_creation DESC";
                 $result7 = mysqli_query($con, $query6);
                 // mysqli_close($con);
                 // for student events
-                $query7 = "SELECT * FROM student_events2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query7 = "SELECT * FROM student_events2 WHERE department = 'MEC' ORDER BY date_of_creation DESC";
                 $result8 = mysqli_query($con, $query7);
 
                 // for student placement
 
-                $query8 = "SELECT * FROM student_placements2 WHERE department = 'CSE' ORDER BY date_of_creation DESC";
+                $query8 = "SELECT * FROM student_placements2 WHERE department = 'MEC' ORDER BY date_of_creation DESC";
                 $result9 = mysqli_query($con, $query8);
 
                 // for contcat Hod Dynamic 
 
 
-                $query9 = "SELECT * FROM contact_hod WHERE department = 'CSE' ORDER BY id ASC LIMIT 1";
+                $query9 = "SELECT * FROM contact_hod WHERE department = 'MEC' ORDER BY id ASC LIMIT 1";
                 $result10 = mysqli_query($con, $query9);
 
                 // for Co's Po's
 
-                $query10 = "SELECT * FROM contact_hod WHERE department = 'CSE'";
+                $query10 = "SELECT * FROM contact_hod WHERE department = 'MEC'";
                 $result11 = mysqli_query($con, $query10);
 
                 ?>
@@ -602,13 +529,13 @@ ini_set('display_errors', 1)
                                 <!-- <h3>Programme Overview</h3>
                                 <p>The Department of Computer Science and Engineering was established in the year 2005. with an intake of 60 students in B.Tech. it has become one of the most
                                     strongest and dynamic departments in the college and the computer science field with the distinguished and committed faculty members. The Computer
-                                    Science and Engineering (CSE) department is dedicated in imparting quality education through well-designed and periodically upgraded curriculum
-                                    in tune with the challenging software needs of the industry.</p>
-                                <p>The intake currently is 180 in B.Tech. (CSE) Programme. The department is also successfully running post graduate programme M. Tech.
+                                    Science and Engineering (MEC) department is dedicated in imparting quality education through well-designed and periodically upgraded curriculum
+                                    in tune with the challenging software neeMEC of the industry.</p>
+                                <p>The intake currently is 180 in B.Tech. (MEC) Programme. The department is also successfully running post graduate programme M. Tech.
                                     (Computer Science and Engineering) with an intake of 36. There are eighteen Computer Laboratories in the department well and figured
-                                    computer systems. The computer laboratories are equipped with state of the art facilities meeting the standards and well maintained
+                                    computer systems. The computer laboratories are equipped with state of the art facilities meeting the standarMEC and well maintained
                                     by dedicated and competent teaching and non-teaching staff.</p>
-                                <p>Computer Science and Engineering department is now home to several eminent and new faculty members, having rich experience in quads,
+                                <p>Computer Science and Engineering department is now home to several eminent and new faculty members, having rich experience in quaMEC,
                                     industry and R&D. The department has grown to good number of faculty members who provide leadership and expertise in several areas of
                                     computer science and engineering.</p> -->
                             </div>
@@ -808,7 +735,7 @@ ini_set('display_errors', 1)
                                                 <tbody>
                                                     <tr>
                                                         <td></td>
-                                                        <td>Dr. N.Chandamouli (Head, CSE)</td> 
+                                                        <td>Dr. N.Chandamouli (Head, MEC)</td> 
                                                        <td>Professor & HoD</td>
                                                        <td>Chairperson</td>
 
@@ -865,7 +792,7 @@ ini_set('display_errors', 1)
                     <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                    // echo "<p>No department information found.</p>";
                                                                 }
 
                                                                 if (mysqli_num_rows($result01) > 0) {
@@ -918,13 +845,13 @@ ini_set('display_errors', 1)
                                                     <tr>
                                                         <td></td>
                                                         <td>R18</td>
-                                                        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/R18B.Tech.CSESyllabus.pdf" target="_blank" rel="noopener">View</a></td>
+                                                        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/R18B.Tech.MECSyllabus.pdf" target="_blank" rel="noopener">View</a></td>
 
                                                     </tr>
                                                     <tr>
                                                         <td></td>
                                                         <td>R22</td>
-                                                        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/R22B.Tech.CSECourseStructureSyllabus2.pdf" target="_blank" rel="noopener">View</a></td>
+                                                        <td><a href="http://kakatiyasolutions.in/vageshwari_clg/assets/pdfs/R22B.Tech.MECCourseStructureSyllabus2.pdf" target="_blank" rel="noopener">View</a></td>
 
                                                     </tr>
 
@@ -940,7 +867,7 @@ ini_set('display_errors', 1)
                     <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                    // echo "<p>No department information found.</p>";
                                                                 }
 
                                                                 if (mysqli_num_rows($result02) > 0) {
@@ -997,7 +924,7 @@ ini_set('display_errors', 1)
                     <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                    //echo "<p>No department information found.</p>";
                                                                 }
 
                                                                 if (mysqli_num_rows($result03) > 0) {
@@ -1059,7 +986,7 @@ ini_set('display_errors', 1)
                 <?php
                                                                     }
                                                                 } else {
-                                                                    echo "<p>No department information found.</p>";
+                                                                    //echo "<p>No department information found.</p>";
                                                                 }
 
 
@@ -1091,7 +1018,7 @@ ini_set('display_errors', 1)
                                         <tbody>
                                             <tr>
                                                 <td></td>
-                                                <td>CSE LAB-1</td>
+                                                <td>MEC LAB-1</td>
                                                 <td>COMPUTER CONFIGURATION
                                                     Make: LENOVO THINKCENTER
                                                     Processor: 12TH GeN Intel(R) Core(TM) i5-12400
@@ -1106,7 +1033,7 @@ ini_set('display_errors', 1)
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                <td>CSE LAB-2</td>
+                                                <td>MEC LAB-2</td>
                                                 <td>COMPUTER CONFIGURATION
                                                     Make: LENOVO THINKCENTER
                                                     Processor: 12TH GeN Intel(R) Core(TM) i5-12400
@@ -1122,7 +1049,7 @@ ini_set('display_errors', 1)
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                <td>CSE LAB-3</td>
+                                                <td>MEC LAB-3</td>
                                                 <td>COMPUTER CONFIGURATION
                                                     Make: DELL
                                                     Processor: Intel® Core(TM) i5-6400T CPU @2020GHz 2.21 GHz
@@ -1138,7 +1065,7 @@ ini_set('display_errors', 1)
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                <td>CSE LAB-4</td>
+                                                <td>MEC LAB-4</td>
                                                 <td>COMPUTER CONFIGURATION
                                                     Make: DELL
                                                     Processor: Intel® Core(TM) i5-6400T CPU @2020GHz 2.21 GHz
@@ -1153,7 +1080,7 @@ ini_set('display_errors', 1)
                                             </tr>
                                             <tr>
                                                 <td></td>
-                                                <td>CSE LAB-5</td>
+                                                <td>MEC LAB-5</td>
                                                 <td>Make: DELL
                                                     Processor: i5,6TH GEN
                                                     Speed:2.3 GHz
@@ -1265,8 +1192,8 @@ ini_set('display_errors', 1)
                                                 <div class="lab-min">
                                                     <h6>Data Structures Lab:-</h6>
                                                 </div>
-                                                <p>The objectives of the Data Structures Lab (DS Lab) are to introduce the fundamental concepts of data structures, including their design,
-                                                    implementation, and application. In the DS Lab, students gain hands-on experience with various data structures such as arrays,
+                                                <p>The objectives of the Data Structures Lab (MEC Lab) are to introduce the fundamental concepts of data structures, including their design,
+                                                    implementation, and application. In the MEC Lab, students gain hands-on experience with various data structures such as arrays,
                                                     linked lists, stacks, queues, trees, graphs, and hash tables. This lab focuses on the practical implementation and manipulation
                                                     of these structures, as well as the development of algorithms for data processing and management.</p>
 
@@ -1543,7 +1470,7 @@ ini_set('display_errors', 1)
                                     </div>
                                 </div> -->
                         <!-- Btech lab images -->
-                        <div class="lab-img">
+                        <!-- <div class="lab-img">
                             <div class="your-slider">
 
                                 <div>
@@ -1625,7 +1552,7 @@ ini_set('display_errors', 1)
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
 
@@ -1663,7 +1590,7 @@ ini_set('display_errors', 1)
                         <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                            //echo "<p>No department information found.</p>";
                         }
                         ?>
                     </div>
@@ -1713,7 +1640,7 @@ ini_set('display_errors', 1)
             <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                            // echo "<p>No department information found.</p>";
                         }
             ?>
                 </div>
@@ -1754,7 +1681,7 @@ ini_set('display_errors', 1)
             <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                            // echo "<p>No department information found.</p>";
                         }
             ?>
                 </div>
@@ -1795,13 +1722,13 @@ ini_set('display_errors', 1)
             <?php
                             }
                         } else {
-                            echo "<p>No department information found.</p>";
+                            // echo "<p>No department information found.</p>";
                         }
             ?>
                 </div>
                 <?php
 
-                $query = "SELECT * FROM dep_faculty_profile WHERE department = 'CSE' ORDER BY id ASC";
+                $query = "SELECT * FROM dep_faculty_profile WHERE department = 'MEC' ORDER BY id ASC";
                 $result = mysqli_query($con, $query);
 
                 $data = [];
@@ -2323,7 +2250,6 @@ ini_set('display_errors', 1)
             </div>
         </div>
     </section>
-
 
 
 
