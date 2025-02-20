@@ -79,6 +79,9 @@
                 <li><a class="dropdown-item" href="<?php echo $base_url; ?>me/me.php"> Mechanical Engineering</a></li>
                  <li><a class="dropdown-item" href="<?php echo $base_url; ?>ai&ml/ai&ml.php">Computer Science & Engineering ( AI & ML)</a></li>
                   <li><a class="dropdown-item" href="<?php echo $base_url; ?>data/data.php">Computer Science & Engineering (Data Science)</a></li>
+                  <li><a class="dropdown-item" href="<?php echo $base_url; ?>mba.php">MBA</a></li>
+                  <li><a class="dropdown-item" href="<?php echo $base_url; ?>mca.php">MCA</a></li>
+
               </ul>
             </li>
                 <li class="nav-item dropdown">
